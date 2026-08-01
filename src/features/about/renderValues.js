@@ -4,11 +4,11 @@ import {
 
 import {
   createSectionHeading,
-} from "../../components/common/SectionHeading.js";
+} from "../../components/common/ sectionHeading.js";
 
 import {
   createFeatureCard,
-} from "../../components/common/FeatureCard.js";
+} from "../../components/common/featureCard.js";
 
 export function renderValues() {
 

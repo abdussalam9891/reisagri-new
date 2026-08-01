@@ -2,11 +2,11 @@ import { FOUNDATION } from "../../constants/about.js";
 
 import {
   createSectionHeading,
-} from "../../components/common/SectionHeading.js";
+} from "../../components/common/ sectionHeading.js";
 
 import {
   createInfoCard,
-} from "../../components/common/InfoCard.js";
+} from "../../components/common/infoCard.js";
 
 export function renderFoundation() {
 

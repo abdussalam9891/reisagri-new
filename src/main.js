@@ -2,7 +2,7 @@ import { initNavbar } from "./features/navbar/index.js";
 
 import { initRevealAnimations } from "./features/animations/reveal.js";
 
-import { initHomePage } from "./pages/homePage.js";
+import { initHomePage } from "./pages/homepage.js";
 
 import { initAboutPage } from "./pages/aboutpage.js";
 

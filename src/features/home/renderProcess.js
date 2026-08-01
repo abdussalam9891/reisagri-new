@@ -4,7 +4,7 @@ import {
 
 import {
   createSectionHeading,
-} from "../../components/common/SectionHeading.js";
+} from "../../components/common/ sectionHeading.js";
 
 import {
   createProcessCard,
@@ -29,7 +29,7 @@ bg-white
 "
 >
 
- 
+
 
 <div
 class="

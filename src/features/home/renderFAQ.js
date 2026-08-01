@@ -4,7 +4,7 @@ import {
 
 import {
   createSectionHeading,
-} from "../../components/common/SectionHeading.js";
+} from "../../components/common/ sectionHeading.js";
 
 import {
   createFAQItem,
@@ -25,7 +25,7 @@ export function renderFAQ() {
 
 <section
 class="
- 
+
 "
 >
 
