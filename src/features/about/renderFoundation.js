@@ -2,7 +2,7 @@ import { FOUNDATION } from "../../constants/about.js";
 
 import {
   createSectionHeading,
-} from "../../components/common/ sectionHeading.js";
+} from "../../components/common/sectionHeading.js";
 
 import {
   createInfoCard,

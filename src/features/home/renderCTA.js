@@ -4,7 +4,7 @@ import {
 
 import {
   createSectionHeading,
-} from "../../components/common/ sectionHeading.js";
+} from "../../components/common/sectionHeading.js";
 
 import {
   createCTAFeature,
