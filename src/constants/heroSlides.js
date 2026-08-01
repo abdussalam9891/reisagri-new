@@ -1,0 +1,92 @@
+
+export const HERO_SLIDES = [
+  {
+    image: "/src/assets/images/1.jpg",
+
+    title:
+      "Connecting Global\nAgricultural Markets",
+
+    description:
+      "Reliable sourcing and export of premium agricultural commodities with a strong commitment to quality, transparency and long-term partnerships.",
+
+    button: {
+      text: "Request Quote",
+      href: "/pages/contact.html",
+    },
+  },
+
+  {
+    image: "/src/assets/images/2.jpg",
+
+    title:
+      "Trusted Export\nSolutions",
+
+    description:
+      "Delivering rice, sugar, spices, grains, pulses and maize to international buyers through an efficient and dependable supply chain.",
+
+    button: {
+      text: "Our Products",
+      href: "/pages/products.html",
+    },
+  },
+
+  {
+    image: "/src/assets/images/3.jpg",
+
+    title:
+      "Quality From\nSource To Destination",
+
+    description:
+      "Every shipment is carefully sourced, inspected and managed to ensure consistent quality for customers across global markets.",
+
+    button: {
+      text: "Global Sourcing",
+      href: "/pages/global-sourcing.html",
+    },
+  },
+
+  {
+    image: "/src/assets/images/4.jpg",
+
+    title:
+      "Building Long-Term\nBusiness Partnerships",
+
+    description:
+      "We work closely with importers, distributors and wholesalers to create sustainable and profitable trade relationships.",
+
+    button: {
+      text: "Why REISAGRI",
+      href: "/pages/why-reisagri.html",
+    },
+  },
+
+  {
+    image: "/src/assets/images/5.jpg",
+
+    title:
+      "Delivering Confidence\nAcross Borders",
+
+    description:
+      "Combining industry expertise, reliable logistics and transparent communication to simplify international agricultural trade.",
+
+    button: {
+      text: "Contact Us",
+      href: "/pages/contact.html",
+    },
+  },
+
+  {
+    image: "/src/assets/images/6.jpg",
+
+    title:
+      "Growing Together\nWorldwide",
+
+    description:
+      "Helping businesses source premium agricultural commodities with confidence through dependable global supply chain solutions.",
+
+    button: {
+      text: "Get Started",
+      href: "/pages/contact.html",
+    },
+  },
+];

@@ -1,0 +1,22 @@
+import { createNavbar } from "../../components/navbar/navbar.js";
+
+import { initScroll } from "./scroll.js";
+import { initActiveLink } from "./activeLink.js";
+import { initMobileDrawer } from "./mobileDrawer.js";
+
+export function initNavbar() {
+  const container = document.getElementById("navbar-container");
+
+  if (!container) {
+    console.warn("[Navbar] #navbar-container not found.");
+    return;
+  }
+
+  const theme = container.dataset.theme || "light";
+
+  container.innerHTML = createNavbar(theme);
+
+  initScroll();
+  initActiveLink();
+  initMobileDrawer();
+}
