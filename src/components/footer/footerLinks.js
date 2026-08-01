@@ -312,10 +312,10 @@ export function createFooterLinks() {
               text-white/60
             "
           >
-            21-C, Opposite Living Style Mall<br />
-            Pocket 6, Jasola Vihar<br />
-            New Delhi 110025<br />
-            India
+            Unit No. TK1, Third Floor<br>
+Living Style Mall, Jasola<br>
+New Delhi – 110025<br>
+India
           </p>
 
         </div>
@@ -369,7 +369,7 @@ export function createFooterLinks() {
           </h4>
 
           <a
-            href="mailto:info@reisagri.com"
+            href="mailto:info@reisagritrading.com"
             class="
               mt-3
               inline-block
@@ -379,7 +379,7 @@ export function createFooterLinks() {
               hover:text-[#E8720F]
             "
           >
-            info@reisagri.com
+            info@reisagritrading.com
           </a>
 
         </div>

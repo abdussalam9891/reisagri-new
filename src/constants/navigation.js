@@ -68,6 +68,6 @@ export const SOCIAL_LINKS = [
   {
     label: "Email",
     slug: "email",
-    href: "mailto:info@reisagri.com",
+    href: "mailto:info@reisagritrading.com",
   },
 ];

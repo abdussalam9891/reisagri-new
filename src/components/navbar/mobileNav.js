@@ -249,7 +249,7 @@ export function createMobileNav() {
       <div class="mt-5 space-y-4">
 
         <a
-          href="mailto:info@reisagri.com"
+          href="mailto:info@reisagritrading.com"
           class="
             block
 
@@ -263,7 +263,7 @@ export function createMobileNav() {
             hover:text-[#E8720F]
           "
         >
-          info@reisagri.com
+          info@reisagritrading.com
         </a>
 
         <a

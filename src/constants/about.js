@@ -108,16 +108,16 @@ export const LEADERSHIP = [
 
     image: "/public/assets/ceo.jpeg",
 
-    alt: "Izhar Alam - Chief Executive Officer",
+    alt: "Mohammad Izhar Alam - CO-FOUNDER & CEO",
 
-    
+
 
     heading:
       "Driven by Experience.\nGuided by Integrity.",
 
     paragraphs: [
 
-      `REISAGRI is led by <strong class="text-[#181818]">Izhar Alam</strong>, Chief Executive Officer, whose experience in agricultural commodity trading and international supply chain management has helped shape the company's commitment to reliability, transparency and operational excellence.`,
+      `REISAGRI is led by <strong class="text-[#181818]">Izhar Alam</strong>, CO-FOUNDER & CEO, whose experience in agricultural commodity trading and international supply chain management has helped shape the company's commitment to reliability, transparency and operational excellence.`,
 
       `With more than a decade of industry experience, he has worked across sourcing, procurement, risk management and international trade, developing strong relationships with producers, logistics partners and buyers across multiple markets.`,
 
@@ -128,10 +128,10 @@ export const LEADERSHIP = [
     quote:
       "Great partnerships are built on trust, consistency and the confidence that every shipment will meet expectations.",
 
-    name: "Izhar Alam",
+    name: "Mohammad Izhar Alam",
 
     designation:
-      "Chief Executive Officer"
+      "CO-FOUNDER & CEO"
 
   }
 

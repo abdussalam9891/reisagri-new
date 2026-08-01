@@ -1,5 +1,5 @@
 @import "../features/animations/animations.css";
- 
+
 
 
 
@@ -20,4 +20,42 @@
 
 .navbar-dark {
   color: #fff;
+}
+
+
+
+
+
+
+
+
+/* ==========================================
+   GLOBAL MAP MARKERS
+========================================== */
+
+.market-marker{
+
+position:absolute;
+
+opacity:0;
+
+transform:
+translate(-50%,-50%)
+scale(.2);
+
+transition:
+
+all .7s
+cubic-bezier(.22,1,.36,1);
+
+}
+
+.market-marker.active{
+
+opacity:1;
+
+transform:
+translate(-50%,-50%)
+scale(1);
+
 }

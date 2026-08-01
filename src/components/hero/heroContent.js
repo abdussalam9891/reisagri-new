@@ -53,38 +53,7 @@ export function createHeroContent() {
 
 
 
-          <span
-  class="
-    mb-6
-
-    inline-flex
-    w-fit
-
-    rounded-full
-
-    border
-    border-white/20
-
-    bg-white/10
-
-    px-4
-    py-2
-
-    text-xs
-    font-semibold
-
-    uppercase
-
-    tracking-[0.22em]
-
-    text-white/90
-
-    backdrop-blur-sm
-  "
->
-  Trusted Agricultural Commodity Exporter
-</span>
-
+          
 
 
             <!-- Heading -->

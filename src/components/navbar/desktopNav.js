@@ -140,16 +140,18 @@ export function createDesktopNav(theme = "light") {
     >
 
       <img
-        src="/public/assets/reisagri-logo-white.png"
-        alt="REISAGRI"
+  id="navbarLogo"
 
-        class="
-          h-32
-          w-auto
-          object-contain
-        "
-      />
+  src="/public/assets/reisagri-logo-white.png"
 
+  alt="REISAGRI"
+
+  class="
+    h-32
+    w-auto
+    object-contain
+  "
+/>
     </a>
 
     <!-- Desktop Navigation -->
@@ -178,6 +180,8 @@ export function createDesktopNav(theme = "light") {
     >
 
 <a
+
+ id="navbarCTA"
   href="/pages/contact.html"
   class="
     group
