@@ -44,6 +44,9 @@ overflow-hidden
  <img
 src="/src/assets/images/warehouse.jpg"
 
+ loading="lazy"
+  decoding="async"
+
 class="
 about-hero-image
 
@@ -359,7 +362,7 @@ lg:px-8
 
 
 
-        
+
 
         shadow-[0_30px_80px_rgba(0,0,0,.45)]
 

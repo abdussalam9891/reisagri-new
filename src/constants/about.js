@@ -111,7 +111,6 @@ export const LEADERSHIP = [
     alt: "Mohammad Izhar Alam - CO-FOUNDER & CEO",
 
 
-
     heading:
       "Driven by Experience.\nGuided by Integrity.",
 

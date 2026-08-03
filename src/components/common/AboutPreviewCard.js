@@ -62,6 +62,9 @@ src="${image}"
 
 alt="${imageAlt}"
 
+loading="lazy"
+decoding="async"
+
 class="
 aspect-[4/5]
 

@@ -57,6 +57,9 @@ export function createProductCategoryCard({
       src="${image}"
       alt="${title}"
 
+       loading="lazy"
+  decoding="async"
+
       class="
         h-full
         w-full

@@ -67,6 +67,9 @@ export function createLeadershipCard({
         src="${image}"
         alt="${alt}"
 
+         loading="lazy"
+  decoding="async"
+
         class="
           aspect-[4/5]
 

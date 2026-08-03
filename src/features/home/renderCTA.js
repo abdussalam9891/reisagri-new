@@ -37,6 +37,9 @@ src="${CTA.background}"
 
 alt="Warehouse"
 
+ loading="lazy"
+  decoding="async"
+
 class="
 absolute
 

@@ -27,6 +27,8 @@ animate-[floatMap_12s_ease-in-out_infinite]
     src="/public/assets/images/worldMap.svg"
 
     alt="Global Presence"
+    loading="lazy"
+  decoding="async"
 
     class="
       w-full

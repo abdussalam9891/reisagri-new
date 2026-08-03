@@ -54,6 +54,9 @@ src="${image}"
 
 alt="${title}"
 
+ loading="lazy"
+decoding="async"
+
 class="
 absolute
 inset-0
