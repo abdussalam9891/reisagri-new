@@ -462,19 +462,7 @@ India
           </a>
         </li>
 
-        <li>
-          <a
-            href="/pages/global-sourcing.html"
-            class="
-              text-white/60
-              transition-colors
-              duration-300
-              hover:text-[#E8720F]
-            "
-          >
-            Global Sourcing
-          </a>
-        </li>
+
 
         <li>
           <a

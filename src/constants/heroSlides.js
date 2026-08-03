@@ -30,20 +30,7 @@ export const HERO_SLIDES = [
     },
   },
 
-  {
-    image: "/src/assets/images/3.jpg",
-
-    title:
-      "Quality From\nSource To Destination",
-
-    description:
-      "Every shipment is carefully sourced, inspected and managed to ensure consistent quality for customers across global markets.",
-
-    button: {
-      text: "Global Sourcing",
-      href: "/pages/global-sourcing.html",
-    },
-  },
+   
 
   {
     image: "/src/assets/images/4.jpg",

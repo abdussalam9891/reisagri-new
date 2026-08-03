@@ -14,11 +14,7 @@ export const NAVIGATION = [
     slug: "products",
     href: "/pages/products.html",
   },
-  {
-    label: "Global Sourcing",
-    slug: "global-sourcing",
-    href: "/pages/global-sourcing.html",
-  },
+
   {
     label: "Why REISAGRI",
     slug: "why-reisagri",
@@ -36,10 +32,7 @@ export const COMPANY_LINKS = [
     label: "About Us",
     href: "/pages/about.html",
   },
-  {
-    label: "Global Sourcing",
-    href: "/pages/global-sourcing.html",
-  },
+
   {
     label: "Contact",
     href: "/pages/contact.html",
