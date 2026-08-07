@@ -8,7 +8,7 @@ import { initAboutPage } from "./pages/aboutpage.js";
 
 import {
   initProductsPage,
-} from "./pages/productspage.js";
+} from "./pages/productsPage.js";
 
 
 
