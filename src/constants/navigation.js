@@ -15,11 +15,7 @@ export const NAVIGATION = [
     href: "/pages/products.html",
   },
 
-  {
-    label: "Why REISAGRI",
-    slug: "why-reisagri",
-    href: "/pages/why-reisagri.html",
-  },
+  
   {
     label: "Contact",
     slug: "contact",

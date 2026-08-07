@@ -1,4 +1,4 @@
-# REISAGRI — Design & Build Plan
+# Reis Agri Trading — Design & Build Plan
 ### Reference: Olam Agri (olamagri.com) — scoped down for a 6-page launch site
 
 > **Read this before you build anything.** This plan takes Olam's *patterns*, not their *stack*. Olam is a 33-year, $40B+ agribusiness with a performance engineering team keeping jQuery + Slick + Locomotive Scroll + a custom animation engine from tanking their Core Web Vitals. You're building in vanilla html + js  + Tailwind. Bolting their exact stack onto yours will cause hydration bugs, not credibility. Steal the choreography. Rebuild the engine.
@@ -20,7 +20,7 @@
 | Interactive map | Skip for launch — static "Where We Source" grid instead |
 | Contact form | Hardcoded dropdowns — not JSON-driven like Olam's |
 | Reduced motion | Every animation must respect `prefers-reduced-motion` (see §3) |
-| Pages | Home / About / Products / Global Sourcing / Why REISAGRI / Contact |
+| Pages | Home / About / Products / Global Sourcing / Why Reis Agri Trading / Contact |
 
 Everything below is the reasoning and detail behind each row. If you're moving fast, this table is your checklist — the sections below are what to read when you need to justify or implement a specific decision.
 
@@ -34,7 +34,7 @@ Everything below is the reasoning and detail behind each row. If you're moving f
 
 Olam's actual palette (`colors.css`) has ~10 accent hues because they color-code distinct businesses, origins, and product lines across a huge site. **You have 6 pages and 6 commodities — one accent color is the correct amount**, regardless of which specific hue wins.
 
-### REISAGRI palette (final, 1 accent)
+### Reis Agri Trading palette (final, 1 accent)
 
 | Role | Color | Use |
 |---|---|---|
@@ -63,7 +63,7 @@ Olam hardcodes a color per sourcing country (India `#00904d`, Thailand `#009cdd`
 
 Olam's actual desktop scale (`typography.css`, ≥1230px breakpoint):
 
-| Element | Olam size/line-height | REISAGRI equivalent (Fraunces / Inter) |
+| Element | Olam size/line-height | Reis Agri Trading equivalent (Fraunces / Inter) |
 |---|---|---|
 | H1 | 65px / 72px | Fraunces, same scale — hero headline |
 | H2 | 56px / 68px | Fraunces — section titles |
@@ -83,7 +83,7 @@ Olam scales type again at 1920px+ (H1 jumps to 100px) because they're designed f
 
 Olam's actual keyframes, translated to what you'll build:
 
-| Olam effect | What it does | REISAGRI implementation |
+| Olam effect | What it does | Reis Agri Trading implementation |
 |---|---|---|
 | `slide-up` | opacity 0→1, translateY 50%→0, 0.6s | Framer Motion `initial={{opacity:0, y:40}} whileInView={{opacity:1, y:0}}` |
 | `slide-left` / `slide-right` | opacity 0→1, translateX ±50%→0, 0.6s | Same pattern, `x` instead of `y` — use for alternating text/image rows |
@@ -107,19 +107,19 @@ Their CSS didn't need to specify these because their JS handles it separately �
 
 ---
 
-## 4. Layout Patterns (mapped to REISAGRI's 6 pages)
+## 4. Layout Patterns (mapped to Reis Agri Trading's 6 pages)
 
 Olam's actual block types, and which ones are worth rebuilding at your scale:
 
-| Olam block | Worth building? | REISAGRI use |
+| Olam block | Worth building? | Reis Agri Trading use |
 |---|---|---|
 | `leaf-banner` (hero, layered cutout images) | Simplified version, yes | Homepage hero — one strong image + headline, skip the multi-image cutout grid |
 | `sticky-menu` (in-page jump nav) | Yes, cheap to build | Useful on Products page if it's long (rice/sugar/spices/grains/pulses/maize sections) |
 | `two-column-text` | Yes | Standard content sections across all pages |
 | interactive origin `map` | **No — skip for launch** | Too much custom dev for a 6-page MVP. Replace with a static "Where We Source" section: simple grid of countries/regions with flag or icon, no interactivity |
-| `tile-carousel` (icon + text, colored underline) | Yes, simplified | "Why REISAGRI" / value props section — 4-5 tiles, ONE shared accent color for underlines, not one-per-tile like Olam |
+| `tile-carousel` (icon + text, colored underline) | Yes, simplified | "Why Reis Agri Trading" / value props section — 4-5 tiles, ONE shared accent color for underlines, not one-per-tile like Olam |
 | `product-category` (alternating image grid) | Yes | Products page — rice/sugar/spices/grains/pulses/maize grid |
-| `three-icon-banner` (brand/logo grid) | Only if relevant | Skip unless REISAGRI has partner/certification logos to show |
+| `three-icon-banner` (brand/logo grid) | Only if relevant | Skip unless Reis Agri Trading has partner/certification logos to show |
 | `vision` (mission tiles with data points) | Yes, condensed | About page — 3-4 tiles max (not Olam's 9), your actual differentiators: reliability, African market focus, sourcing quality |
 | `content-image-slider` | Optional | Could work for a "how we work" step-through on About |
 | `featured-news` | **No** | You don't have a newsroom yet — skip until you do |
@@ -130,7 +130,7 @@ Olam's actual block types, and which ones are worth rebuilding at your scale:
 2. **About** — company story, vision/mission tiles, founding info (New Delhi, 2022)
 3. **Products** — rice, sugar, spices, grains, pulses, maize — alternating image/text grid (product-category pattern)
 4. **Global Sourcing / Markets** — static "Where We Source" section (Africa focus), no interactive map
-5. **Why REISAGRI / Quality** — trust signals, differentiators, condensed vision tiles
+5. **Why Reis Agri Trading / Quality** — trust signals, differentiators, condensed vision tiles
 6. **Contact** — simplified contact-us-form-v2
 
 ---
@@ -184,7 +184,7 @@ Olam's actual block types, and which ones are worth rebuilding at your scale:
 Priority order for building
 ✅ Hero
 Product Categories
-About REISAGRI
+About Reis Agri Trading
 Why Choose Us
 Export Process
 Featured Commodities

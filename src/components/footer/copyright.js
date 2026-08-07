@@ -37,7 +37,7 @@ export function createCopyright() {
         text-white/50
       "
     >
-      © ${year} REISAGRI. All rights reserved.
+      © ${year} Reis Agri Trading. All rights reserved.
     </p>
 
     <nav>

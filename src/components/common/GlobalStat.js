@@ -24,7 +24,7 @@ text-center
 class="
 font-serif
 
-text-5xl
+text-4xl
 
 leading-none
 
@@ -35,7 +35,7 @@ duration-300
 
 group-hover:text-[#E8720F]
 
-lg:text-6xl
+lg:text-5xl
 "
 >
 

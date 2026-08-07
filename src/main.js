@@ -6,6 +6,10 @@ import { initHomePage } from "./pages/homepage.js";
 
 import { initAboutPage } from "./pages/aboutpage.js";
 
+import {
+  initProductsPage,
+} from "./pages/productspage.js";
+
 
 
 
@@ -19,7 +23,7 @@ import {
 document.addEventListener("DOMContentLoaded", () => {
   // Global
   initNavbar();
-  initRevealAnimations();
+
 
 const page = document.body.dataset.page;
 
@@ -33,6 +37,10 @@ switch (page) {
     initAboutPage();
     break;
 
+     case "products":
+    initProductsPage();
+    break;
+
 }
 
 
@@ -44,4 +52,7 @@ switch (page) {
     footer.innerHTML = createFooter();
     initFooterAccordion();
   }
+
+
+    initRevealAnimations();
 });

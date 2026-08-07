@@ -1,19 +1,6 @@
 
 export const HERO_SLIDES = [
-  {
-    image: "/src/assets/images/1.jpg",
 
-    title:
-      "Connecting Global\nAgricultural Markets",
-
-    description:
-      "Reliable sourcing and export of premium agricultural commodities with a strong commitment to quality, transparency and long-term partnerships.",
-
-    button: {
-      text: "Request Quote",
-      href: "/pages/contact.html",
-    },
-  },
 
   {
     image: "/src/assets/images/2.jpg",
@@ -30,22 +17,9 @@ export const HERO_SLIDES = [
     },
   },
 
-   
 
-  {
-    image: "/src/assets/images/4.jpg",
 
-    title:
-      "Building Long-Term\nBusiness Partnerships",
 
-    description:
-      "We work closely with importers, distributors and wholesalers to create sustainable and profitable trade relationships.",
-
-    button: {
-      text: "Why REISAGRI",
-      href: "/pages/why-reisagri.html",
-    },
-  },
 
   {
     image: "/src/assets/images/5.jpg",
@@ -62,8 +36,24 @@ export const HERO_SLIDES = [
     },
   },
 
+
   {
-    image: "/src/assets/images/6.jpg",
+    image: "/src/assets/images/warehouse.jpg",
+
+    title:
+      "Connecting Global\nAgricultural Markets",
+
+    description:
+      "Reliable sourcing and export of premium agricultural commodities with a strong commitment to quality, transparency and long-term partnerships.",
+
+    button: {
+      text: "Request Quote",
+      href: "/pages/contact.html",
+    },
+  },
+
+  {
+    image: "/src/assets/images/10.jpg",
 
     title:
       "Growing Together\nWorldwide",

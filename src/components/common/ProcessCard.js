@@ -107,7 +107,7 @@ right-5
 
 font-serif
 
-text-6xl
+text-4xl
 
 leading-none
 

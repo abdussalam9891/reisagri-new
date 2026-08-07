@@ -57,6 +57,7 @@ duration-500
 
     <h3
       class="
+      reveal reveal-left
         faq-title
 
         text-xl
@@ -143,7 +144,7 @@ duration-500
     "
   >
 
-    <div class="overflow-hidden">
+    <div class="overflow-hidden reveal reveal-left">
 
       <p
         class="

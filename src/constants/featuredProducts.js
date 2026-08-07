@@ -1,153 +1,113 @@
 export const FEATURED_PRODUCTS = [
 
   {
-
     id: 1,
 
     featured: true,
 
-    title:
-      "1121 Basmati Rice",
+    title: "Non-Basmati Rice",
 
-    subtitle:
-      "Premium Long Grain Rice",
+    subtitle: "Premium Export Quality",
 
     image:
-      "/src/assets/images/basmati.jpg",
+      "/src/assets/images/nonBasmatiRice.jpg",
 
     href:
-      "/pages/products.html#1121-basmati-rice",
+      "/pages/products.html#riceSection",
 
     specifications: [
-
-      "Export Grade",
-
-      "Long Grain",
-
-      "Bulk Supply",
-
+      "IR 64",
+      "PR 11/14",
+      "Swarna",
     ],
-
   },
 
   {
-
     id: 2,
 
-    featured: false,
+    featured: true,
 
-    title:
-      "ICUMSA 45 Sugar",
+    title: "Basmati Rice",
 
-    subtitle:
-      "Refined White Sugar",
+    subtitle: "Authentic Indian Basmati",
 
     image:
-      "/src/assets/images/icumsaSugar.jpg",
+      "/src/assets/images/basmatiRice.jpg",
 
     href:
-      "/pages/products.html#icumsa-45-sugar",
+      "/pages/products.html#riceSection",
 
     specifications: [
-
-      "High Purity",
-
-      "Food Grade",
-
-      "Global Export",
-
+      "1121",
+      "1509",
+      "1718",
     ],
-
   },
 
   {
-
     id: 3,
 
     featured: false,
 
-    title:
-      "Yellow Maize",
+    title: "Premium Wheat",
 
-    subtitle:
-      "Premium Feed Grade",
+    subtitle: "Export Quality Wheat",
 
     image:
-      "/src/assets/images/yellowMaize.jpg",
+      "/src/assets/images/wheat.jpg",
 
     href:
-      "/pages/products.html#yellow-maize",
+      "/pages/products.html#otherCommoditiesSection",
 
     specifications: [
-
-      "Moisture Controlled",
-
-      "Bulk Quantity",
-
       "Premium Quality",
-
+      "Bulk Supply",
+      "Export Grade",
     ],
-
   },
 
   {
-
     id: 4,
 
     featured: false,
 
-    title:
-      "Turmeric Powder",
+    title: "Refined Sugar",
 
-    subtitle:
-      "Natural Indian Spice",
+    subtitle: "Reliable Global Supply",
 
     image:
-      "/src/assets/images/turmeric.jpg",
+      "/src/assets/images/sugar.jpg",
 
     href:
-      "/pages/products.html#turmeric",
+      "/pages/products.html#otherCommoditiesSection",
 
     specifications: [
-
-      "Rich Curcumin",
-
-      "Export Quality",
-
-      "Natural Aroma",
-
+      "Refined Sugar",
+      "Food Grade",
+      "Bulk Supply",
     ],
-
   },
 
   {
-
     id: 5,
 
     featured: false,
 
-    title:
-      "Red Lentils",
+    title: "Maize & Pulses",
 
-    subtitle:
-      "Premium Quality Pulses",
+    subtitle: "Bulk Agricultural Commodities",
 
     image:
-      "/src/assets/images/redLentils.jpg",
+      "/src/assets/images/pulsesGrains.jpg",
 
     href:
-      "/pages/products.html#red-lentils",
+      "/pages/products.html#otherCommoditiesSection",
 
     specifications: [
-
-      "Protein Rich",
-
-      "Uniform Size",
-
-      "Export Ready",
-
+      "Maize",
+      "Pulses",
+      "Export Quality",
     ],
-
   },
 
 ];

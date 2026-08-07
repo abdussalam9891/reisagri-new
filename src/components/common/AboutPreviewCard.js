@@ -6,9 +6,9 @@ export function createAboutPreviewCard({
 
   description,
 
-  image,
+   video,
 
-  imageAlt,
+
 
   stats,
 
@@ -33,7 +33,7 @@ lg:gap-24
 >
 
 <!-- =====================================
-     IMAGE
+     video
 ====================================== -->
 
 <div
@@ -57,27 +57,35 @@ hover:shadow-[0_30px_60px_rgba(0,0,0,.18)]
 "
 >
 
-<img
-src="${image}"
+<video
+  autoplay
+  muted
+  loop
+  playsinline
+  preload="metadata"
 
-alt="${imageAlt}"
+  poster="/src/assets/images/10.jpg"
 
-loading="lazy"
-decoding="async"
+  class="
+    aspect-[4/5]
+    w-full
+    object-cover
 
-class="
-aspect-[4/5]
+    transition-transform
+    duration-700
 
-w-full
+    group-hover:scale-105
+  "
+>
 
-object-cover
+  <source
+    src="${video}"
+    type="video/mp4"
+  />
 
-transition-transform
-duration-700
+  Your browser does not support the video tag.
 
-group-hover:scale-105
-"
-/>
+</video>
 
 <!-- Overlay -->
 
@@ -124,7 +132,7 @@ group-hover:w-full
      CONTENT
 ====================================== -->
 
-<div>
+<div class="reveal reveal-up">
 
 <span
 class="

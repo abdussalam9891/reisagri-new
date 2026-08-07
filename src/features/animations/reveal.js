@@ -1,8 +1,8 @@
-const STAGGER = 120;
+const STAGGER = 70;
 
 const OBSERVER_OPTIONS = {
   threshold: 0.15,
-  rootMargin: "0px 0px -60px 0px",
+  rootMargin: "0px 0px -100px 0px",
 };
 
 export function initRevealAnimations() {

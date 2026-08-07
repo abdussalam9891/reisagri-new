@@ -1,5 +1,5 @@
-import { LEADERSHIP } from "../../constants/about.js";
 import { createLeadershipCard } from "../../components/common/LeadershipCard.js";
+import { LEADERSHIP } from "../../constants/about.js";
 
 export function renderLeadership() {
 
@@ -21,10 +21,10 @@ export function renderLeadership() {
       py-16
 
       sm:px-6
-      sm:py-20
+      sm:py-14
 
       lg:px-8
-      lg:py-24
+      lg:py-14
     "
   >
 

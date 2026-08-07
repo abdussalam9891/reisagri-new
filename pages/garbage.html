@@ -1,1367 +1,270 @@
-<!DOCTYPE html>
-<html lang="en">
+export function createProductsIntroduction(data) {
 
-<head>
-
-  <!-- ==========================================
-       META
-  =========================================== -->
-
-  <meta charset="UTF-8" />
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-
-  <meta
-    http-equiv="X-UA-Compatible"
-    content="IE=edge"
-  />
-
-  <!-- ==========================================
-       SEO
-  =========================================== -->
-
-  <title>
-    About Us | REISAGRI
-  </title>
-
-  <meta
-    name="description"
-    content="Learn about REISAGRI, a Delhi-based agricultural commodity trading and export company connecting trusted producers with buyers across global markets."
-  />
-
-  <meta
-    name="keywords"
-    content="REISAGRI, About REISAGRI, Agricultural Export, Commodity Trading, Rice Exporter, Sugar Exporter"
-  />
-
-  <meta
-    name="author"
-    content="REISAGRI"
-  />
-
-  <meta
-    name="robots"
-    content="index,follow"
-  />
-
-  <meta
-    name="theme-color"
-    content="#181818"
-  />
-
-  <link
-    rel="canonical"
-    href="https://www.reisagri.com/about"
-  />
-
-  <!-- ==========================================
-       OPEN GRAPH
-  =========================================== -->
-
-  <meta
-    property="og:title"
-    content="About Us | REISAGRI"
-  />
-
-  <meta
-    property="og:description"
-    content="Discover the vision, leadership and global sourcing expertise behind REISAGRI."
-  />
-
-  <meta
-    property="og:type"
-    content="website"
-  />
-
-  <meta
-    property="og:image"
-    content="/assets/images/og-image.jpg"
-  />
-
-  <!-- ==========================================
-       GOOGLE FONTS
-  =========================================== -->
-
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  />
-
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  />
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
-
-  <!-- ==========================================
-       TAILWIND
-  =========================================== -->
-
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <link
-    rel="stylesheet"
-    href="/src/css/main.css"
-  />
-
-</head>
-
-<body
-  class="
-    bg-white
-    text-[#222222]
-    antialiased
-  "
->
-
-  <!-- ==========================================
-       NAVBAR
-  =========================================== -->
-
-  <div
-    id="navbar-container"
-    data-theme="dark"
-  ></div>
-
-  <!-- ==========================================
-       HERO
-  =========================================== -->
-
-  <section
-    class="
-      border-b
-      border-[#E5E7EB]
-      bg-[#F8F8F5]
-      py-14
-    "
-  >
-
-    <div
-      class="
-        mx-auto
-        flex
-        max-w-5xl
-        flex-col
-        items-center
-
-        px-6
-        py-28
-
-        text-center
-
-        reveal
-        reveal-up
-      "
-    >
-
-      <span
-        class="
-          text-sm
-          font-semibold
-          uppercase
-          tracking-[0.25em]
-
-          text-[#E8720F]
-        "
-      >
-        About REISAGRI
-      </span>
-
-      <h1
-        class="
-          mt-5
-
-          max-w-5xl
-
-          font-serif
-
-          text-5xl
-          leading-tight
-
-          text-[#181818]
-
-          md:text-6xl
-        "
-      >
-        Connecting Agricultural Excellence
-        With Global Markets.
-      </h1>
-
-      <p
-        class="
-          mx-auto
-          mt-8
-
-          max-w-3xl
-
-          text-lg
-          leading-8
-
-          text-[#5E6663]
-        "
-      >
-        REISAGRI is a Delhi-based agricultural commodity trading and
-        export company committed to delivering reliable sourcing,
-        uncompromising quality and dependable supply chain solutions.
-        We connect trusted producers with international buyers,
-        building long-term partnerships through transparency,
-        consistency and operational excellence.
-      </p>
-
-      <div
-        class="
-          mt-12
-
-          flex
-          flex-wrap
-          justify-center
-
-          gap-4
-        "
-      >
-
-        <a
-          href="/pages/contact.html"
-          class="
-            inline-flex
-            items-center
-            justify-center
-
-            rounded-full
-
-            bg-[#181818]
-
-            px-8
-            py-4
-
-            text-sm
-            font-medium
-            uppercase
-
-            tracking-[0.18em]
-
-            text-white
-
-            transition-all
-            duration-300
-
-            hover:bg-[#E8720F]
-          "
-        >
-          Get In Touch
-        </a>
-
-        <a
-          href="#our-story"
-          class="
-            inline-flex
-            items-center
-            justify-center
-
-            rounded-full
-
-            border
-            border-[#181818]
-
-            px-8
-            py-4
-
-            text-sm
-            font-medium
-            uppercase
-
-            tracking-[0.18em]
-
-            text-[#181818]
-
-            transition-all
-            duration-300
-
-            hover:border-[#E8720F]
-            hover:text-[#E8720F]
-          "
-        >
-          Our Story
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- ==========================================
-     OUR STORY
-========================================== -->
+  return `
 
 <section
-  id="our-story"
-  class="bg-white"
->
+class="
+relative
 
-  <div
-    class="
-      mx-auto
-      grid
-      max-w-7xl
-      items-center
-      gap-20
+overflow-hidden
 
-      px-6
-      py-24
-
-      lg:grid-cols-2
-    "
-  >
-
-    <!-- ===================================
-         IMAGE
-    ==================================== -->
-
-    <div
-      class="
-        reveal
-        reveal-left
-      "
-    >
-
-      <div
-        class="
-          overflow-hidden
-          rounded-[32px]
-        "
-      >
-
-        <img
-          src="/assets/about-company.jpg"
-          alt="REISAGRI Agricultural Commodity Trading"
-          class="
-            h-full
-            w-full
-            object-cover
-
-            transition-transform
-            duration-700
-
-            hover:scale-105
-          "
-        />
-
-      </div>
-
-    </div>
-
-    <!-- ===================================
-         CONTENT
-    ==================================== -->
-
-    <div
-      class="
-        reveal
-        reveal-right
-      "
-    >
-
-      <span
-        class="
-          text-sm
-          font-semibold
-          uppercase
-          tracking-[0.22em]
-
-          text-[#E8720F]
-        "
-      >
-        Our Story
-      </span>
-
-      <h2
-        class="
-          mt-4
-
-          font-serif
-
-          text-4xl
-          leading-tight
-
-          text-[#181818]
-
-          md:text-5xl
-        "
-      >
-        Building Reliable Supply Chains
-        Across Global Markets.
-      </h2>
-
-      <p
-        class="
-          mt-8
-
-          leading-8
-
-          text-[#5E6663]
-        "
-      >
-        REISAGRI was established with a clear objective—to simplify
-        international agricultural trade through dependable sourcing,
-        transparent business practices and efficient supply chain
-        management. Based in New Delhi, India, we work closely with
-        trusted producers and processing partners to supply premium
-        agricultural commodities to buyers around the world.
-      </p>
-
-      <p
-        class="
-          mt-6
-
-          leading-8
-
-          text-[#5E6663]
-        "
-      >
-        We understand that successful commodity trading depends on
-        consistency, quality and timely execution. Every shipment is
-        managed with careful attention to sourcing, quality assurance,
-        documentation and logistics, ensuring our customers receive
-        products that meet international expectations.
-      </p>
-
-      <p
-        class="
-          mt-6
-
-          leading-8
-
-          text-[#5E6663]
-        "
-      >
-        At REISAGRI, we believe long-term partnerships are built through
-        trust rather than transactions. Our commitment to integrity,
-        operational excellence and customer-focused service enables us
-        to create lasting value for importers, distributors and
-        businesses across global markets.
-      </p>
-
-      <!-- ===================================
-           HIGHLIGHTS
-      ==================================== -->
-
-      <div
-        class="
-          mt-12
-
-          grid
-          gap-8
-
-          sm:grid-cols-2
-        "
-      >
-
-        <div>
-
-          <h3
-            class="
-              font-serif
-              text-4xl
-
-              text-[#E8720F]
-            "
-          >
-            Global
-          </h3>
-
-          <p
-            class="
-              mt-2
-
-              text-[#5E6663]
-            "
-          >
-            International Trade Network
-          </p>
-
-        </div>
-
-        <div>
-
-          <h3
-            class="
-              font-serif
-              text-4xl
-
-              text-[#E8720F]
-            "
-          >
-            Trusted
-          </h3>
-
-          <p
-            class="
-              mt-2
-
-              text-[#5E6663]
-            "
-          >
-            Verified Supplier Network
-          </p>
-
-        </div>
-
-        <div>
-
-          <h3
-            class="
-              font-serif
-              text-4xl
-
-              text-[#E8720F]
-            "
-          >
-            Premium
-          </h3>
-
-          <p
-            class="
-              mt-2
-
-              text-[#5E6663]
-            "
-          >
-            Quality Agricultural Commodities
-          </p>
-
-        </div>
-
-        <div>
-
-          <h3
-            class="
-              font-serif
-              text-4xl
-
-              text-[#E8720F]
-            "
-          >
-            End-to-End
-          </h3>
-
-          <p
-            class="
-              mt-2
-
-              text-[#5E6663]
-            "
-          >
-            Supply Chain Management
-          </p>
-
-        </div>
-
-      </div>
-
-      <a
-        href="/pages/products.html"
-        class="
-          mt-12
-
-          inline-flex
-          items-center
-          justify-center
-
-          rounded-full
-
-          bg-[#181818]
-
-          px-8
-          py-4
-
-          text-sm
-          font-medium
-          uppercase
-
-          tracking-[0.18em]
-
-          text-white
-
-          transition-all
-          duration-300
-
-          hover:bg-[#E8720F]
-        "
-      >
-        Explore Products
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- ==========================================
-     LEADERSHIP
-========================================== -->
-
-<section class="bg-[#F8F8F5]">
-
-  <div
-    class="
-      mx-auto
-      grid
-      max-w-7xl
-      items-center
-      gap-20
-
-      px-6
-      py-24
-
-      lg:grid-cols-[420px_1fr]
-    "
-  >
-
-    <!-- ===================================
-         CEO IMAGE
-    ==================================== -->
-
-    <div
-      class="
-        reveal
-        reveal-left
-      "
-    >
-
-      <div
-        class="
-          overflow-hidden
-          rounded-[30px]
-
-          bg-white
-
-          shadow-xl
-        "
-      >
-
-        <img
-          src="/public/assets/ceo.jpeg"
-          alt="Mohammad Izhar Alam - CO-FOUNDER & CEO"
-          class="
-            h-full
-            w-full
-            object-cover
-          "
-        />
-
-      </div>
-
-    </div>
-
-    <!-- ===================================
-         CONTENT
-    ==================================== -->
-
-    <div
-      class="
-        reveal
-        reveal-right
-      "
-    >
-
-      <span
-        class="
-          text-sm
-          font-semibold
-          uppercase
-          tracking-[0.22em]
-
-          text-[#E8720F]
-        "
-      >
-        Leadership
-      </span>
-
-      <h2
-        class="
-          mt-4
-
-          font-serif
-
-          text-4xl
-
-          text-[#181818]
-
-          md:text-5xl
-        "
-      >
-        Driven by Experience.
-        Guided by Integrity.
-      </h2>
-
-      <p
-        class="
-          mt-8
-
-          leading-8
-
-          text-[#5E6663]
-        "
-      >
-        REISAGRI is led by
-        <strong class="text-[#181818]">
-          Mohammad Izhar Alam,
-        </strong>
-        Chief Executive Officer, whose experience in agricultural
-        commodity trading and international supply chain management has
-        helped shape the company's commitment to reliability,
-        transparency and operational excellence.
-      </p>
-
-      <p
-        class="
-          mt-6
-
-          leading-8
-
-          text-[#5E6663]
-        "
-      >
-        With more than a decade of industry experience, he has worked
-        across sourcing, procurement, risk management and international
-        trade, developing strong relationships with producers,
-        logistics partners and buyers across multiple markets.
-      </p>
-
-      <p
-        class="
-          mt-6
-
-          leading-8
-
-          text-[#5E6663]
-        "
-      >
-        His leadership philosophy is simple: build long-term
-        partnerships through honesty, consistent quality and dependable
-        execution. Under his guidance, REISAGRI continues to strengthen
-        its position as a trusted sourcing partner for agricultural
-        commodities worldwide.
-      </p>
-
-      <!-- Quote -->
-
-      <div
-        class="
-          mt-10
-
-          rounded-3xl
-
-          border-l-4
-          border-[#E8720F]
-
-          bg-white
-
-          p-8
-        "
-      >
-
-        <p
-          class="
-            font-serif
-
-            text-2xl
-
-            italic
-
-            leading-relaxed
-
-            text-[#181818]
-          "
-        >
-          "Great partnerships are built on trust, consistency and the
-          confidence that every shipment will meet expectations."
-        </p>
-
-      </div>
-
-      <!-- Signature -->
-
-      <div class="mt-10">
-
-        <h3
-          class="
-            text-xl
-            font-semibold
-
-            text-[#181818]
-          "
-        >
-          Mohammad Izhar Alam
-        </h3>
-
-        <p
-          class="
-            mt-1
-
-            text-[#E8720F]
-            uppercase
-            tracking-[0.15em]
-
-            text-sm
-          "
-        >
-          Chief Executive Officer
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- ==========================================
-     MISSION • VISION • VALUES
-========================================== -->
-
-<section class="bg-white">
-
-<div
-  class="
-    reveal
-    reveal-up
-
-    mx-auto
-    max-w-3xl
-
-    text-center
-  "
->
-
-  <span
-    class="
-      inline-flex
-
-      rounded-full
-
-      bg-[#FFF6EE]
-
-      px-4
-      py-2
-
-      text-xs
-      font-semibold
-
-      uppercase
-
-      tracking-[0.22em]
-
-      text-[#E8720F]
-    "
-  >
-    Our Foundation
-  </span>
-
-  <h2
-    class="
-      mt-6
-
-      font-serif
-
-      text-[2rem]
-      leading-tight
-
-      text-[#181818]
-
-      sm:text-[2.5rem]
-
-      lg:text-5xl
-    "
-  >
-    Purpose That Drives
-    Every Partnership.
-  </h2>
-
-  <p
-    class="
-      mx-auto
-
-      mt-6
-
-      max-w-2xl
-
-      leading-8
-
-      text-[#666666]
-    "
-  >
-    Everything we do is guided by integrity, quality and long-term
-    relationships. These principles shape every sourcing decision,
-    every shipment and every partnership we build across international
-    markets.
-  </p>
-
-</div>
-
-
-<!-- ==========================================
-     Mission & Vision
-========================================== -->
-
-<div
-  class="
-    mt-16
-
-    grid
-
-    gap-8
-
-    lg:mt-20
-    lg:grid-cols-2
-  "
->
-
-  <!-- ==========================================
-       Mission
-  ========================================== -->
-
-  <div
-    class="
-      reveal
-      reveal-left
-
-      group
-
-      relative
-      overflow-hidden
-
-      rounded-[32px]
-
-      border
-      border-[#ECECEC]
-
-      bg-white
-
-      p-8
-
-      sm:p-10
-
-      shadow-sm
-
-      transition-all
-      duration-500
-
-      hover:-translate-y-2
-      hover:border-[#E8720F]/50
-      hover:shadow-[0_25px_50px_rgba(232,114,15,0.10)]
-    "
-  >
-
-    <!-- Orange Accent -->
-
-    <div
-      class="
-        absolute
-
-        left-0
-        top-0
-
-        h-1
-        w-0
-
-        bg-[#E8720F]
-
-        transition-all
-        duration-500
-
-        group-hover:w-full
-      "
-    ></div>
-
-    <!-- Icon -->
-
-    <div
-      class="
-        flex
-
-        h-16
-        w-16
-
-        items-center
-        justify-center
-
-        rounded-2xl
-
-        bg-[#FFF6EE]
-      "
-    >
-
-      <!-- Target -->
-
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-8 w-8 text-[#E8720F]"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        stroke-width="1.8"
-      >
-        <circle cx="12" cy="12" r="9"/>
-        <circle cx="12" cy="12" r="4"/>
-        <path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>
-      </svg>
-
-    </div>
-
-    <span
-      class="
-        mt-8
-
-        inline-block
-
-        text-xs
-        font-semibold
-
-        uppercase
-
-        tracking-[0.22em]
-
-        text-[#E8720F]
-      "
-    >
-      Our Mission
-    </span>
-
-    <h3
-      class="
-        mt-4
-
-        font-serif
-
-        text-3xl
-
-        leading-tight
-
-        text-[#181818]
-      "
-    >
-      Deliver Trust Through
-      Every Shipment.
-    </h3>
-
-    <p
-      class="
-        mt-6
-
-        leading-8
-
-        text-[#666666]
-      "
-    >
-      To connect trusted agricultural producers with global buyers by
-      delivering premium-quality commodities, dependable sourcing and
-      efficient supply chain solutions that create long-term value.
-    </p>
-
-  </div>
-
-  <!-- ==========================================
-       Vision
-  ========================================== -->
-
-  <div
-    class="
-      reveal
-      reveal-right
-
-      group
-
-      relative
-      overflow-hidden
-
-      rounded-[32px]
-
-      bg-[#181818]
-
-      p-8
-
-      sm:p-10
-
-      text-white
-
-      transition-all
-      duration-500
-
-      hover:-translate-y-2
-      hover:shadow-[0_30px_60px_rgba(0,0,0,.35)]
-    "
-  >
-
-    <!-- Orange Accent -->
-
-    <div
-      class="
-        absolute
-
-        left-0
-        top-0
-
-        h-1
-        w-0
-
-        bg-[#E8720F]
-
-        transition-all
-        duration-500
-
-        group-hover:w-full
-      "
-    ></div>
-
-    <!-- Icon -->
-
-    <div
-      class="
-        flex
-
-        h-16
-        w-16
-
-        items-center
-        justify-center
-
-        rounded-2xl
-
-        bg-white/10
-      "
-    >
-
-      <!-- Globe -->
-
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-8 w-8 text-[#E8720F]"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        stroke-width="1.8"
-      >
-        <circle cx="12" cy="12" r="9"/>
-        <path d="M3 12h18"/>
-        <path d="M12 3a15 15 0 010 18"/>
-        <path d="M12 3a15 15 0 000 18"/>
-      </svg>
-
-    </div>
-
-    <span
-      class="
-        mt-8
-
-        inline-block
-
-        text-xs
-        font-semibold
-
-        uppercase
-
-        tracking-[0.22em]
-
-        text-[#E8720F]
-      "
-    >
-      Our Vision
-    </span>
-
-    <h3
-      class="
-        mt-4
-
-        font-serif
-
-        text-3xl
-
-        leading-tight
-      "
-    >
-      Becoming A Trusted
-      Global Agricultural
-      Trading Partner.
-    </h3>
-
-    <p
-      class="
-        mt-6
-
-        leading-8
-
-        text-white/75
-      "
-    >
-      We aspire to become a globally respected agricultural commodity
-      trading company recognised for integrity, operational excellence
-      and dependable partnerships across international markets.
-    </p>
-
-  </div>
-
-</div>
-
-
-
-
-<!-- ==========================================
-     Core Values
-========================================== -->
-
-<div
-  class="
-    mt-16
-
-    sm:mt-20
-
-    lg:mt-24
-  "
->
-
-  <!-- Section Heading -->
-
-  <div
-    class="
-      reveal
-      reveal-up
-
-      mb-12
-
-      text-center
-    "
-  >
-
-    <span
-      class="
-        inline-flex
-
-        rounded-full
-
-        bg-[#FFF6EE]
-
-        px-4
-        py-2
-
-        text-xs
-        font-semibold
-
-        uppercase
-
-        tracking-[0.22em]
-
-        text-[#E8720F]
-      "
-    >
-      Core Values
-    </span>
-
-    <h3
-      class="
-        mt-5
-
-        font-serif
-
-        text-[2rem]
-
-        leading-tight
-
-        text-[#181818]
-
-        md:text-[2.5rem]
-      "
-    >
-      The Principles Behind
-      Every Decision.
-    </h3>
-
-  </div>
-
-  <!-- Cards -->
-
-  <div
-    class="
-      grid
-
-      gap-6
-
-      md:grid-cols-2
-
-      xl:grid-cols-4
-    "
-  >
-
-
-  <div
-  class="
-    reveal
-
-    group
-
-    relative
-    overflow-hidden
-
-    rounded-[30px]
-
-    border
-    border-[#ECECEC]
-
-    bg-white
-
-    p-7
-
-    transition-all
-    duration-500
-
-    hover:-translate-y-2
-    hover:border-[#E8720F]/60
-
-    hover:shadow-[0_22px_45px_rgba(232,114,15,.10)]
-  "
->
+bg-[#F8F7F4]
+">
 
 <div
 class="
-absolute
-left-0
-top-0
+mx-auto
 
-h-1
-w-0
+max-w-7xl
 
-bg-[#E8720F]
+px-5
 
-transition-all
-duration-500
+py-8
 
-group-hover:w-full
-"
-></div>
+sm:px-6
+
+lg:px-8
+
+lg:py-12
+">
 
 <div
+class="
+grid
+
+items-center
+
+gap-20
+
+lg:grid-cols-[1.15fr_.85fr]
+">
+
+<!-- LEFT -->
+
+<div>
+
+
+
+<h2
+class="
+font-serif
+text-5xl
+leading-[1.1]
+text-[#181818]
+">
+
+${data.title}
+
+</h2>
+
+${data.paragraphs.map(p=>`
+
+<p
+
+class="
+mt-8
+
+max-w-2xl
+
+leading-9
+
+text-[#666666]
+">
+
+${p}
+
+</p>
+
+`).join("")}
+
+<div
+class="
+mt-14
+
+flex
+
+flex-wrap
+
+gap-5
+">
+
+<a
+
+href="#riceSection"
+
+class="
+group
+
+inline-flex
+
+items-center
+
+gap-3
+
+rounded-full
+
+bg-[#181818]
+
+px-8
+
+py-4
+
+text-sm
+
+font-semibold
+
+uppercase
+
+tracking-[0.18em]
+
+text-white
+
+transition-all
+
+duration-500
+
+hover:-translate-y-1
+
+hover:bg-[#E8720F]
+">
+
+Explore Rice
+
+<i
+
+data-lucide="arrow-right"
+
+class="
+h-4
+w-4
+
+transition-transform
+
+group-hover:translate-x-1
+">
+
+</i>
+
+</a>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div
+class="
+grid
+
+gap-6
+">
+
+${data.categories.map(createPortfolioCard).join("")}
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+`;
+
+}
+
+function createPortfolioCard(item){
+
+return`
+
+<div
+
+class="
+group
+
+rounded-[32px]
+
+border
+
+border-[#ECECEC]
+
+bg-white
+
+p-8
+
+shadow-sm
+
+transition-all
+
+duration-500
+
+hover:-translate-y-2
+
+hover:border-[#E8720F]
+
+hover:shadow-[0_25px_50px_rgba(232,114,15,.12)]
+">
+
+<div
+
 class="
 flex
 
-h-14
-w-14
+items-center
+
+justify-between
+">
+
+<div>
+
+<p
+
+class="
+text-xs
+
+font-semibold
+
+uppercase
+
+tracking-[0.18em]
+
+text-[#E8720F]
+">
+
+${item.label}
+
+</p>
+
+<h3
+
+class="
+mt-3
+
+font-serif
+
+text-3xl
+
+text-[#181818]
+">
+
+${item.title}
+
+</h3>
+
+</div>
+
+<div
+
+class="
+flex
+
+h-16
+
+w-16
 
 items-center
+
 justify-center
 
 rounded-2xl
@@ -1369,1233 +272,52 @@ rounded-2xl
 bg-[#FFF6EE]
 
 transition-all
+
 duration-300
 
 group-hover:bg-[#E8720F]
-"
->
+">
 
-<svg
-xmlns="http://www.w3.org/2000/svg"
-class="h-7 w-7 text-[#E8720F] group-hover:text-white"
-fill="none"
-viewBox="0 0 24 24"
-stroke="currentColor"
-stroke-width="1.8"
->
-<path
-stroke-linecap="round"
-stroke-linejoin="round"
-d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4z"
-/>
-</svg>
+<i
+
+data-lucide="${item.icon}"
+
+class="
+h-8
+
+w-8
+
+text-[#E8720F]
+
+transition-colors
+
+duration-300
+
+group-hover:text-white
+">
+
+</i>
 
 </div>
 
-<h3
+</div>
+
+<p
+
 class="
 mt-6
 
-font-serif
-
-text-2xl
-
-transition-colors
-duration-300
-
-group-hover:text-[#E8720F]
-"
->
-Integrity
-</h3>
-
-<p
-class="
-mt-4
-
-leading-7
+leading-8
 
 text-[#666666]
-"
->
-Honesty, transparency and ethical business practices remain at the heart of every relationship we build.
+">
+
+${item.description}
+
 </p>
 
 </div>
 
+`;
 
-
-<div
-  class="
-    reveal
-
-    group
-
-    relative
-    overflow-hidden
-
-    rounded-[30px]
-
-    border
-    border-[#ECECEC]
-
-    bg-white
-
-    p-7
-
-    transition-all
-    duration-500
-
-    hover:-translate-y-2
-    hover:border-[#E8720F]/60
-
-    hover:shadow-[0_22px_45px_rgba(232,114,15,.10)]
-  "
->
-
-<div
-class="
-absolute
-left-0
-top-0
-
-h-1
-w-0
-
-bg-[#E8720F]
-
-transition-all
-duration-500
-
-group-hover:w-full
-"
-></div>
-
-<div
-class="
-flex
-
-h-14
-w-14
-
-items-center
-justify-center
-
-rounded-2xl
-
-bg-[#FFF6EE]
-
-transition-all
-duration-300
-
-group-hover:bg-[#E8720F]
-"
->
-
-<!-- Shield Check -->
-
-<svg
-xmlns="http://www.w3.org/2000/svg"
-class="h-7 w-7 text-[#E8720F] group-hover:text-white"
-fill="none"
-viewBox="0 0 24 24"
-stroke="currentColor"
-stroke-width="1.8"
->
-<path
-stroke-linecap="round"
-stroke-linejoin="round"
-d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4z"
-/>
-<path
-stroke-linecap="round"
-stroke-linejoin="round"
-d="M9 12l2 2 4-4"
-/>
-</svg>
-
-</div>
-
-<h3
-class="
-mt-6
-
-font-serif
-
-text-2xl
-
-transition-colors
-duration-300
-
-group-hover:text-[#E8720F]
-"
->
-Quality
-</h3>
-
-<p
-class="
-mt-4
-
-leading-7
-
-text-[#666666]
-"
->
-Every shipment is sourced and inspected with strict quality standards,
-ensuring consistency, reliability and customer satisfaction.
-</p>
-
-</div>
-
-
-
-<div
-  class="
-    reveal
-
-    group
-
-    relative
-    overflow-hidden
-
-    rounded-[30px]
-
-    border
-    border-[#ECECEC]
-
-    bg-white
-
-    p-7
-
-    transition-all
-    duration-500
-
-    hover:-translate-y-2
-    hover:border-[#E8720F]/60
-
-    hover:shadow-[0_22px_45px_rgba(232,114,15,.10)]
-  "
->
-
-<div
-class="
-absolute
-left-0
-top-0
-
-h-1
-w-0
-
-bg-[#E8720F]
-
-transition-all
-duration-500
-
-group-hover:w-full
-"
-></div>
-
-<div
-class="
-flex
-
-h-14
-w-14
-
-items-center
-justify-center
-
-rounded-2xl
-
-bg-[#FFF6EE]
-
-transition-all
-duration-300
-
-group-hover:bg-[#E8720F]
-"
->
-
-<!-- Truck -->
-
-<svg
-xmlns="http://www.w3.org/2000/svg"
-class="h-7 w-7 text-[#E8720F] group-hover:text-white"
-fill="none"
-viewBox="0 0 24 24"
-stroke="currentColor"
-stroke-width="1.8"
->
-<path
-stroke-linecap="round"
-stroke-linejoin="round"
-d="M3 7h11v8H3z"
- />
-<path
-stroke-linecap="round"
-stroke-linejoin="round"
-d="M14 10h3l4 4v1h-7z"
- />
-<circle cx="7" cy="17" r="2"/>
-<circle cx="17" cy="17" r="2"/>
-</svg>
-
-</div>
-
-<h3
-class="
-mt-6
-
-font-serif
-
-text-2xl
-
-transition-colors
-duration-300
-
-group-hover:text-[#E8720F]
-"
->
-Reliability
-</h3>
-
-<p
-class="
-mt-4
-
-leading-7
-
-text-[#666666]
-"
->
-From sourcing to export logistics, we ensure dependable execution,
-timely communication and smooth delivery across every stage.
-</p>
-
-</div>
-
-
-
-
-<div
-  class="
-    reveal
-
-    group
-
-    relative
-    overflow-hidden
-
-    rounded-[30px]
-
-    border
-    border-[#ECECEC]
-
-    bg-white
-
-    p-7
-
-    transition-all
-    duration-500
-
-    hover:-translate-y-2
-    hover:border-[#E8720F]/60
-
-    hover:shadow-[0_22px_45px_rgba(232,114,15,.10)]
-  "
->
-
-<div
-class="
-absolute
-left-0
-top-0
-
-h-1
-w-0
-
-bg-[#E8720F]
-
-transition-all
-duration-500
-
-group-hover:w-full
-"
-></div>
-
-<div
-class="
-flex
-
-h-14
-w-14
-
-items-center
-justify-center
-
-rounded-2xl
-
-bg-[#FFF6EE]
-
-transition-all
-duration-300
-
-group-hover:bg-[#E8720F]
-"
->
-
-<!-- Handshake -->
-
-<svg
-xmlns="http://www.w3.org/2000/svg"
-class="h-7 w-7 text-[#E8720F] group-hover:text-white"
-fill="none"
-viewBox="0 0 24 24"
-stroke="currentColor"
-stroke-width="1.8"
->
-<path
-stroke-linecap="round"
-stroke-linejoin="round"
-d="M8 12l3 3 5-5"
- />
-<path
-stroke-linecap="round"
-stroke-linejoin="round"
-d="M3 9l4-4 5 5m5-1l4 4-5 5"
- />
-</svg>
-
-</div>
-
-<h3
-class="
-mt-6
-
-font-serif
-
-text-2xl
-
-transition-colors
-duration-300
-
-group-hover:text-[#E8720F]
-"
->
-Partnership
-</h3>
-
-<p
-class="
-mt-4
-
-leading-7
-
-text-[#666666]
-"
->
-We believe lasting success is built through mutual trust, collaboration
-and long-term relationships that benefit every stakeholder.
-</p>
-
-</div>
-
-
-</section>
-
-
-
-<!-- ==========================================
-     WHY CHOOSE REISAGRI
-========================================== -->
-
-
-
-<section class="bg-[#FAFAFA]">
-
-  <div
-    class="
-      mx-auto
-      max-w-7xl
-
-      px-5
-      py-16
-
-      sm:px-6
-      sm:py-20
-
-      lg:px-8
-      lg:py-24
-    "
-  >
-
-    <!-- Heading -->
-
-    <div
-      class="
-        reveal
-        reveal-up
-
-        mx-auto
-        max-w-3xl
-
-        text-center
-      "
-    >
-
-      <span
-        class="
-          text-sm
-          font-semibold
-          uppercase
-
-          tracking-[0.22em]
-
-          text-[#E8720F]
-        "
-      >
-        Why Choose REISAGRI
-      </span>
-
-      <h2
-        class="
-          mt-4
-
-          font-serif
-
-          text-[2rem]
-          leading-tight
-
-          text-[#181818]
-
-          sm:text-[2.5rem]
-
-          lg:text-5xl
-        "
-      >
-        Built Around Trust,
-        Quality & Reliability.
-      </h2>
-
-      <p
-        class="
-          mx-auto
-
-          mt-6
-
-          max-w-2xl
-
-          leading-8
-
-          text-[#666666]
-        "
-      >
-        We don't simply export agricultural commodities—we build dependable
-        partnerships that help businesses source confidently and grow
-        sustainably.
-      </p>
-
-    </div>
-
-    <!-- Cards -->
-
-    <div
-      class="
-        mt-14
-
-        grid
-
-        gap-5
-
-        sm:mt-16
-        sm:gap-6
-
-        md:grid-cols-2
-
-        xl:mt-20
-        xl:grid-cols-3
-        xl:gap-8
-      "
-    >
-
-      <!-- Card 1 -->
-
-      <div
-        class="
-          reveal
-
-          group
-
-          relative
-          overflow-hidden
-
-          rounded-3xl
-
-          border
-          border-[#ECECEC]
-
-          bg-white
-
-          p-6
-
-          sm:p-7
-
-          lg:p-8
-
-          shadow-sm
-
-          transition-all
-          duration-500
-          ease-out
-
-          hover:-translate-y-3
-          hover:scale-[1.02]
-
-          hover:border-[#E8720F]/60
-
-          hover:shadow-[0_22px_45px_rgba(232,114,15,0.12)]
-        "
-      >
-
-        <div
-          class="
-            absolute
-            left-0
-            top-0
-
-            h-1
-            w-0
-
-            bg-[#E8720F]
-
-            transition-all
-            duration-500
-
-            group-hover:w-full
-          "
-        ></div>
-
-        <!-- Icon -->
-
-        <div
-          class="
-            flex
-
-            h-14
-            w-14
-
-            items-center
-            justify-center
-
-            rounded-2xl
-
-            bg-[#FFF6EE]
-
-            transition-all
-            duration-300
-
-            group-hover:bg-[#E8720F]
-          "
-        >
-
-          <!-- Handshake -->
-
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-7 w-7 text-[#E8720F] group-hover:text-white"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="1.8"
-          >
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M8 11l3 3m0 0l5-5m-5 5l-3-3M4 9l4-4 4 4M20 15l-4 4-4-4"/>
-          </svg>
-
-        </div>
-
-        <h3
-          class="
-            mt-6
-
-            font-serif
-
-            text-xl
-
-            sm:text-2xl
-
-            text-[#181818]
-
-            transition-colors
-            duration-300
-
-            group-hover:text-[#E8720F]
-          "
-        >
-          Trusted Supplier Network
-        </h3>
-
-        <p
-          class="
-            mt-4
-
-            text-[15px]
-            leading-7
-
-            text-[#666666]
-          "
-        >
-          We work with carefully selected producers to ensure consistency,
-          reliability and long-term supply stability.
-        </p>
-
-      </div>
-
-      <!-- Card 2 -->
-
-      <div class="reveal group relative overflow-hidden rounded-3xl border border-[#ECECEC] bg-white p-6 sm:p-7 lg:p-8 shadow-sm transition-all duration-500 ease-out hover:-translate-y-3 hover:scale-[1.02] hover:border-[#E8720F]/60 hover:shadow-[0_22px_45px_rgba(232,114,15,0.12)]">
-
-        <div class="absolute left-0 top-0 h-1 w-0 bg-[#E8720F] transition-all duration-500 group-hover:w-full"></div>
-
-        <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#FFF6EE] transition-all duration-300 group-hover:bg-[#E8720F]">
-
-          <!-- Shield -->
-
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#E8720F] group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6l7-3z"/>
-          </svg>
-
-        </div>
-
-        <h3 class="mt-6 font-serif text-xl sm:text-2xl text-[#181818] transition-colors duration-300 group-hover:text-[#E8720F]">
-          Quality First
-        </h3>
-
-        <p class="mt-4 text-[15px] leading-7 text-[#666666]">
-          Every shipment is sourced with attention to quality, specifications and customer expectations.
-        </p>
-
-      </div>
-
-      <!-- Card 3 -->
-
-      <div class="reveal group relative overflow-hidden rounded-3xl border border-[#ECECEC] bg-white p-6 sm:p-7 lg:p-8 shadow-sm transition-all duration-500 ease-out hover:-translate-y-3 hover:scale-[1.02] hover:border-[#E8720F]/60 hover:shadow-[0_22px_45px_rgba(232,114,15,0.12)]">
-
-        <div class="absolute left-0 top-0 h-1 w-0 bg-[#E8720F] transition-all duration-500 group-hover:w-full"></div>
-
-        <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#FFF6EE] transition-all duration-300 group-hover:bg-[#E8720F]">
-
-          <!-- Truck -->
-
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#E8720F] group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17H6a2 2 0 01-2-2V7a2 2 0 012-2h8v12m0 0h2m-2 0a2 2 0 104 0m-4 0a2 2 0 11-4 0m8-8h2l2 3v5h-2"/>
-          </svg>
-
-        </div>
-
-        <h3 class="mt-6 font-serif text-xl sm:text-2xl text-[#181818] transition-colors duration-300 group-hover:text-[#E8720F]">
-          Efficient Logistics
-        </h3>
-
-        <p class="mt-4 text-[15px] leading-7 text-[#666666]">
-          From sourcing to export documentation and delivery, we coordinate every stage of the supply chain.
-        </p>
-
-      </div>
-
-     <div
-  class="
-    reveal
-
-    group
-
-    relative
-    overflow-hidden
-
-    rounded-3xl
-
-    border
-    border-[#ECECEC]
-
-    bg-white
-
-    p-6
-
-    sm:p-7
-
-    lg:p-8
-
-    shadow-sm
-
-    transition-all
-    duration-500
-    ease-out
-
-    hover:-translate-y-3
-    hover:scale-[1.02]
-
-    hover:border-[#E8720F]/60
-
-    hover:shadow-[0_22px_45px_rgba(232,114,15,0.12)]
-  "
->
-
-  <div
-    class="
-      absolute
-      left-0
-      top-0
-
-      h-1
-      w-0
-
-      bg-[#E8720F]
-
-      transition-all
-      duration-500
-
-      group-hover:w-full
-    "
-  ></div>
-
-  <div
-    class="
-      flex
-
-      h-14
-      w-14
-
-      items-center
-      justify-center
-
-      rounded-2xl
-
-      bg-[#FFF6EE]
-
-      transition-all
-      duration-300
-
-      group-hover:bg-[#E8720F]
-    "
-  >
-
-    <!-- Message Circle -->
-
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#E8720F] group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z"/>
-    </svg>
-
-  </div>
-
-  <h3
-    class="
-      mt-6
-
-      font-serif
-
-      text-xl
-      sm:text-2xl
-
-      text-[#181818]
-
-      transition-colors
-      duration-300
-
-      group-hover:text-[#E8720F]
-    "
-  >
-    Transparent Communication
-  </h3>
-
-  <p
-    class="
-      mt-4
-
-      text-[15px]
-      leading-7
-
-      text-[#666666]
-    "
-  >
-    We believe every successful partnership begins with honest, timely
-    communication and complete transparency throughout the trading process.
-  </p>
-
-</div>
-
-
-
-<div
-  class="
-    reveal
-
-    group
-
-    relative
-    overflow-hidden
-
-    rounded-3xl
-
-    border
-    border-[#ECECEC]
-
-    bg-white
-
-    p-6
-
-    sm:p-7
-
-    lg:p-8
-
-    shadow-sm
-
-    transition-all
-    duration-500
-    ease-out
-
-    hover:-translate-y-3
-    hover:scale-[1.02]
-
-    hover:border-[#E8720F]/60
-
-    hover:shadow-[0_22px_45px_rgba(232,114,15,0.12)]
-  "
->
-
-  <div
-    class="
-      absolute
-      left-0
-      top-0
-
-      h-1
-      w-0
-
-      bg-[#E8720F]
-
-      transition-all
-      duration-500
-
-      group-hover:w-full
-    "
-  ></div>
-
-  <div
-    class="
-      flex
-
-      h-14
-      w-14
-
-      items-center
-      justify-center
-
-      rounded-2xl
-
-      bg-[#FFF6EE]
-
-      transition-all
-      duration-300
-
-      group-hover:bg-[#E8720F]
-    "
-  >
-
-    <!-- Globe -->
-
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#E8720F] group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-      <circle cx="12" cy="12" r="9"/>
-      <path stroke-linecap="round" stroke-linejoin="round" d="M3 12h18M12 3a15 15 0 010 18M12 3a15 15 0 000 18"/>
-    </svg>
-
-  </div>
-
-  <h3
-    class="
-      mt-6
-
-      font-serif
-
-      text-xl
-      sm:text-2xl
-
-      text-[#181818]
-
-      transition-colors
-      duration-300
-
-      group-hover:text-[#E8720F]
-    "
-  >
-    Global Perspective
-  </h3>
-
-  <p
-    class="
-      mt-4
-
-      text-[15px]
-      leading-7
-
-      text-[#666666]
-    "
-  >
-    With deep understanding of international trade, we simplify cross-border
-    sourcing while ensuring compliance, consistency and efficiency.
-  </p>
-
-</div>
-
-
-
-
-<div
-  class="
-    reveal
-
-    group
-
-    relative
-    overflow-hidden
-
-    rounded-3xl
-
-    border
-    border-[#ECECEC]
-
-    bg-white
-
-    p-6
-
-    sm:p-7
-
-    lg:p-8
-
-    shadow-sm
-
-    transition-all
-    duration-500
-    ease-out
-
-    hover:-translate-y-3
-    hover:scale-[1.02]
-
-    hover:border-[#E8720F]/60
-
-    hover:shadow-[0_22px_45px_rgba(232,114,15,0.12)]
-  "
->
-
-  <div
-    class="
-      absolute
-      left-0
-      top-0
-
-      h-1
-      w-0
-
-      bg-[#E8720F]
-
-      transition-all
-      duration-500
-
-      group-hover:w-full
-    "
-  ></div>
-
-  <div
-    class="
-      flex
-
-      h-14
-      w-14
-
-      items-center
-      justify-center
-
-      rounded-2xl
-
-      bg-[#FFF6EE]
-
-      transition-all
-      duration-300
-
-      group-hover:bg-[#E8720F]
-    "
-  >
-
-    <!-- Users -->
-
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#E8720F] group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M17 21v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2M16 3.13a4 4 0 010 7.75M9 11a4 4 0 100-8 4 4 0 000 8zm8 10v-2a4 4 0 00-3-3.87"/>
-    </svg>
-
-  </div>
-
-  <h3
-    class="
-      mt-6
-
-      font-serif
-
-      text-xl
-      sm:text-2xl
-
-      text-[#181818]
-
-      transition-colors
-      duration-300
-
-      group-hover:text-[#E8720F]
-    "
-  >
-    Long-Term Partnerships
-  </h3>
-
-  <p
-    class="
-      mt-4
-
-      text-[15px]
-      leading-7
-
-      text-[#666666]
-    "
-  >
-    We focus on building lasting relationships with buyers, suppliers and
-    business partners by delivering dependable service and consistent value.
-  </p>
-
-</div>
-
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-
-
-
-<!-- ==========================================
-     CTA
-========================================== -->
-
-<section class="bg-[#181818]">
-
-  <div
-    class="
-      mx-auto
-      max-w-5xl
-
-      px-6
-      py-24
-
-      text-center
-    "
-  >
-
-    <span
-      class="
-        text-sm
-        font-semibold
-        uppercase
-        tracking-[0.25em]
-
-        text-[#E8720F]
-      "
-    >
-      Let's Work Together
-    </span>
-
-    <h2
-      class="
-        mt-5
-
-        font-serif
-
-        text-4xl
-        leading-tight
-
-        text-white
-
-        md:text-5xl
-      "
-    >
-      Looking For A Reliable
-      Agricultural Trading Partner?
-    </h2>
-
-    <p
-      class="
-        mx-auto
-        mt-8
-
-        max-w-2xl
-
-        leading-8
-
-        text-white/75
-      "
-    >
-      Whether you're sourcing rice, sugar, spices, grains, pulses or
-      maize, REISAGRI is ready to support your business with dependable
-      sourcing and global supply chain expertise.
-    </p>
-
-    <a
-      href="/pages/contact.html"
-      class="
-        mt-10
-
-        inline-flex
-        items-center
-        justify-center
-
-        rounded-full
-
-        bg-[#E8720F]
-
-        px-10
-        py-4
-
-        text-sm
-        font-semibold
-        uppercase
-
-        tracking-[0.18em]
-
-        text-white
-
-        transition-all
-        duration-300
-
-        hover:scale-105
-      "
-    >
-      Request A Quote
-    </a>
-
-  </div>
-
-</section>
-
-<!-- Footer -->
-
-<div id="footer"></div>
-
-<script src="https://unpkg.com/lucide@latest"></script>
-
-<script
-  type="module"
-  src="/src/main.js"
-></script>
-
-</body>
-</html>
+}

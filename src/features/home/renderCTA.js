@@ -87,21 +87,20 @@ mx-auto
 max-w-7xl
 
 px-5
-py-20
+py-8
 
 text-center
 
 sm:px-6
 
 lg:px-8
-lg:py-32
+lg:py-12
 "
 >
 
 ${createSectionHeading({
 
-badge:
-CTA.badge,
+
 
 title:
 CTA.title,

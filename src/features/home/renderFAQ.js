@@ -36,12 +36,12 @@ mx-auto
 max-w-7xl
 
 px-5
-py-20
+py-8
 
 sm:px-6
 
 lg:px-8
-lg:py-28
+lg:py-12
 "
 >
 
@@ -70,8 +70,7 @@ lg:grid-cols-[420px_1fr]
 
     ${createSectionHeading({
 
-      badge:
-        FAQ.badge,
+
 
       title:
         FAQ.title,

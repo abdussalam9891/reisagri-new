@@ -120,7 +120,7 @@ export function initScroll() {
 
           item.classList.add(
             "text-[#181818]",
-            "hover:bg-black/5"
+           
           );
 
         });

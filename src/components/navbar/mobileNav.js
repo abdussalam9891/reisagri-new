@@ -337,7 +337,7 @@ export function createMobileNav() {
     >
 
       <p class="text-xs text-white/40">
-        © 2026 REISAGRI
+        © 2026 Reis Agri Trading.
       </p>
 
       <p class="mt-2 text-[11px] text-white/25">

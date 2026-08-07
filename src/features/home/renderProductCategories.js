@@ -33,13 +33,13 @@ mx-auto
 max-w-7xl
 
 px-5
-py-16
+py-8
 
 sm:px-6
-sm:py-20
+sm:py-8
 
 lg:px-8
-lg:py-28
+lg:py-12
 "
 >
 
@@ -52,7 +52,7 @@ title:
 "A Complete Range Of\nAgricultural Commodities.",
 
 description:
-"From premium grains to essential food commodities, REISAGRI Trading delivers reliable sourcing solutions backed by trusted supplier networks and efficient global logistics."
+"From premium grains to essential food commodities, Reis Agri Trading delivers reliable sourcing solutions backed by trusted supplier networks and efficient global logistics."
 
 })}
 

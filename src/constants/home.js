@@ -1,70 +1,38 @@
 export const ABOUT_PREVIEW = {
-
-  badge:
-    "About REISAGRI",
+  badge: "About REISAGRI",
 
   title:
     "Building Trusted Agricultural\nPartnerships Worldwide.",
 
   description:
-    "REISAGRI Trading is a trusted agricultural commodity exporter connecting reliable producers with international buyers through premium-quality products, transparent communication and dependable supply chain solutions.",
+    "Reis Agri Trading is a trusted agricultural commodity exporter connecting reliable producers with international buyers through premium-quality products, transparent communication and dependable supply chain solutions.",
 
-  image:
-    "/src/assets/images/paddy.jpg",
-
-  imageAlt:
-    "REISAGRI Agricultural Commodity Trading",
+  video:
+    "/src/assets/videos/reisagriVideo.mp4",
 
   stats: [
-
     {
-
       value: "10+",
-
-      label:
-        "Years Experience",
-
+      label: "Years Experience",
     },
-
     {
-
       value: "25+",
-
-      label:
-        "Countries Served",
-
+      label: "Countries Served",
     },
-
     {
-
       value: "100%",
-
-      label:
-        "Quality Commitment",
-
+      label: "Quality Commitment",
     },
-
     {
-
       value: "24/7",
-
-      label:
-        "Customer Support",
-
+      label: "Customer Support",
     },
-
   ],
 
   cta: {
-
-    text:
-      "Learn More",
-
-    href:
-      "/pages/about.html",
-
+    text: "Learn More",
+    href: "/pages/about.html",
   },
-
 };
 
 

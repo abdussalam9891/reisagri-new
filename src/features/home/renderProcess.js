@@ -40,20 +40,19 @@ mx-auto
 max-w-7xl
 
 px-5
-py-16
+py-8
 
 sm:px-6
-sm:py-20
+sm:py-8
 
 lg:px-8
-lg:py-28
+lg:py-12
 "
 >
 
 ${createSectionHeading({
 
-badge:
-PROCESS.badge,
+
 
 title:
 PROCESS.title,
@@ -65,7 +64,7 @@ PROCESS.description,
 
 <div
 class="
-mt-20
+mt-12
 
 grid
 

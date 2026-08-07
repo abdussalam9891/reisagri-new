@@ -122,7 +122,7 @@ lg:px-8
         class="
           about-title
 
-          mt-4
+          mt-3
 
           font-serif
 
@@ -132,9 +132,9 @@ lg:px-8
 
           text-white
 
-          md:text-6xl
+          md:text-4xl
 
-          lg:text-7xl
+          lg:text-5xl
         "
       >
 

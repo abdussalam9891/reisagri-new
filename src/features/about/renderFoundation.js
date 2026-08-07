@@ -1,11 +1,11 @@
 import { FOUNDATION } from "../../constants/about.js";
 
 import {
-  createSectionHeading,
+    createSectionHeading,
 } from "../../components/common/sectionHeading.js";
 
 import {
-  createInfoCard,
+    createInfoCard,
 } from "../../components/common/infoCard.js";
 
 export function renderFoundation() {
@@ -31,7 +31,7 @@ export function renderFoundation() {
       sm:py-20
 
       lg:px-8
-      lg:py-24
+      lg:py-14
     "
   >
 

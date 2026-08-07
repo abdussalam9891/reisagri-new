@@ -116,11 +116,11 @@ export const LEADERSHIP = [
 
     paragraphs: [
 
-      `REISAGRI is led by <strong class="text-[#181818]">Izhar Alam</strong>, CO-FOUNDER & CEO, whose experience in agricultural commodity trading and international supply chain management has helped shape the company's commitment to reliability, transparency and operational excellence.`,
+      `Reis Agri Trading is led by <strong class="text-[#181818]">Mohammad Izhar Alam</strong>, CO-FOUNDER & CEO, whose experience in agricultural commodity trading and international supply chain management has helped shape the company's commitment to reliability, transparency and operational excellence.`,
 
       `With more than a decade of industry experience, he has worked across sourcing, procurement, risk management and international trade, developing strong relationships with producers, logistics partners and buyers across multiple markets.`,
 
-      `His leadership philosophy is simple: build long-term partnerships through honesty, consistent quality and dependable execution. Under his guidance, REISAGRI continues to strengthen its position as a trusted sourcing partner for agricultural commodities worldwide.`
+      `His leadership philosophy is simple: build long-term partnerships through honesty, consistent quality and dependable execution. Under his guidance, Reis Agri Trading continues to strengthen its position as a trusted sourcing partner for agricultural commodities worldwide.`
 
     ],
 
@@ -178,13 +178,9 @@ export const COMPANY_TIMELINE = [
 
 
 export const CTA = {
+  heading:
+    "Looking For A Reliable\nAgricultural Trading Partner?",
 
-
-
-heading:
-"Looking For A Reliable\nAgricultural Trading Partner?",
-
-description:
-"Whether you're sourcing rice, sugar, spices, maize, pulses or grains, REISAGRI delivers dependable sourcing, transparent communication and efficient global supply chain solutions.",
-
+  description:
+    "Partner with REISAGRI for premium agricultural commodities, dependable sourcing, transparent communication and efficient global supply chain solutions tailored to your business.",
 };
