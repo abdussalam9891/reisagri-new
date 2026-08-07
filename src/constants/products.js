@@ -124,7 +124,7 @@ export const PRODUCT_HERO = {
     "Reis Agri Trading supplies premium-quality agricultural commodities sourced from trusted producers across India. Our expertise lies in delivering consistent quality, dependable sourcing and efficient export solutions for buyers worldwide.",
 
   image:
-    "/src/assets/images/paddy2.jpg",
+    "/src/assets/images/10.jpg",
 
   imageAlt:
     "Agricultural Commodity Export",
