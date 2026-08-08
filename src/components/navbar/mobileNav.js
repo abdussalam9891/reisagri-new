@@ -9,11 +9,12 @@ export function createMobileNav() {
           data-nav="${item.slug}"
           class="
             group
+
             flex
             items-center
             justify-between
 
-            rounded-2xl
+            rounded-xl
 
             px-5
             py-4
@@ -32,29 +33,41 @@ export function createMobileNav() {
             hover:text-[#E8720F]
           "
         >
-          <span>${item.label}</span>
+
+          <span>
+            ${item.label}
+          </span>
+
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
+
             class="
               h-5
               w-5
+
+              shrink-0
 
               transition-transform
               duration-300
 
               group-hover:translate-x-1
             "
+
             fill="none"
             viewBox="0 0 24 24"
+
             stroke="currentColor"
             stroke-width="1.8"
           >
+
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
+
               d="M9 6l6 6-6 6"
             />
+
           </svg>
 
         </a>
@@ -62,292 +75,481 @@ export function createMobileNav() {
     `
   ).join("");
 
+
   return `
-<div
-  id="mobileDrawer"
-  class="
-    fixed
-    inset-0
-    z-[999]
-    hidden
-  "
->
 
-  <!-- Backdrop -->
-
-  <div
-    id="mobileBackdrop"
-    class="
-      absolute
-      inset-0
-
-      bg-black/60
-      backdrop-blur-sm
-
-      opacity-0
-
-      transition-opacity
-      duration-300
-    "
-  ></div>
-
-  <!-- Drawer -->
-
-  <aside
-    id="mobilePanel"
-    class="
-      absolute
-
-      left-4
-      top-4
-      bottom-4
-
-      w-[340px]
-      max-w-[calc(100vw-2rem)]
-
-      overflow-y-auto
-
-      rounded-3xl
-
-      border
-      border-white/10
-
-      bg-[#181818]
-
-      shadow-2xl
-
-      -translate-x-[120%]
-
-      transition-transform
-      duration-300
-
-      no-scrollbar
-    "
-  >
-
-    <!-- Header -->
+    <!-- ========================================= -->
+    <!-- Mobile Drawer -->
+    <!-- ========================================= -->
 
     <div
+      id="mobileDrawer"
+
       class="
-        flex
-        items-center
-        justify-between
+        fixed
+        inset-0
 
-        border-b
-        border-white/10
+        z-[200]
 
-        px-6
-        py-6
+        hidden
       "
     >
 
-      <div>
+      <!-- ======================================= -->
+      <!-- Backdrop -->
+      <!-- ======================================= -->
 
-        <h2
-          class="
-            font-serif
-            text-2xl
-            text-white
-          "
-        >
-          REISAGRI
-        </h2>
+      <div
+        id="mobileBackdrop"
 
-        <p
-          class="
-            mt-1
-
-            text-[10px]
-            uppercase
-            tracking-[0.25em]
-
-            text-[#E8720F]
-          "
-        >
-          Global Commodities
-        </p>
-
-      </div>
-
-      <button
-        id="closeDrawerBtn"
-        type="button"
-        aria-label="Close Menu"
         class="
-          flex
-          h-10
-          w-10
-          items-center
-          justify-center
+          absolute
+          inset-0
 
-          rounded-full
+          bg-black/65
 
-          text-white
+          opacity-0
 
-          transition
+          backdrop-blur-[3px]
 
-          hover:bg-white/5
-          hover:text-[#E8720F]
-        "
-      >
-
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          stroke-width="1.8"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M6 6l12 12M18 6L6 18"
-          />
-        </svg>
-
-      </button>
-
-    </div>
-
-    <!-- Navigation -->
-
-    <nav class="px-4 py-6">
-
-      <ul class="space-y-2">
-
-        ${navigation}
-
-      </ul>
-
-    </nav>
-
-    <!-- Contact -->
-
-    <div
-      class="
-        border-t
-        border-white/10
-
-        px-6
-        py-6
-      "
-    >
-
-      <p
-        class="
-          text-xs
-          uppercase
-          tracking-[0.25em]
-
-          text-white/40
-        "
-      >
-        Contact
-      </p>
-
-      <div class="mt-5 space-y-4">
-
-        <a
-          href="mailto:info@reisagritrading.com"
-          class="
-            block
-
-            text-sm
-
-            text-white/90
-
-            transition-colors
-            duration-300
-
-            hover:text-[#E8720F]
-          "
-        >
-          info@reisagritrading.com
-        </a>
-
-        <a
-          href="tel:+911234567890"
-          class="
-            block
-
-            text-sm
-
-            text-white/90
-
-            transition-colors
-            duration-300
-
-            hover:text-[#E8720F]
-          "
-        >
-          +91 12345 67890
-        </a>
-
-      </div>
-
-    </div>
-
-    <!-- CTA -->
-
-    <div class="px-6 pb-8">
-
-      <a
-        href="/pages/contact.html"
-        class="
-          flex
-          items-center
-          justify-center
-
-          rounded-xl
-
-          bg-[#E8720F]
-
-          py-4
-
-          text-sm
-          font-semibold
-          uppercase
-          tracking-[0.15em]
-
-          text-white
-
-          transition-all
+          transition-opacity
           duration-300
+        "
+      ></div>
 
-          hover:bg-[#cf670d]
+
+      <!-- ======================================= -->
+      <!-- Centered Panel -->
+      <!-- ======================================= -->
+
+      <aside
+        id="mobilePanel"
+
+        class="
+          absolute
+
+          left-1/2
+          top-1/2
+
+          z-10
+
+          flex
+
+          h-[calc(100svh-2rem)]
+
+          w-[calc(100vw-2rem)]
+
+          max-w-[380px]
+
+          -translate-x-1/2
+          -translate-y-[calc(50%+120vh)]
+
+          flex-col
+
+          overflow-hidden
+          overflow-y-auto
+
+          rounded-[28px]
+
+          border
+          border-white/10
+
+          bg-[#181818]
+
+          shadow-[0_30px_100px_rgba(0,0,0,.45)]
+
+          transition-transform
+          duration-500
+
+          ease-[cubic-bezier(.22,1,.36,1)]
+
+          no-scrollbar
+
+          sm:rounded-[32px]
+
+          sm:w-[calc(100vw-3rem)]
         "
       >
-        Get Quote
-      </a>
+
+        <!-- ===================================== -->
+        <!-- Header -->
+        <!-- ===================================== -->
+
+        <div
+          class="
+            flex
+            shrink-0
+            items-center
+            justify-between
+
+            border-b
+            border-white/10
+
+            px-6
+            py-6
+
+            sm:px-7
+            sm:py-7
+          "
+        >
+
+          <div>
+
+            <h2
+              class="
+                font-serif
+
+                text-2xl
+
+                leading-none
+
+                text-white
+
+                sm:text-[26px]
+              "
+            >
+              REISAGRI
+            </h2>
+
+
+            <p
+              class="
+                mt-2
+
+                text-[9px]
+
+                uppercase
+
+                tracking-[0.25em]
+
+                text-[#E8720F]
+              "
+            >
+              Global Commodities
+            </p>
+
+          </div>
+
+
+          <!-- Close -->
+
+          <button
+            id="closeDrawerBtn"
+
+            type="button"
+
+            aria-label="Close Menu"
+
+            class="
+              flex
+
+              h-10
+              w-10
+
+              shrink-0
+
+              items-center
+              justify-center
+
+              rounded-full
+
+              text-white
+
+              transition-all
+              duration-300
+
+              hover:bg-white/5
+
+              hover:text-[#E8720F]
+
+              hover:rotate-90
+            "
+          >
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+
+              class="
+                h-6
+                w-6
+              "
+
+              fill="none"
+              viewBox="0 0 24 24"
+
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+
+                d="M6 6l12 12M18 6L6 18"
+              />
+
+            </svg>
+
+          </button>
+
+        </div>
+
+
+        <!-- ===================================== -->
+        <!-- Navigation -->
+        <!-- ===================================== -->
+
+        <nav
+          class="
+            flex-1
+
+            px-4
+            py-5
+
+            sm:px-5
+            sm:py-6
+          "
+        >
+
+          <ul
+            class="
+              space-y-1
+            "
+          >
+
+            ${navigation}
+
+          </ul>
+
+        </nav>
+
+
+        <!-- ===================================== -->
+        <!-- Contact -->
+        <!-- ===================================== -->
+
+        <div
+          class="
+            shrink-0
+
+            border-t
+            border-white/10
+
+            px-6
+            py-6
+
+            sm:px-7
+          "
+        >
+
+          <p
+            class="
+              text-[10px]
+
+              uppercase
+
+              tracking-[0.25em]
+
+              text-white/40
+            "
+          >
+            Contact
+          </p>
+
+
+          <div
+            class="
+              mt-4
+
+              space-y-3
+            "
+          >
+
+            <a
+              href="mailto:info@reisagritrading.com"
+
+              class="
+                block
+
+                text-sm
+
+                text-white/90
+
+                transition-colors
+                duration-300
+
+                hover:text-[#E8720F]
+              "
+            >
+              info@reisagritrading.com
+            </a>
+
+
+            <a
+              href="tel:+918298771036"
+
+              class="
+                block
+
+                text-sm
+
+                text-white/90
+
+                transition-colors
+                duration-300
+
+                hover:text-[#E8720F]
+              "
+            >
+              +91 82987 71036
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- ===================================== -->
+        <!-- CTA -->
+        <!-- ===================================== -->
+
+        <div
+          class="
+            shrink-0
+
+            px-6
+            pb-6
+
+            sm:px-7
+            sm:pb-7
+          "
+        >
+
+          <a
+            href="/pages/contact.html"
+
+            class="
+              group
+
+              flex
+
+              items-center
+              justify-center
+
+              gap-3
+
+              rounded-xl
+
+              bg-[#E8720F]
+
+              px-6
+              py-4
+
+              text-sm
+
+              font-semibold
+
+              uppercase
+
+              tracking-[0.15em]
+
+              text-white
+
+              transition-all
+              duration-300
+
+              hover:-translate-y-0.5
+
+              hover:bg-[#F08B2F]
+
+              hover:shadow-[0_15px_35px_rgba(232,114,15,.25)]
+            "
+          >
+
+            Get Quote
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+
+              class="
+                h-4
+                w-4
+
+                transition-transform
+                duration-300
+
+                group-hover:translate-x-1
+              "
+
+              fill="none"
+              viewBox="0 0 24 24"
+
+              stroke="currentColor"
+              stroke-width="2"
+            >
+
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+
+                d="M5 12h14M13 5l7 7-7 7"
+              />
+
+            </svg>
+
+          </a>
+
+        </div>
+
+
+        <!-- ===================================== -->
+        <!-- Footer -->
+        <!-- ===================================== -->
+
+        <div
+          class="
+            shrink-0
+
+            border-t
+            border-white/10
+
+            px-6
+            py-5
+
+            text-center
+
+            sm:px-7
+          "
+        >
+
+          <p
+            class="
+              text-[10px]
+
+              text-white/35
+            "
+          >
+            © 2026 Reis Agri Trading.
+          </p>
+
+
+          <p
+            class="
+              mt-1.5
+
+              text-[9px]
+
+              text-white/20
+            "
+          >
+            Global Agricultural Commodity Exporter
+          </p>
+
+        </div>
+
+      </aside>
 
     </div>
 
-    <!-- Footer -->
-
-    <div
-      class="
-        border-t
-        border-white/10
-
-        px-6
-        py-6
-        text-center
-      "
-    >
-
-      <p class="text-xs text-white/40">
-        © 2026 Reis Agri Trading.
-      </p>
-
-      <p class="mt-2 text-[11px] text-white/25">
-        Global Agricultural Commodity Exporter
-      </p>
-
-    </div>
-
-  </aside>
-
-</div>
-`;
+  `;
 }

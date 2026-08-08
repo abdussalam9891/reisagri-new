@@ -1,19 +1,16 @@
-
-import {
+ import {
   initAboutCounters,
 } from "./counter.js";
 
 import {
-
   animateFadeUp,
-
   animateTitle,
-
 } from "./aboutHeroAnimations.js";
 
 import {
   initAboutHeroParallax,
 } from "./aboutHeroParallax.js";
+
 
 export function renderAboutHero() {
 
@@ -22,317 +19,442 @@ export function renderAboutHero() {
 
   if (!container) return;
 
+
   container.innerHTML = `
 
-<section
+    <!-- ========================================= -->
+    <!-- About Hero -->
+    <!-- ========================================= -->
 
-id="aboutHeroSection"
+    <section
+      id="aboutHeroSection"
 
-class="
-relative
+      class="
+        relative
 
-min-h-[100svh]
+        h-[72svh]
 
-overflow-hidden
-"
->
+        min-h-[520px]
 
-  <!-- =====================================
-       BACKGROUND IMAGE
-  ====================================== -->
+        max-h-[680px]
 
- <img
-src="/src/assets/images/maize.jpg"
+        overflow-hidden
 
- loading="lazy"
-  decoding="async"
+        md:h-[78vh]
 
-class="
-about-hero-image
+        md:min-h-[580px]
 
-absolute
-inset-0
+        md:max-h-[720px]
 
-h-full
-w-full
+        lg:h-[82vh]
 
-object-cover
+        lg:min-h-[600px]
 
-scale-110
+        lg:max-h-[760px]
+      "
+    >
 
-will-change-transform
-"
->
+      <!-- ========================================= -->
+      <!-- Background Image -->
+      <!-- ========================================= -->
 
-  <!-- Dark Overlay -->
+      <img
+        src="/src/assets/images/maize.jpg"
 
-<div
-class="
-about-overlay
+        alt="Agricultural farming and maize"
 
-absolute
-inset-0
+        loading="eager"
 
-bg-gradient-to-r
+        fetchpriority="high"
 
-from-black/85
-via-black/65
-to-black/40
-"
->
+        decoding="async"
 
-  <!-- =====================================
-       CONTENT
-  ====================================== -->
+        draggable="false"
 
- <div
-class="
-about-content
-
-relative
-z-20
-
-will-change-transform
-
-mx-auto
-
-flex
-
-min-h-[100svh]
-
-max-w-7xl
-
-items-center
-
-px-6
-
-lg:px-8
-"
->
-
-    <div class="max-w-4xl">
-
-
-
-
-
-      <!-- Heading -->
-
-      <h1
         class="
-          about-title
+          about-hero-image
 
-          mt-3
+          absolute
+          inset-0
 
-          font-serif
+          h-full
+          w-full
 
-          text-4xl
+          object-cover
 
-          leading-[1.02]
+          scale-110
 
-          text-white
+          will-change-transform
 
-          md:text-4xl
-
-          lg:text-5xl
+          select-none
         "
-      >
-
-        Building Trusted
-        Agricultural
-        Supply Chains
-        Worldwide.
-
-      </h1>
+      />
 
 
-      <!-- CTA -->
+      <!-- ========================================= -->
+      <!-- Dark Overlay -->
+      <!-- ========================================= -->
 
       <div
         class="
-          about-actions
+          pointer-events-none
 
-          mt-12
+          absolute
+          inset-0
+
+          bg-gradient-to-r
+
+          from-black/85
+
+          via-black/65
+
+          to-black/35
+
+          md:from-black/80
+          md:via-black/60
+          md:to-black/30
+        "
+      ></div>
+
+
+      <!-- ========================================= -->
+      <!-- Main Content -->
+      <!-- ========================================= -->
+
+      <div
+        class="
+          relative
+          z-20
+
+          mt-10
+
+          mx-auto
 
           flex
 
-          flex-wrap
+          min-h-full
 
-          gap-5
+          max-w-7xl
+
+          items-center
+
+          px-6
+
+          sm:px-8
+
+          lg:px-12
+
+          xl:px-14
         "
       >
 
-        <!-- Primary Button -->
-
-        <a
-          href="/pages/contact.html"
-
+        <div
           class="
-            group
+            max-w-[620px]
 
-            inline-flex
+            pb-24
 
-            items-center
+            sm:pb-28
 
-            gap-3
+            md:max-w-[680px]
 
-            rounded-full
+            md:pb-32
 
-            bg-[#E8720F]
+            lg:max-w-[720px]
 
-            px-9
-            py-4
-
-            text-sm
-
-            font-semibold
-
-            uppercase
-
-            tracking-[0.18em]
-
-            text-white
-
-            transition-all
-            duration-300
-
-            hover:-translate-y-1
-
-            hover:shadow-[0_20px_45px_rgba(232,114,15,.35)]
+            lg:pb-36
           "
         >
 
-          Get Quote
+          <!-- ===================================== -->
+          <!-- Heading -->
+          <!-- ===================================== -->
 
-          <i
-            data-lucide="arrow-right"
+         <h1
+  class="
+    about-title
+
+    max-w-[340px]
+
+    font-serif
+
+    text-[29px]
+
+    leading-[1.06]
+
+    tracking-[-0.02em]
+
+    mt-4
+
+    text-white
+
+    sm:text-[32px]
+
+    md:max-w-[620px]
+
+    md:text-[42px]
+
+    lg:text-[48px]
+
+    xl:text-[54px]
+  "
+>
+  Building Trusted
+  Agricultural
+  Supply Chains
+  Worldwide
+</h1>
+
+
+          <!-- ===================================== -->
+          <!-- CTA -->
+          <!-- ===================================== -->
+
+          <div
             class="
-              h-4
-              w-4
+              about-actions
 
-              transition-transform
-
-              duration-300
-
-              group-hover:translate-x-1
-            "
-          ></i>
-
-        </a>
-
-        <!-- Secondary -->
-
-        <a
-          href="/pages/products.html"
-
-          class="
-            group
-
-            relative
-
-            inline-flex
-
-            items-center
-
-            justify-center
-
-            overflow-hidden
-
-            rounded-full
-
-            border
-
-            border-white/20
-
-            px-9
-            py-4
-
-            text-sm
-
-            font-semibold
-
-            uppercase
-
-            tracking-[0.18em]
-
-            text-white
-          "
-        >
-
-          <span
-            class="
-              absolute
-              inset-0
-
-              origin-left
-
-              scale-x-0
-
-              bg-[#E8720F]
-
-              transition-transform
-              duration-500
-
-              ease-[cubic-bezier(.22,1,.36,1)]
-
-              group-hover:scale-x-100
-            "
-          ></span>
-
-          <span
-            class="
-              relative
-
-              z-10
+              mt-8
 
               flex
 
-              items-center
+              flex-wrap
 
               gap-3
+
+              sm:mt-10
+
+              sm:gap-4
+
+              md:mt-11
+
+              lg:mt-12
             "
           >
 
-            Explore Products
+            <!-- Primary CTA -->
 
-            <i
-              data-lucide="arrow-right"
+            <a
+              href="/pages/contact.html"
+
               class="
-                h-4
-                w-4
+                group
 
-                transition-transform
+                inline-flex
 
+                items-center
+
+                gap-2.5
+
+                rounded-full
+
+                bg-[#E8720F]
+
+                px-6
+                py-3
+
+                text-[11px]
+
+                font-semibold
+
+                uppercase
+
+                tracking-[0.16em]
+
+                text-white
+
+                transition-all
                 duration-300
 
-                group-hover:translate-x-1
+                hover:-translate-y-1
+
+                hover:bg-[#f68b32]
+
+                hover:shadow-[0_18px_40px_rgba(232,114,15,.35)]
+
+                sm:px-7
+                sm:py-3.5
+
+                sm:text-xs
+
+                md:px-8
+                md:py-4
+
+                md:text-sm
               "
-            ></i>
+            >
 
-          </span>
+              Get Quote
 
-        </a>
+              <i
+                data-lucide="arrow-right"
+
+                class="
+                  h-3.5
+                  w-3.5
+
+                  sm:h-4
+                  sm:w-4
+
+                  transition-transform
+                  duration-300
+
+                  group-hover:translate-x-1
+                "
+              ></i>
+
+            </a>
+
+
+            <!-- Secondary CTA -->
+
+            <a
+              href="/pages/products.html"
+
+              class="
+                group
+
+                relative
+
+                inline-flex
+
+                items-center
+
+                justify-center
+
+                overflow-hidden
+
+                rounded-full
+
+                border
+
+                border-white/25
+
+                px-6
+                py-3
+
+                text-[11px]
+
+                font-semibold
+
+                uppercase
+
+                tracking-[0.16em]
+
+                text-white
+
+                transition-all
+                duration-500
+
+                ease-[cubic-bezier(.22,1,.36,1)]
+
+                hover:rounded-[6px_20px_6px_20px]
+
+                hover:-translate-y-1
+
+                hover:border-[#E8720F]
+
+                hover:shadow-[0_16px_35px_rgba(232,114,15,.22)]
+
+                sm:px-7
+                sm:py-3.5
+
+                sm:text-xs
+
+                md:px-8
+                md:py-4
+
+                md:text-sm
+              "
+            >
+
+              <!-- Fill -->
+
+              <span
+                class="
+                  absolute
+
+                  inset-0
+
+                  origin-left
+
+                  scale-x-0
+
+                  bg-[#E8720F]
+
+                  transition-transform
+                  duration-500
+
+                  ease-[cubic-bezier(.22,1,.36,1)]
+
+                  group-hover:scale-x-100
+                "
+              ></span>
+
+
+              <!-- Content -->
+
+              <span
+                class="
+                  relative
+
+                  z-10
+
+                  flex
+
+                  items-center
+
+                  gap-2.5
+                "
+              >
+
+                Explore Products
+
+                <i
+                  data-lucide="arrow-right"
+
+                  class="
+                    h-3.5
+                    w-3.5
+
+                    sm:h-4
+                    sm:w-4
+
+                    transition-transform
+                    duration-300
+
+                    group-hover:translate-x-1
+                  "
+                ></i>
+
+              </span>
+
+            </a>
+
+          </div>
+
+        </div>
 
       </div>
 
-    </div>
 
-  </div>
+      <!-- ========================================= -->
+      <!-- Bottom Stats -->
+      <!-- ========================================= -->
 
-  <!-- Stats will be added in Part 2 -->
-
-  <!-- =====================================
-     FLOATING STATS
-====================================== -->
+   <!-- ========================================= -->
+<!-- Hero Stats -->
+<!-- ========================================= -->
 
 <div
   class="
     absolute
-
     inset-x-0
-    bottom-6
+    bottom-0
 
     z-30
+
+    w-full
   "
 >
 
@@ -340,11 +462,17 @@ lg:px-8
     class="
       mx-auto
 
+      w-full
+
       max-w-7xl
 
       px-6
 
-      lg:px-8
+      sm:px-8
+
+      lg:px-12
+
+      xl:px-14
     "
   >
 
@@ -353,36 +481,44 @@ lg:px-8
         about-stats
 
         grid
+        grid-cols-4
 
         overflow-hidden
 
+        border-t
+        border-white/10
 
+        bg-black/20
 
-
-
-
-
-
-
-        shadow-[0_30px_80px_rgba(0,0,0,.45)]
-
-        sm:grid-cols-2
-
-        lg:grid-cols-4
+        backdrop-blur-sm
       "
     >
 
-      <!-- Years -->
+      <!-- ================================= -->
+      <!-- Years Experience -->
+      <!-- ================================= -->
 
       <div
         class="
+          flex
+          min-w-0
+          flex-col
+          items-center
+          justify-center
+
+          border-r
           border-white/10
 
-          p-4
+          px-1.5
+          py-3
 
           text-center
 
-          lg:border-r
+          sm:px-4
+          sm:py-4
+
+          md:px-6
+          md:py-5
         "
       >
 
@@ -392,50 +528,86 @@ lg:px-8
 
             font-serif
 
-            text-5xl
+            text-[18px]
+
+            leading-none
 
             text-[#E8720F]
+
+            sm:text-2xl
+
+            md:text-3xl
+
+            lg:text-4xl
           "
 
           data-target="10"
+
           data-suffix="+"
         >
-
           0
-
         </h3>
 
         <p
           class="
-            mt-3
+            mt-1.5
 
-            text-xs
+            whitespace-nowrap
+
+            text-[7px]
+
+            font-medium
 
             uppercase
 
-            tracking-[0.22em]
+            leading-none
 
-            text-white/70
+            tracking-[0.08em]
+
+            text-white/65
+
+            sm:text-[9px]
+
+            sm:tracking-[0.12em]
+
+            md:mt-2
+
+            md:text-[10px]
+
+            md:tracking-[0.18em]
           "
         >
-
           Years Experience
-
         </p>
 
       </div>
 
+
+      <!-- ================================= -->
       <!-- Countries -->
+      <!-- ================================= -->
 
       <div
         class="
+          flex
+          min-w-0
+          flex-col
+          items-center
+          justify-center
+
+          border-r
           border-white/10
 
-          p-8
+          px-1.5
+          py-3
 
           text-center
 
-          lg:border-r
+          sm:px-4
+          sm:py-4
+
+          md:px-6
+          md:py-5
         "
       >
 
@@ -445,50 +617,86 @@ lg:px-8
 
             font-serif
 
-            text-5xl
+            text-[18px]
+
+            leading-none
 
             text-[#E8720F]
+
+            sm:text-2xl
+
+            md:text-3xl
+
+            lg:text-4xl
           "
 
           data-target="25"
+
           data-suffix="+"
         >
-
           0
-
         </h3>
 
         <p
           class="
-            mt-3
+            mt-1.5
 
-            text-xs
+            whitespace-nowrap
+
+            text-[7px]
+
+            font-medium
 
             uppercase
 
-            tracking-[0.22em]
+            leading-none
 
-            text-white/70
+            tracking-[0.08em]
+
+            text-white/65
+
+            sm:text-[9px]
+
+            sm:tracking-[0.12em]
+
+            md:mt-2
+
+            md:text-[10px]
+
+            md:tracking-[0.18em]
           "
         >
-
           Countries Served
-
         </p>
 
       </div>
 
+
+      <!-- ================================= -->
       <!-- Quality -->
+      <!-- ================================= -->
 
       <div
         class="
+          flex
+          min-w-0
+          flex-col
+          items-center
+          justify-center
+
+          border-r
           border-white/10
 
-          p-8
+          px-1.5
+          py-3
 
           text-center
 
-          lg:border-r
+          sm:px-4
+          sm:py-4
+
+          md:px-6
+          md:py-5
         "
       >
 
@@ -498,46 +706,83 @@ lg:px-8
 
             font-serif
 
-            text-5xl
+            text-[18px]
+
+            leading-none
 
             text-[#E8720F]
+
+            sm:text-2xl
+
+            md:text-3xl
+
+            lg:text-4xl
           "
 
           data-target="100"
+
           data-suffix="%"
         >
-
           0
-
         </h3>
 
         <p
           class="
-            mt-3
+            mt-1.5
 
-            text-xs
+            whitespace-nowrap
+
+            text-[7px]
+
+            font-medium
 
             uppercase
 
-            tracking-[0.22em]
+            leading-none
 
-            text-white/70
+            tracking-[0.08em]
+
+            text-white/65
+
+            sm:text-[9px]
+
+            sm:tracking-[0.12em]
+
+            md:mt-2
+
+            md:text-[10px]
+
+            md:tracking-[0.18em]
           "
         >
-
           Quality Commitment
-
         </p>
 
       </div>
 
+
+      <!-- ================================= -->
       <!-- Support -->
+      <!-- ================================= -->
 
       <div
         class="
-          p-8
+          flex
+          min-w-0
+          flex-col
+          items-center
+          justify-center
+
+          px-1.5
+          py-3
 
           text-center
+
+          sm:px-4
+          sm:py-4
+
+          md:px-6
+          md:py-5
         "
       >
 
@@ -547,35 +792,56 @@ lg:px-8
 
             font-serif
 
-            text-5xl
+            text-[18px]
+
+            leading-none
 
             text-[#E8720F]
+
+            sm:text-2xl
+
+            md:text-3xl
+
+            lg:text-4xl
           "
 
           data-target="24"
+
           data-suffix="/7"
         >
-
           0
-
         </h3>
 
         <p
           class="
-            mt-3
+            mt-1.5
 
-            text-xs
+            whitespace-nowrap
+
+            text-[7px]
+
+            font-medium
 
             uppercase
 
-            tracking-[0.22em]
+            leading-none
 
-            text-white/70
+            tracking-[0.08em]
+
+            text-white/65
+
+            sm:text-[9px]
+
+            sm:tracking-[0.12em]
+
+            md:mt-2
+
+            md:text-[10px]
+
+            md:tracking-[0.18em]
           "
         >
-
           Customer Support
-
         </p>
 
       </div>
@@ -586,48 +852,78 @@ lg:px-8
 
 </div>
 
-</section>
 
-`;
+      <!-- ========================================= -->
+      <!-- Bottom Gradient -->
+      <!-- ========================================= -->
+
+      <div
+        class="
+          pointer-events-none
+
+          absolute
+
+          inset-x-0
+
+          bottom-0
+
+          z-10
+
+          h-40
+
+          bg-gradient-to-t
+
+          from-black/80
+
+          via-black/30
+
+          to-transparent
+
+          md:h-48
+        "
+      ></div>
+
+    </section>
+
+  `;
+
 
   window.lucide?.createIcons();
 
-initAboutCounters();
 
-initAboutHeroParallax();
+  /* ========================================= */
+  /* Initialize Animations                     */
+  /* ========================================= */
 
-animateFadeUp(
+  initAboutCounters();
 
-  document.querySelector(".about-badge"),
+  initAboutHeroParallax();
 
-  0
 
-);
+  animateFadeUp(
+    document.querySelector(".about-badge"),
+    0
+  );
 
-animateTitle();
 
-animateFadeUp(
+  animateTitle();
 
-  document.querySelector(".about-description"),
 
-  850
+  animateFadeUp(
+    document.querySelector(".about-description"),
+    850
+  );
 
-);
 
-animateFadeUp(
+  animateFadeUp(
+    document.querySelector(".about-actions"),
+    1150
+  );
 
-  document.querySelector(".about-actions"),
 
-  1150
-
-);
-
-animateFadeUp(
-
-  document.querySelector(".about-stats"),
-
-  1500
-
-);
+  animateFadeUp(
+    document.querySelector(".about-stats"),
+    1500
+  );
 
 }

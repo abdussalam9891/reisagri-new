@@ -3,12 +3,7 @@ export function initActiveLink() {
 
   if (!navLinks.length) return;
 
-  const pathname = window.location.pathname
-    .toLowerCase();
-
-  navLinks.forEach((link) =>
-    link.classList.remove("text-[#E8720F]")
-  );
+  const pathname = window.location.pathname.toLowerCase();
 
   const routes = {
     home: ["/", "/index.html"],
@@ -19,13 +14,44 @@ export function initActiveLink() {
     contact: ["/pages/contact.html"],
   };
 
+  /* =====================================
+     RESET
+  ====================================== */
+
+  navLinks.forEach((link) => {
+    link.classList.remove(
+      "active",
+      "text-[#E8720F]"
+    );
+  });
+
+  /* =====================================
+     FIND CURRENT PAGE
+  ====================================== */
+
   Object.entries(routes).forEach(([slug, pages]) => {
-    if (
-      pages.some((page) => pathname.endsWith(page))
-    ) {
-      document
-        .querySelector(`[data-nav="${slug}"]`)
-        ?.classList.add("text-[#E8720F]");
-    }
+
+    const isActive = pages.some((page) => {
+
+      if (page === "/") {
+        return pathname === "/";
+      }
+
+      return pathname.endsWith(page);
+    });
+
+    if (!isActive) return;
+
+    const activeLink =
+      document.querySelector(
+        `[data-nav="${slug}"]`
+      );
+
+    if (!activeLink) return;
+
+    activeLink.classList.add(
+      "active",
+      "text-[#E8720F]"
+    );
   });
 }

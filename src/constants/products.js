@@ -379,7 +379,7 @@ badge:
 "Complete Agricultural Portfolio",
 
 title:
-"Beyond Rice,\nA Diverse Commodity Portfolio.",
+"Beyond Rice,\nA Diverse Commodity Portfolio",
 
 description:
 "While rice remains our flagship commodity, we also supply a broad range of agricultural products sourced through trusted supplier networks to meet the diverse requirements of global buyers.",

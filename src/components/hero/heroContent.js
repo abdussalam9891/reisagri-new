@@ -55,6 +55,7 @@ export function createHeroContent() {
               <h1
                 class="
                   hero-title
+                  mt-12
 
                   flex
                   flex-col

@@ -1,5 +1,5 @@
-const DRAWER_OPEN_CLASS = "translate-x-0";
-const DRAWER_CLOSE_CLASS = "-translate-x-[120%]";
+const DRAWER_OPEN_CLASS = "-translate-y-1/2";
+const DRAWER_CLOSE_CLASS = "-translate-y-[calc(50%+120vh)]";
 
 const BACKDROP_VISIBLE = "opacity-100";
 const BACKDROP_HIDDEN = "opacity-0";

@@ -28,13 +28,13 @@ mx-auto
 max-w-7xl
 
 px-5
-py-12
+py-6
 
 sm:px-6
-sm:py-16
+sm:py-8
 
 lg:px-8
-lg:py-16
+lg:py-8
 "
 >
 
@@ -54,7 +54,7 @@ description:
 class="
 mx-auto
 
-mt-10
+mt-12
 
 max-w-3xl
 "

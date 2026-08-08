@@ -25,10 +25,10 @@ export function renderFoundation() {
       max-w-7xl
 
       px-5
-      py-16
+      py-4
 
       sm:px-6
-      sm:py-20
+      sm:py-6
 
       lg:px-8
       lg:py-14

@@ -5,7 +5,7 @@ export const FOUNDATION = {
     badge: "Our Foundation",
 
     title:
-      "Purpose That Drives\nEvery Partnership.",
+      "Purpose That Drives\nEvery Partnership",
 
     description:
       "Everything we do is guided by integrity, quality and long-term relationships. These principles shape every sourcing decision, every shipment and every partnership we build across international markets.",
@@ -22,7 +22,7 @@ export const FOUNDATION = {
       variant: "light",
 
       title:
-        "Deliver Trust Through\nEvery Shipment.",
+        "Deliver Trust Through\nEvery Shipment",
 
       description:
         "To connect trusted agricultural producers with global buyers by delivering premium-quality commodities, dependable sourcing and efficient supply chain solutions that create long-term value.",

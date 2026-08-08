@@ -1,278 +1,374 @@
-export function createExportPackaging(data){
+export function createExportPackaging(data) {
 
-return `
+  return `
 
-<section
-class="
-bg-white
-">
+    <section
+      class="
+        bg-white
+      "
+    >
 
-<div
-class="
-reveal reveal-up
-mx-auto
+      <div
+        class="
+          mx-auto
 
-max-w-7xl
+          max-w-7xl
 
-px-5
-py-28
+          px-5
 
-sm:px-6
+          py-20
 
-lg:px-8
-">
+          sm:px-6
+          sm:py-24
 
-<div class="max-w-3xl">
+          lg:px-8
+          lg:py-28
+        "
+      >
 
-<div
-class="
-reveal reveal-left
-inline-flex
+        <!-- ========================================= -->
+        <!-- Header -->
+        <!-- ========================================= -->
 
-rounded-full
+        <div
+          class="
+            max-w-3xl
+          "
+        >
 
-bg-[#FFF3E8]
+          <!-- Badge -->
 
-px-5
-py-2
-mb-10
+          <div
+            class="
+              reveal
+              reveal-left
 
-text-xs
+              inline-flex
 
-font-semibold
+              rounded-full
 
-uppercase
+              bg-[#FFF3E8]
 
-tracking-[0.18em]
+              px-4
+              py-2
 
-text-[#E8720F]
-">
+              text-[10px]
 
-${data.badge}
+              font-semibold
 
-</div>
+              uppercase
 
-<h2
-class="
-reveal reveal-left
-mt-8
+              tracking-[0.18em]
 
-font-serif
+              text-[#E8720F]
 
-text-5xl
+              sm:px-5
+              sm:py-2
 
-leading-[1.08]
+              sm:text-xs
+            "
+          >
+            ${data.badge}
+          </div>
 
-text-[#181818]
-">
 
-${data.title}
+          <!-- Heading -->
 
-</h2>
+          <h2
+            class="
+              reveal
+              reveal-left
 
-<p
-class="
-reveal reveal-left
-mt-8
+              mt-6
 
-leading-9
+              max-w-2xl
 
-text-[#666666]
-">
+              font-serif
 
-${data.description}
+              text-3xl
 
-</p>
+              leading-[1.08]
 
-</div>
+              tracking-[-0.02em]
 
-<div
-class="
-reveal reveal-right
-mt-24
+              text-[#181818]
 
-grid
+              sm:text-4xl
 
-gap-8
+              lg:text-5xl
+            "
+          >
+            ${data.title}
+          </h2>
 
-lg:grid-cols-2
-">
 
-${data.cards.map(createCard).join("")}
+          <!-- Description -->
 
-</div>
+          <p
+            class="
+              reveal
+              reveal-left
 
-</div>
+              mt-6
 
-</section>
+              max-w-2xl
 
-`;
+              text-base
 
+              leading-7
+
+              text-[#666666]
+
+              sm:mt-7
+
+              sm:text-lg
+
+              sm:leading-8
+            "
+          >
+            ${data.description}
+          </p>
+
+        </div>
+
+
+        <!-- ========================================= -->
+        <!-- Export / Packaging Details -->
+        <!-- ========================================= -->
+
+        <div
+          class="
+            reveal
+            reveal-up
+
+            mt-16
+
+            border-t
+            border-[#E8ECE7]
+
+            lg:mt-20
+          "
+        >
+
+          ${data.cards
+            .map(createRow)
+            .join("")}
+
+        </div>
+
+      </div>
+
+    </section>
+
+  `;
 }
 
 
-function createCard(card){
+/* ========================================= */
+/* Export / Packaging Row                    */
+/* ========================================= */
 
-return`
+function createRow(card) {
 
-<div
-class="
-group
+  return `
 
-rounded-[34px]
+    <div
+      class="
+        group
 
-border
+        grid
 
-border-[#ECECEC]
+        gap-6
 
-bg-[#FAFAF8]
+        border-b
+        border-[#E8ECE7]
 
-p-10
+        py-8
 
-transition-all
+        transition-colors
+        duration-300
 
-duration-500
+        lg:grid-cols-[240px_1fr]
 
-hover:-translate-y-2
+        lg:items-start
 
-hover:border-[#E8720F]
+        lg:gap-16
 
-hover:shadow-[0_25px_60px_rgba(232,114,15,.10)]
-">
+        lg:py-10
+      "
+    >
 
-<div
-class="
-flex
+      <!-- ===================================== -->
+      <!-- Title -->
+      <!-- ===================================== -->
 
-items-center
+      <div
+        class="
+          flex
+          items-center
+          gap-4
+        "
+      >
 
-justify-between
-">
+        <!-- Icon -->
 
-<h3
-class="
-font-serif
+        <div
+          class="
+            flex
 
-text-3xl
+            h-11
+            w-11
 
-text-[#181818]
-">
+            shrink-0
 
-${card.title}
+            items-center
+            justify-center
 
-</h3>
+            rounded-full
 
-<div
-class="
-flex
+            bg-[#FFF3E8]
 
-h-16
+            transition-all
+            duration-300
 
-w-16
+            group-hover:bg-[#E8720F]
 
-items-center
+            group-hover:scale-105
+          "
+        >
 
-justify-center
+          <i
+            data-lucide="${card.icon}"
 
-rounded-2xl
+            class="
+              h-5
+              w-5
 
-bg-[#FFF6EE]
+              text-[#E8720F]
 
-transition-all
+              transition-colors
+              duration-300
 
-duration-300
+              group-hover:text-white
+            "
+          ></i>
 
-group-hover:bg-[#E8720F]
-">
+        </div>
 
-<i
-data-lucide="${card.icon}"
 
-class="
-h-8
+        <h3
+          class="
+            font-serif
 
-w-8
+            text-2xl
 
-text-[#E8720F]
+            leading-tight
 
-group-hover:text-white
-">
+            text-[#181818]
 
-</i>
+            sm:text-3xl
+          "
+        >
+          ${card.title}
+        </h3>
 
-</div>
+      </div>
 
-</div>
 
-<ul
-class="
-mt-10
+      <!-- ===================================== -->
+      <!-- Details -->
+      <!-- ===================================== -->
 
-space-y-5
-">
+      <ul
+        class="
+          grid
 
-${card.items.map(item=>`
+          gap-x-8
+          gap-y-4
 
-<li
-class="
-flex
+          sm:grid-cols-2
 
-items-center
+          lg:grid-cols-2
+        "
+      >
 
-gap-4
-">
+        ${card.items
+          .map(
+            item => `
 
-<div
-class="
-flex
+              <li
+                class="
+                  flex
 
-h-8
+                  items-start
 
-w-8
+                  gap-3
+                "
+              >
 
-items-center
+                <!-- Check -->
 
-justify-center
+                <span
+                  class="
+                    mt-1
 
-rounded-full
+                    flex
 
-bg-[#FFF6EE]
-">
+                    h-5
+                    w-5
 
-<i
-data-lucide="check"
+                    shrink-0
 
-class="
-h-4
+                    items-center
+                    justify-center
 
-w-4
+                    rounded-full
 
-text-[#E8720F]
-">
+                    bg-[#FFF3E8]
+                  "
+                >
 
-</i>
+                  <i
+                    data-lucide="check"
 
-</div>
+                    class="
+                      h-3
+                      w-3
 
-<span
-class="
-leading-7
+                      text-[#E8720F]
+                    "
+                  ></i>
 
-text-[#555]
-">
+                </span>
 
-${item}
 
-</span>
+                <!-- Text -->
 
-</li>
+                <span
+                  class="
+                    text-sm
 
-`).join("")}
+                    leading-6
 
-</ul>
+                    text-[#555555]
 
-</div>
+                    sm:text-base
 
-`;
+                    sm:leading-7
+                  "
+                >
+                  ${item}
+                </span>
 
+              </li>
+
+            `
+          )
+          .join("")}
+
+      </ul>
+
+    </div>
+
+  `;
 }
