@@ -34,13 +34,13 @@ export function createRiceSection(data) {
         class="
           font-serif
 
-          text-4xl
+          text-3xl
 
           leading-tight
 
           text-[#181818]
 
-          md:text-5xl
+          md:text-4xl
         "
       >
 

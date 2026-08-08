@@ -42,7 +42,7 @@ overflow-hidden
   ====================================== -->
 
  <img
-src="/src/assets/images/warehouse.jpg"
+src="/src/assets/images/maize.jpg"
 
  loading="lazy"
   decoding="async"

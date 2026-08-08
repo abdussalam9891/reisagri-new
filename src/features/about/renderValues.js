@@ -43,7 +43,7 @@ export function renderValues() {
         "Core Values",
 
       title:
-        "The Principles Behind\nEverything We Do.",
+        "The Principles Behind\nEverything We Do",
 
       description:
         "Our values guide every sourcing decision, every shipment and every long-term partnership we build across global agricultural markets.",

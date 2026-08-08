@@ -133,25 +133,7 @@ export function createProductCategoryCard({
     "
   >
 
-    <!-- Category -->
 
-    <span
-      class="
-        text-xs
-
-        font-semibold
-
-        uppercase
-
-        tracking-[0.24em]
-
-        text-[#E8720F]
-      "
-    >
-
-      Commodity
-
-    </span>
 
     <!-- Title -->
 
@@ -212,7 +194,7 @@ export function createProductCategoryCard({
 
           tracking-[0.18em]
 
-          text-white
+         text-[#E8720F]
         "
       >
 

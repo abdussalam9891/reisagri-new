@@ -1,370 +1,639 @@
+
+
 export function createAboutPreviewCard({
-
-  badge,
-
   title,
-
   description,
-
-   video,
-
-
-
+  video,
   stats,
-
   cta,
-
 }) {
-
   return `
+    <div
+      class="
+        grid
+        items-center
 
-<div
-class="
-grid
+        gap-10
 
-items-center
+        lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)]
 
-gap-16
+        lg:gap-16
+        xl:gap-20
+      "
+    >
 
-lg:grid-cols-[520px_1fr]
+      <!-- ========================================= -->
+      <!-- Video -->
+      <!-- ========================================= -->
 
-lg:gap-24
-"
->
+      <div
+        class="
+          about-video-wrapper
 
-<!-- =====================================
-     video
-====================================== -->
+          group
 
-<div
-class="
-group
+          relative
 
-relative
+          overflow-hidden
 
-overflow-hidden
+          rounded-tl-[8px]
+          rounded-tr-[48px]
+          rounded-br-[8px]
+          rounded-bl-[48px]
 
-rounded-[36px]
+          sm:rounded-tr-[72px]
+          sm:rounded-bl-[72px]
 
-shadow-sm
+          lg:rounded-tr-[96px]
+          lg:rounded-bl-[96px]
 
-transition-all
-duration-500
+          bg-black
 
-hover:-translate-y-2
+          shadow-sm
 
-hover:shadow-[0_30px_60px_rgba(0,0,0,.18)]
-"
->
+          transition-all
+          duration-500
 
-<video
-  autoplay
-  muted
-  loop
-  playsinline
-  preload="metadata"
+          hover:-translate-y-1
 
-  poster="/src/assets/images/10.jpg"
+          hover:shadow-[0_30px_60px_rgba(0,0,0,.18)]
+        "
+      >
 
-  class="
-    aspect-[4/5]
-    w-full
-    object-cover
+        <!-- ========================================= -->
+        <!-- Video -->
+        <!-- ========================================= -->
 
-    transition-transform
-    duration-700
+        <video
+          data-about-video
 
-    group-hover:scale-105
-  "
->
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
 
-  <source
-    src="${video}"
-    type="video/mp4"
-  />
+          poster="/src/assets/images/10.webp"
 
-  Your browser does not support the video tag.
+          class="
+            about-video
 
-</video>
+            block
 
-<!-- Overlay -->
+            aspect-[4/3]
 
-<div
-class="
-absolute
+            w-full
 
-inset-0
+            object-cover
 
-bg-gradient-to-t
+            transition-transform
+            duration-700
 
-from-black/35
+            ease-out
 
-via-transparent
+            group-hover:scale-[1.03]
 
-to-transparent
-"
-></div>
+            lg:aspect-[16/9]
+          "
+        >
 
-<!-- Orange Accent -->
+          <source
+            src="${video}"
+            type="video/mp4"
+          />
 
-<div
-class="
-absolute
+          Your browser does not support the video tag.
 
-left-0
-top-0
+        </video>
 
-h-[3px]
-w-0
 
-bg-[#E8720F]
+        <!-- ========================================= -->
+        <!-- Video Overlay -->
+        <!-- ========================================= -->
 
-transition-all
-duration-500
+        <div
+          class="
+            pointer-events-none
 
-group-hover:w-full
-"
-></div>
+            absolute
+            inset-0
 
-</div>
+            bg-gradient-to-t
+            from-black/30
+            via-transparent
+            to-black/5
+          "
+        ></div>
 
-<!-- =====================================
-     CONTENT
-====================================== -->
 
-<div class="reveal reveal-up">
+        <!-- ========================================= -->
+        <!-- Play / Pause Button -->
+        <!-- ========================================= -->
 
-<span
-class="
-inline-flex
+        <button
+          type="button"
 
-rounded-full
+          data-video-toggle
 
-bg-[#FFF6EE]
+          aria-label="Pause video"
 
-px-4
-py-2
+          class="
+            absolute
 
-text-xs
+            left-1/2
+            top-1/2
 
-font-semibold
+            z-20
 
-uppercase
+            flex
 
-tracking-[0.22em]
+            h-16
+            w-16
 
-text-[#E8720F]
-"
->
+            sm:h-20
+            sm:w-20
 
-${badge}
+            -translate-x-1/2
+            -translate-y-1/2
 
-</span>
+            items-center
+            justify-center
 
-<h2
-class="
-mt-6
+            rounded-full
 
-font-serif
+            bg-[#E8720F]
 
-text-[2.2rem]
+            text-white
 
-leading-tight
+            shadow-[0_12px_35px_rgba(0,0,0,.25)]
 
-text-[#181818]
+            transition-all
+            duration-300
 
-sm:text-[2.8rem]
+            hover:scale-110
 
-lg:text-5xl
-"
->
+            hover:bg-[#f68b32]
 
-${title.replace(/\n/g,"<br>")}
+            active:scale-95
+          "
+        >
 
-</h2>
+          <!-- Pause Icon -->
 
-<p
-class="
-mt-8
+          <svg
+            data-video-pause-icon
 
-max-w-2xl
+            xmlns="http://www.w3.org/2000/svg"
 
-leading-8
+            viewBox="0 0 24 24"
 
-text-[#666666]
-"
->
+            fill="currentColor"
 
-${description}
+            class="
+              h-6
+              w-6
 
-</p>
+              sm:h-7
+              sm:w-7
+            "
+          >
 
-<!-- =====================================
-     STATS
-====================================== -->
+            <rect
+              x="6"
+              y="5"
+              width="4"
+              height="14"
+              rx="1"
+            />
 
-<div
-class="
-mt-12
+            <rect
+              x="14"
+              y="5"
+              width="4"
+              height="14"
+              rx="1"
+            />
 
-grid
+          </svg>
 
-grid-cols-2
 
-gap-6
+          <!-- Play Icon -->
 
-lg:grid-cols-4
-"
->
+          <svg
+            data-video-play-icon
 
-${stats.map(stat => `
+            xmlns="http://www.w3.org/2000/svg"
 
-<div>
+            viewBox="0 0 24 24"
 
-<h3
-class="
-font-serif
+            fill="currentColor"
 
-text-4xl
+            class="
+              hidden
 
-text-[#181818]
-"
->
+              ml-1
 
-${stat.value}
+              h-6
+              w-6
 
-</h3>
+              sm:h-7
+              sm:w-7
+            "
+          >
 
-<p
-class="
-mt-2
+            <path
+              d="M8 5.5v13l10-6.5z"
+            />
 
-text-sm
+          </svg>
 
-uppercase
+        </button>
 
-tracking-[0.16em]
 
-text-[#777777]
-"
->
+        <!-- ========================================= -->
+        <!-- Bottom Accent -->
+        <!-- ========================================= -->
 
-${stat.label}
+        <div
+          class="
+            pointer-events-none
 
-</p>
+            absolute
 
-</div>
+            bottom-0
+            left-0
 
-`).join("")}
+            h-[3px]
 
-</div>
+            w-0
 
-<!-- =====================================
-     CTA
-====================================== -->
+            bg-[#E8720F]
 
-<a
-href="${cta.href}"
+            transition-all
+            duration-500
 
-class="
-group
+            group-hover:w-full
+          "
+        ></div>
 
-relative
+      </div>
 
-mt-12
 
-inline-flex
+      <!-- ========================================= -->
+      <!-- Content -->
+      <!-- ========================================= -->
 
-items-center
+      <div
+        class="
+          about-content
+        "
+      >
 
-justify-center
+        <!-- ========================================= -->
+        <!-- Heading -->
+        <!-- ========================================= -->
 
-overflow-hidden
+        <h2
+          class="
+            about-title
 
-rounded-full
+            font-serif
 
-border
-border-[#E8720F]
+            text-[2rem]
 
-px-8
-py-4
+            leading-[1.08]
 
-text-sm
+            tracking-[-0.02em]
 
-font-semibold
+            text-[#181818]
 
-uppercase
+            sm:text-[2rem]
 
-tracking-[0.18em]
+            lg:text-[2rem]
 
-text-[#181818]
-"
->
+            xl:text-[2.25rem]
+          "
+        >
 
-<span
-class="
-absolute
+          ${title.replace(/\n/g, "<br>")}
 
-inset-0
+        </h2>
 
-origin-left
 
-scale-x-0
+        <!-- ========================================= -->
+        <!-- Description -->
+        <!-- ========================================= -->
 
-bg-[#E8720F]
+        <p
+          class="
+            mt-6
 
-transition-transform
-duration-700
+            max-w-2xl
 
-ease-[cubic-bezier(0.22,1,0.36,1)]
+            text-base
 
-group-hover:scale-x-100
-"
-></span>
+            leading-7
 
-<span
-class="
-relative
+            text-[#666666]
 
-z-10
+            sm:text-lg
 
-flex
+            sm:leading-8
+          "
+        >
 
-items-center
+          ${description}
 
-gap-3
+        </p>
 
-transition-colors
-duration-300
 
-group-hover:text-white
-"
->
+        <!-- ========================================= -->
+        <!-- Stats -->
+        <!-- ========================================= -->
 
-${cta.text}
+        <div
+          class="
+            mt-8
 
-<i
-data-lucide="arrow-right"
+            grid
 
-class="
-h-4
-w-4
+            grid-cols-2
 
-transition-transform
-duration-300
+            gap-x-8
+            gap-y-7
 
-group-hover:translate-x-1
-"
-></i>
+            lg:grid-cols-4
+          "
+        >
 
-</span>
+          ${stats
+            .map(stat => {
 
-</a>
+              /*
+                Numeric examples:
 
-</div>
+                "15+"  → target: 15, suffix: +
+                "6"    → target: 6,  suffix: ""
+                "100%" → target: 100, suffix: %
 
-</div>
+                Non-numeric:
 
-`;
+                "Global" → static text
+              */
 
+              const match =
+                String(stat.value).match(
+                  /^(\d+(?:\.\d+)?)(.*)$/
+                );
+
+
+              const isNumeric =
+                Boolean(match);
+
+
+              const target =
+                isNumeric
+                  ? match[1]
+                  : "";
+
+
+              const suffix =
+                isNumeric
+                  ? match[2]
+                  : "";
+
+
+              return `
+                <div
+                  class="
+                    about-stat
+
+                    min-w-0
+                  "
+                >
+
+                  <!-- Number -->
+
+                  <div
+                    ${
+                      isNumeric
+                        ? `
+                          data-target="${target}"
+                          data-suffix="${suffix}"
+                        `
+                        : ""
+                    }
+
+                    class="
+                      ${
+                        isNumeric
+                          ? "about-counter"
+                          : "about-stat-text"
+                      }
+
+                      text-3xl
+
+                      font-medium
+
+                      leading-none
+
+                      tracking-tight
+
+                      text-[#E8720F]
+
+                      sm:text-4xl
+
+                      transition-colors
+                      duration-300
+                    "
+                  >
+
+                    ${
+                      isNumeric
+                        ? `0${suffix}`
+                        : stat.value
+                    }
+
+                  </div>
+
+
+                  <!-- Label -->
+
+                  <div
+                    class="
+                      mt-2
+
+                      max-w-[130px]
+
+                      text-[10px]
+
+                      font-medium
+
+                      uppercase
+
+                      leading-4
+
+                      tracking-[0.14em]
+
+                      text-[#777777]
+
+                      sm:text-xs
+                    "
+                  >
+
+                    ${stat.label}
+
+                  </div>
+
+                </div>
+              `;
+            })
+            .join("")}
+
+        </div>
+
+
+        <!-- ========================================= -->
+        <!-- CTA -->
+        <!-- ========================================= -->
+
+        <a
+          href="${cta.href}"
+
+          class="
+            about-cta
+
+            group/cta
+
+            relative
+
+            mt-9
+
+            inline-flex
+
+            items-center
+            justify-center
+
+            overflow-hidden
+
+            rounded-full
+
+            border
+            border-[#E8720F]
+
+            px-7
+            py-3.5
+
+            text-xs
+
+            font-semibold
+
+            uppercase
+
+            tracking-[0.16em]
+
+            text-[#181818]
+
+            transition-all
+            duration-500
+
+            ease-[cubic-bezier(0.22,1,0.36,1)]
+
+            sm:px-8
+            sm:py-4
+
+            sm:text-sm
+
+            hover:rounded-[6px_22px_6px_22px]
+
+            hover:-translate-y-1
+
+            hover:shadow-[0_12px_30px_rgba(232,114,15,.18)]
+          "
+        >
+
+          <!-- Fill -->
+
+          <span
+            class="
+              absolute
+              inset-0
+
+              origin-left
+
+              scale-x-0
+
+              bg-[#E8720F]
+
+              transition-transform
+              duration-500
+
+              ease-[cubic-bezier(0.22,1,0.36,1)]
+
+              group-hover/cta:scale-x-100
+            "
+          ></span>
+
+
+          <!-- Content -->
+
+          <span
+            class="
+              relative
+
+              z-10
+
+              flex
+
+              items-center
+
+              gap-3
+
+              transition-colors
+              duration-300
+
+              group-hover/cta:text-white
+            "
+          >
+
+            ${cta.text}
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+
+              viewBox="0 0 24 24"
+
+              fill="none"
+
+              stroke="currentColor"
+
+              stroke-width="2"
+
+              class="
+                h-4
+                w-4
+
+                transition-transform
+                duration-300
+
+                group-hover/cta:translate-x-1
+              "
+            >
+
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5 12h14M13 5l7 7-7 7"
+              />
+
+            </svg>
+
+          </span>
+
+        </a>
+
+      </div>
+
+    </div>
+  `;
 }

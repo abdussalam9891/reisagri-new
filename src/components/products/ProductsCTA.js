@@ -33,33 +33,7 @@ export function createProductsCTA(data) {
     "
   >
 
-    <span
-      class="
-        inline-flex
-
-        rounded-full
-
-        bg-[#E8720F]/10
-
-        px-5
-
-        py-2
-
-        text-xs
-
-        font-semibold
-
-        uppercase
-
-        tracking-[0.18em]
-
-        text-[#E8720F]
-      "
-    >
-
-      Let's Work Together
-
-    </span>
+   
 
     <h2
       class="

@@ -10,9 +10,7 @@ import {
   createWorldMap,
 } from "../../components/common/WorldMap.js";
 
-import {
-  createGlobalStat,
-} from "../../components/common/GlobalStat.js";
+ 
 
 export function renderGlobalPresence() {
 
@@ -84,56 +82,9 @@ ${createWorldMap(
 
 </div>
 
-<!-- =====================================
-     STATS
-===================================== -->
 
-<div
-class="
-mt-24
 
-grid
 
-grid-cols-2
-
-overflow-hidden
-
-rounded-[28px]
-
-border
-border-white/10
-
-bg-white/5
-
-backdrop-blur
-
-lg:grid-cols-4
-"
->
-
-${GLOBAL_PRESENCE.stats.map((stat, index) => `
-
-<div
-class="
-relative
-
-px-8
-py-10
-
-${index !== GLOBAL_PRESENCE.stats.length - 1
-  ? "lg:border-r lg:border-white/10"
-  : ""
-}
-"
->
-
-${createGlobalStat(stat)}
-
-</div>
-
-`).join("")}
-
-</div>
 
 </div>
 

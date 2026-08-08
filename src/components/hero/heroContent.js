@@ -19,8 +19,10 @@ export function createHeroContent() {
           w-full
           max-w-7xl
 
-          px-8
-          lg:px-14
+          px-6
+          sm:px-8
+          lg:px-12
+          xl:px-14
         "
       >
 
@@ -29,196 +31,224 @@ export function createHeroContent() {
           const lines = slide.title.split("\n");
 
           return `
-
-          <div
-
-            class="
-              hero-content
-
-              ${
-                index === 0
-                  ? "opacity-100 visible"
-                  : "opacity-0 invisible absolute"
-              }
-
-              max-w-[760px]
-
-              transition-opacity
-              duration-700
-            "
-
-            data-content="${index}"
-
-          >
-
-
-
-          
-
-
-            <!-- Heading -->
-
-            <h1
+            <div
               class="
-  hero-title
+                hero-content
 
-  flex
-  flex-col
+                ${
+                  index === 0
+                    ? "opacity-100 visible"
+                    : "opacity-0 invisible absolute"
+                }
 
-  overflow-hidden
+                max-w-[680px]
 
-  font-serif
+                transition-opacity
+                duration-700
+              "
 
-  text-[48px]
-
-  font-semibold
-
-  leading-[1.05]
-
-  tracking-[-0.02em]
-
-  text-white
-
-  md:text-[64px]
-
-  lg:text-[74px]
-
-  xl:text-[82px]
-"
+              data-content="${index}"
             >
 
-              ${lines
-                .map(
-                  line => `
-                  <span
+              <!-- Heading -->
+
+              <h1
+                class="
+                  hero-title
+
+                  flex
+                  flex-col
+
+                  overflow-hidden
+
+                  font-serif
+                  font-semibold
+
+                  text-[32px]
+                  leading-[1.04]
+                  tracking-[-0.02em]
+
+                  text-white
+
+                  sm:text-[36px]
+
+                  md:text-[42px]
+
+                  lg:text-[50px]
+
+                  xl:text-[58px]
+                "
+              >
+
+                ${lines
+                  .map(
+                    line => `
+                      <span
+                        class="
+                          hero-title-line
+
+                          block
+                          overflow-hidden
+                        "
+                      >
+
+                        <span
+                          class="
+                            hero-title-word
+
+                            block
+                          "
+                        >
+
+                          ${line}
+
+                        </span>
+
+                      </span>
+                    `
+                  )
+                  .join("")}
+
+              </h1>
+
+
+              <!-- Description -->
+
+              <p
+                class="
+                  hero-description
+
+                  hidden
+                  md:block
+
+                  mt-6
+                  lg:mt-7
+
+                  max-w-[580px]
+
+                  text-base
+                  lg:text-lg
+
+                  leading-7
+                  lg:leading-8
+
+                  font-light
+
+                  text-white/90
+                "
+              >
+
+                ${slide.description}
+
+              </p>
+
+
+              <!-- CTA -->
+
+              <div
+                class="
+                  hero-actions
+
+                  mt-7
+
+                  sm:mt-8
+
+                  md:mt-9
+
+                  lg:mt-10
+                "
+              >
+
+                <a
+                  href="${slide.button.href}"
+
+                  class="
+                    hero-button
+
+                    group
+
+                    inline-flex
+                    items-center
+                    gap-2.5
+
+                    rounded-full
+
+                    bg-[#E8720F]
+
+                    px-6
+                    py-3
+
+                    sm:px-7
+                    sm:py-3.5
+
+                    md:px-8
+                    md:py-3.5
+
+                    text-[11px]
+
+                    sm:text-xs
+
+                    md:text-sm
+
+                    font-semibold
+
+                    uppercase
+
+                    tracking-[0.16em]
+
+                    text-white
+
+                    transition-all
+                    duration-300
+
+                    hover:-translate-y-[3px]
+
+                    hover:bg-[#F08B32]
+
+                    hover:shadow-[0_18px_40px_rgba(232,114,15,.35)]
+                  "
+                >
+
+                  ${slide.button.text}
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+
+                    viewBox="0 0 24 24"
+
+                    fill="none"
+
+                    stroke="currentColor"
+
+                    stroke-width="2"
+
                     class="
-                      hero-title-line
+                      h-3.5
+                      w-3.5
 
-                      block
+                      sm:h-4
+                      sm:w-4
 
-                      overflow-hidden
+                      transition-transform
+                      duration-300
+
+                      group-hover:translate-x-1
                     "
                   >
 
-                    <span
-                      class="
-                        hero-title-word
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 12h14M13 5l7 7-7 7"
+                    />
 
-                        block
-                      "
-                    >
+                  </svg>
 
-                      ${line}
+                </a>
 
-                    </span>
+              </div>
 
-                  </span>
-                `
-                )
-                .join("")}
-
-            </h1>
-
-            <!-- Description -->
-
-            <p
-              class="
-  hero-description
-
-  mt-8
-
-  max-w-[640px]
-
-  text-lg
-
-  leading-8
-
-  font-light
-
-  text-white/90
-"
-            >
-
-              ${slide.description}
-
-            </p>
-
-            <!-- CTA -->
-
-            <div
-              class="
-                hero-actions
-
-                mt-14
-              "
-            >
-
-            <a
-  href="${slide.button.href}"
-
-  class="
-    hero-button
-
-    group
-
-    inline-flex
-    items-center
-    gap-3
-
-    rounded-full
-
-    bg-[#E8720F]
-
-    px-8
-    py-4
-
-    text-sm
-    font-semibold
-
-    uppercase
-
-    tracking-[0.18em]
-
-    text-white
-
-    transition-all
-    duration-300
-
-    hover:translate-y-[-3px]
-    hover:bg-[#f68b32]
-    hover:shadow-[0_18px_40px_rgba(232,114,15,.35)]
-  "
->
-
-  ${slide.button.text}
-
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="2"
-    class="
-      h-4
-      w-4
-
-      transition-transform
-      duration-300
-
-      group-hover:translate-x-1
-    "
-  >
-    <path
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      d="M5 12h14M13 5l7 7-7 7"
-    />
-  </svg>
-
-</a>            </div>
-
-          </div>
-
+            </div>
           `;
 
         }).join("")}

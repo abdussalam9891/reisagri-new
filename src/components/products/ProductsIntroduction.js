@@ -66,9 +66,9 @@ leading-[1.08]
 
 text-[#181818]
 
-sm:text-5xl
+sm:text-4xl
 
-lg:text-6xl
+lg:text-4xl
 ">
 
 ${data.title}

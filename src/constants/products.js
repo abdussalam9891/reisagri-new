@@ -10,7 +10,7 @@ export const PRODUCT_CATEGORIES = [
       "Premium Indian basmati rice including 1121, 1509, 1718 and Pusa varieties available in Steam, Golden Sella, Creamy Sella and Raw variants.",
 
     image:
-      "/src/assets/images/basmatiRice.jpg",
+      "/src/assets/images/basmatiRice.webp",
 
     href:
       "/pages/products.html#riceSection",
@@ -27,7 +27,7 @@ export const PRODUCT_CATEGORIES = [
       "Export-quality non-basmati rice including IR 64, PR 11/14, RH 10, Taj, Swarna, Sugandha, Govind Bhog, Sona Masuri and 100% Broken Rice.",
 
     image:
-      "/src/assets/images/nonBasmatiRice.jpg",
+      "/src/assets/images/nonBasmatiRice.webp",
 
     href:
       "/pages/products.html#riceSection",
@@ -61,7 +61,7 @@ export const PRODUCT_CATEGORIES = [
       "High-quality refined sugar supplied with dependable sourcing, consistent quality standards and efficient international logistics.",
 
     image:
-      "/src/assets/images/sugar.jpg",
+      "/src/assets/images/sugar.webp",
 
     href:
       "/pages/products.html#otherCommoditiesSection",
@@ -95,7 +95,7 @@ export const PRODUCT_CATEGORIES = [
       "A wide range of export-quality pulses carefully sourced to meet international quality standards and buyer requirements.",
 
     image:
-      "/src/assets/images/pulses.jpg",
+      "/src/assets/images/pulses.webp",
 
     href:
       "/pages/products.html#otherCommoditiesSection",
@@ -114,17 +114,16 @@ export const PRODUCT_CATEGORIES = [
 
 export const PRODUCT_HERO = {
 
-  badge:
-    "Our Commodities",
+
 
   title:
-    "Premium Agricultural\nCommodities For\nGlobal Markets.",
+    "Premium Agricultural\nCommodities For\nGlobal Markets",
 
   description:
     "Reis Agri Trading supplies premium-quality agricultural commodities sourced from trusted producers across India. Our expertise lies in delivering consistent quality, dependable sourcing and efficient export solutions for buyers worldwide.",
 
   image:
-    "/src/assets/images/10.jpg",
+    "/src/assets/images/sugar2.webp",
 
   imageAlt:
     "Agricultural Commodity Export",
@@ -464,7 +463,7 @@ description:
 "Every commodity supplied by Reis Agri Trading undergoes careful sourcing, inspection and quality verification before shipment to ensure consistency, safety and customer satisfaction.",
 
 image:
-"/src/assets/images/quality.jpg",
+"/src/assets/images/warehouse.webp",
 
 imageAlt:
 "Rice Quality Inspection",
@@ -537,11 +536,10 @@ description:
 
 export const PACKAGING={
 
-badge:
-"Packaging & Logistics",
+
 
 title:
-"Built Around Your\nImport Requirements.",
+"Built Around Your\nImport Requirements",
 
 description:
 "From packaging preferences to export documentation and shipment coordination, we provide flexible solutions designed to meet the requirements of international buyers.",
@@ -624,8 +622,7 @@ export const PRODUCTS_CTA = {
 
 export const WHY_PRODUCTS = {
 
-badge:
-"Why Global Buyers Choose Us",
+
 
 title:
 "Trusted By Importers\nAcross International Markets.",
@@ -689,8 +686,7 @@ description:
 
 export const TRADE_PROCESS={
 
-badge:
-"Trade Process",
+
 
 title:
 "Simple.\nTransparent.\nReliable.",

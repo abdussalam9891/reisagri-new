@@ -24,33 +24,7 @@ lg:px-8
 
 <div class="max-w-3xl">
 
-<div
-class="
-reveal reveal-left
-inline-flex
 
-rounded-full
-
-bg-[#FFF3E8]
-
-px-5
-py-2
-mb-10
-
-text-xs
-
-font-semibold
-
-uppercase
-
-tracking-[0.18em]
-
-text-[#E8720F]
-">
-
-${data.badge}
-
-</div>
 
 <h2
 class="

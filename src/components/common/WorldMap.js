@@ -2,85 +2,139 @@ import { createGlobalMarker } from "./GlobalMarker.js";
 import { createExportRoutes } from "./ExportRoutes.js";
 import { createIndiaGlow } from "./IndiaGlow.js";
 
+
 export function createWorldMap(markets) {
 
   return `
 
-<div
-class="
-relative
+    <div
+      class="
+        world-map-wrapper
 
-mx-auto
+        relative
 
-max-w-6xl
+        mx-auto
 
-animate-[floatMap_12s_ease-in-out_infinite]
-"
->
+        w-full
 
-  <!-- =====================================
-       WORLD MAP
-  ====================================== -->
+        max-w-6xl
 
-  <img
+        rounded-[24px]
 
-    src="/public/assets/images/worldMap.svg"
 
-    alt="Global Presence"
-    loading="lazy"
-  decoding="async"
 
-    class="
-      w-full
+        p-3
+        sm:p-5
+        lg:p-7
 
-      select-none
+        transition-all
+        duration-700
 
-      opacity-35
+        ease-[cubic-bezier(0.22,1,0.36,1)]
 
-      transition-all
-      duration-700
+        hover:-translate-y-2
 
-      hover:scale-[1.02]
-    "
-  />
+        hover:scale-[1.015]
 
-  <!-- =====================================
-       SUBTLE OVERLAY
-  ====================================== -->
+        hover:rounded-[42px]
 
-  <div
-    class="
-      absolute
-      inset-0
 
-      bg-[radial-gradient(circle_at_center,rgba(232,114,15,.05),transparent_70%)]
 
-      pointer-events-none
-    "
-  ></div>
+        
+      "
+    >
 
-  <!-- =====================================
-       INDIA EXPORT ORIGIN
-  ====================================== -->
 
-  ${createIndiaGlow()}
 
-  <!-- =====================================
-       EXPORT ROUTES
-  ====================================== -->
 
-  ${createExportRoutes()}
+      <!-- ========================================= -->
+      <!-- Floating Map -->
+      <!-- ========================================= -->
 
-  <!-- =====================================
-       GLOBAL MARKERS
-  ====================================== -->
+      <div
+        class="
+          world-map-float
 
-  ${markets
-    .map(createGlobalMarker)
-    .join("")}
+          relative
 
-</div>
+          z-10
 
-`;
+          w-full
 
+          transform-gpu
+
+          transition-transform
+          duration-700
+
+          ease-[cubic-bezier(0.22,1,0.36,1)]
+        "
+      >
+
+        <img
+          src="/public/assets/images/worldMap.svg"
+
+          alt="Global Presence"
+
+          loading="lazy"
+
+          decoding="async"
+
+          draggable="false"
+
+          class="
+            world-map
+
+            block
+
+            w-full
+
+            select-none
+
+            opacity-35
+
+            transform-gpu
+
+            transition-all
+            duration-700
+
+            ease-[cubic-bezier(0.22,1,0.36,1)]
+
+            hover:opacity-50
+
+            hover:scale-[1.025]
+
+            hover:rotate-[0.35deg]
+
+            hover:drop-shadow-[0_20px_35px_rgba(232,114,15,.10)]
+          "
+        />
+
+
+        <!-- ========================================= -->
+        <!-- India Glow -->
+        <!-- ========================================= -->
+
+        ${createIndiaGlow()}
+
+
+        <!-- ========================================= -->
+        <!-- Export Routes -->
+        <!-- ========================================= -->
+
+        ${createExportRoutes()}
+
+
+        <!-- ========================================= -->
+        <!-- Global Markers -->
+        <!-- ========================================= -->
+
+        ${markets
+          .map(createGlobalMarker)
+          .join("")}
+
+      </div>
+
+    </div>
+
+  `;
 }

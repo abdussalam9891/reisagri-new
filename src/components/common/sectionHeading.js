@@ -41,9 +41,9 @@ export function createSectionHeading({
 
       text-[#181818]
 
-      sm:text-[2.5rem]
+      sm:text-[2rem]
 
-      lg:text-5xl
+      lg:text-4xl
     "
   >
 

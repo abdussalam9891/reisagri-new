@@ -18,7 +18,7 @@ export function createInfoCard({
 
 <div
   class="
-    
+
 
     group
 

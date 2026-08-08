@@ -30,31 +30,7 @@ class="
 max-w-3xl
 ">
 
-<span
-class="
-inline-flex
-
-rounded-full
-
-bg-[#FFF3E8]
-
-px-5
-py-2
-
-text-xs
-
-font-semibold
-
-uppercase
-
-tracking-[0.18em]
-
-text-[#E8720F]
-">
-
-${data.badge}
-
-</span>
+ 
 
 <h2
 class="

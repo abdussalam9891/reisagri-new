@@ -4,6 +4,7 @@ import {
 
 import {
   renderAboutPreview,
+  initAboutVideo,
 } from "./renderAboutPreview.js";
 
 import {
@@ -35,6 +36,9 @@ export function initHome() {
   renderProductCategories();
 
   renderAboutPreview();
+
+  initAboutVideo();
+
 
   renderWhyChoose();
 

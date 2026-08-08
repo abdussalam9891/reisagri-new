@@ -43,7 +43,7 @@ ${createSectionHeading({
 
 
 title:
-"Growing Through\nExperience.",
+"Growing Through\nExperience",
 
 description:
 "Every milestone reflects our commitment to building stronger supply chains, trusted partnerships and sustainable growth."

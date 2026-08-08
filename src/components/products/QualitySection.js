@@ -36,40 +36,13 @@ lg:grid-cols-[1fr_.9fr]
 
 <div class="reveal reveal-left">
 
-<div
-class="
-inline-flex
-
-rounded-full
-
-bg-[#FFF3E8]
-
-px-5
-py-2
-mb-10
-
-text-xs
-
-font-semibold
-
-uppercase
-
-tracking-[0.18em]
-
-text-[#E8720F]
-">
-
-${data.badge}
-
-</div>
-
 <h2
 class="
 mt-2
 
 font-serif
 
-text-5xl
+text-4xl
 
 leading-[1.08]
 

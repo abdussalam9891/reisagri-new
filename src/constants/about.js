@@ -112,7 +112,7 @@ export const LEADERSHIP = [
 
 
     heading:
-      "Driven by Experience.\nGuided by Integrity.",
+      "Driven by Experience\nGuided by Integrity",
 
     paragraphs: [
 

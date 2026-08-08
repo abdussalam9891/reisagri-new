@@ -45,7 +45,7 @@ export const WHY_CHOOSE = {
     "Why Choose REISAGRI",
 
   title:
-    "Built Around Trust,\nQuality & Reliability.",
+    "Built Around Trust,\nQuality & Reliability",
 
   description:
     "Every shipment reflects our commitment to dependable sourcing, international quality standards and long-term business relationships.",
@@ -135,7 +135,7 @@ export const PROCESS = {
 badge:"How We Work",
 
 title:
-"From Inquiry\nTo Delivery.",
+"From Inquiry To Delivery",
 
 description:
 "Every shipment follows a transparent and structured process that ensures quality, efficiency and dependable execution.",
@@ -295,7 +295,7 @@ badge:
 "Frequently Asked Questions",
 
 title:
-"Everything You Need\nTo Know.",
+"Everything You Need\nTo Know",
 
 description:
 "Find answers to the most common questions about our agricultural commodities, export process, logistics and business partnerships.",
@@ -425,6 +425,6 @@ export const CTA = {
   ],
 
   background:
-    "/src/assets/images/warehouse.jpg",
+    "/src/assets/images/warehouse.webp",
 
 };

@@ -180,9 +180,10 @@ export function createDesktopNav(theme = "light") {
     >
 
 <a
+  id="navbarCTA"
 
- id="navbarCTA"
   href="/pages/contact.html"
+
   class="
     group
 
@@ -214,15 +215,21 @@ export function createDesktopNav(theme = "light") {
     text-white
 
     transition-all
-    duration-300
+    duration-500
+
+    ease-[cubic-bezier(0.22,1,0.36,1)]
+
+    hover:rounded-[4px_22px_4px_22px]
 
     hover:-translate-y-1
+
     hover:border-[#F08B2F]
-    hover:shadow-[0_16px_35px_rgba(232,114,15,.22)]
+
+    hover:shadow-[0_18px_40px_rgba(232,114,15,.28)]
   "
 >
 
-  <!-- Animated Fill -->
+  <!-- Fill -->
 
   <span
     class="
@@ -239,13 +246,15 @@ export function createDesktopNav(theme = "light") {
 
       transition-transform
       duration-500
+
       ease-[cubic-bezier(.22,1,.36,1)]
 
       group-hover:scale-x-100
     "
   ></span>
 
-  <!-- Text -->
+
+  <!-- Content -->
 
   <span
     class="
@@ -255,7 +264,7 @@ export function createDesktopNav(theme = "light") {
       flex
       items-center
 
-      gap-2
+      gap-2.5
     "
   >
 
@@ -263,6 +272,7 @@ export function createDesktopNav(theme = "light") {
 
     <i
       data-lucide="arrow-right"
+
       class="
         h-4
         w-4
@@ -270,7 +280,7 @@ export function createDesktopNav(theme = "light") {
         transition-transform
         duration-300
 
-        group-hover:translate-x-1
+        group-hover:translate-x-1.5
       "
     ></i>
 

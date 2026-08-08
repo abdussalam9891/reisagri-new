@@ -10,24 +10,33 @@ export function createHero() {
       class="
         relative
 
-        h-screen
-        min-h-[800px]
+        h-[68svh]
+
+        min-h-[560px]
+        max-h-[820px]
 
         overflow-hidden
-    "
+
+        md:h-[65vh]
+        lg:h-[72vh]
+        xl:h-[76vh]
+      "
     >
 
       <!-- Background Slides -->
 
       ${createHeroSlides()}
 
+
       <!-- Hero Content -->
 
       ${createHeroContent()}
 
+
       <!-- Progress Indicators -->
 
       ${createHeroIndicators()}
+
 
       <!-- Previous Button -->
 
@@ -40,14 +49,22 @@ export function createHero() {
 
         class="
           absolute
-          left-6
+
+          left-5
+          lg:left-6
+
           top-1/2
+
           z-40
 
           hidden
+          lg:flex
 
-          h-14
-          w-14
+          h-12
+          w-12
+
+          xl:h-14
+          xl:w-14
 
           -translate-y-1/2
 
@@ -69,29 +86,47 @@ export function createHero() {
           duration-300
 
           hover:scale-110
-          hover:border-primary
+
+          hover:border-[#E8720F]
+
           hover:bg-black/40
 
-          lg:flex
+          focus:outline-none
+          focus:ring-2
+          focus:ring-[#E8720F]/50
         "
       >
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
+
+          class="
+            h-5
+            w-5
+
+            xl:h-6
+            xl:w-6
+          "
+
           fill="none"
+
           viewBox="0 0 24 24"
+
           stroke="currentColor"
+
           stroke-width="2"
         >
+
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
             d="M15 19l-7-7 7-7"
           />
+
         </svg>
 
       </button>
+
 
       <!-- Next Button -->
 
@@ -104,14 +139,22 @@ export function createHero() {
 
         class="
           absolute
-          right-6
+
+          right-5
+          lg:right-6
+
           top-1/2
+
           z-40
 
           hidden
+          lg:flex
 
-          h-14
-          w-14
+          h-12
+          w-12
+
+          xl:h-14
+          xl:w-14
 
           -translate-y-1/2
 
@@ -133,43 +176,67 @@ export function createHero() {
           duration-300
 
           hover:scale-110
-          hover:border-primary
+
+          hover:border-[#E8720F]
+
           hover:bg-black/40
 
-          lg:flex
+          focus:outline-none
+          focus:ring-2
+          focus:ring-[#E8720F]/50
         "
       >
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
+
+          class="
+            h-5
+            w-5
+
+            xl:h-6
+            xl:w-6
+          "
+
           fill="none"
+
           viewBox="0 0 24 24"
+
           stroke="currentColor"
+
           stroke-width="2"
         >
+
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
             d="M9 5l7 7-7 7"
           />
+
         </svg>
 
       </button>
+
 
       <!-- Bottom Fade -->
 
       <div
         class="
+          pointer-events-none
+
           absolute
           inset-x-0
           bottom-0
 
-          h-44
+          z-20
+
+          h-32
+
+          md:h-40
 
           bg-gradient-to-t
-          from-black/70
-          via-black/20
+          from-black/80
+          via-black/35
           to-transparent
         "
       ></div>
