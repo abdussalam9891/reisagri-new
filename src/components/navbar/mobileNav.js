@@ -1,12 +1,14 @@
 import { NAVIGATION } from "../../constants/navigation.js";
 
 export function createMobileNav() {
+
   const navigation = NAVIGATION.map(
     (item) => `
       <li>
         <a
           href="${item.href}"
           data-nav="${item.slug}"
+
           class="
             group
 
@@ -17,7 +19,7 @@ export function createMobileNav() {
             rounded-xl
 
             px-5
-            py-4
+            py-3.5
 
             text-sm
             font-medium
@@ -38,14 +40,12 @@ export function createMobileNav() {
             ${item.label}
           </span>
 
-
           <svg
             xmlns="http://www.w3.org/2000/svg"
 
             class="
               h-5
               w-5
-
               shrink-0
 
               transition-transform
@@ -78,9 +78,9 @@ export function createMobileNav() {
 
   return `
 
-    <!-- ========================================= -->
+    <!-- ===================================== -->
     <!-- Mobile Drawer -->
-    <!-- ========================================= -->
+    <!-- ===================================== -->
 
     <div
       id="mobileDrawer"
@@ -95,9 +95,9 @@ export function createMobileNav() {
       "
     >
 
-      <!-- ======================================= -->
+      <!-- =================================== -->
       <!-- Backdrop -->
-      <!-- ======================================= -->
+      <!-- =================================== -->
 
       <div
         id="mobileBackdrop"
@@ -118,9 +118,9 @@ export function createMobileNav() {
       ></div>
 
 
-      <!-- ======================================= -->
+      <!-- =================================== -->
       <!-- Centered Panel -->
-      <!-- ======================================= -->
+      <!-- =================================== -->
 
       <aside
         id="mobilePanel"
@@ -133,18 +133,14 @@ export function createMobileNav() {
 
           z-10
 
-          flex
-
-          h-[calc(100svh-2rem)]
-
           w-[calc(100vw-2rem)]
 
           max-w-[380px]
 
+          max-h-[calc(100svh-2rem)]
+
           -translate-x-1/2
           -translate-y-[calc(50%+120vh)]
-
-          flex-col
 
           overflow-hidden
           overflow-y-auto
@@ -165,20 +161,19 @@ export function createMobileNav() {
 
           no-scrollbar
 
-          sm:rounded-[32px]
-
           sm:w-[calc(100vw-3rem)]
+          sm:rounded-[32px]
         "
       >
 
-        <!-- ===================================== -->
+        <!-- ================================= -->
         <!-- Header -->
-        <!-- ===================================== -->
+        <!-- ================================= -->
 
         <div
           class="
             flex
-            shrink-0
+
             items-center
             justify-between
 
@@ -186,10 +181,10 @@ export function createMobileNav() {
             border-white/10
 
             px-6
-            py-6
+            py-5
 
             sm:px-7
-            sm:py-7
+            sm:py-6
           "
         >
 
@@ -295,19 +290,17 @@ export function createMobileNav() {
         </div>
 
 
-        <!-- ===================================== -->
+        <!-- ================================= -->
         <!-- Navigation -->
-        <!-- ===================================== -->
+        <!-- ================================= -->
 
         <nav
           class="
-            flex-1
-
             px-4
-            py-5
+            py-4
 
             sm:px-5
-            sm:py-6
+            sm:py-5
           "
         >
 
@@ -324,19 +317,17 @@ export function createMobileNav() {
         </nav>
 
 
-        <!-- ===================================== -->
+        <!-- ================================= -->
         <!-- Contact -->
-        <!-- ===================================== -->
+        <!-- ================================= -->
 
         <div
           class="
-            shrink-0
-
             border-t
             border-white/10
 
             px-6
-            py-6
+            py-5
 
             sm:px-7
           "
@@ -359,9 +350,9 @@ export function createMobileNav() {
 
           <div
             class="
-              mt-4
+              mt-3
 
-              space-y-3
+              space-y-2.5
             "
           >
 
@@ -409,19 +400,17 @@ export function createMobileNav() {
         </div>
 
 
-        <!-- ===================================== -->
+        <!-- ================================= -->
         <!-- CTA -->
-        <!-- ===================================== -->
+        <!-- ================================= -->
 
         <div
           class="
-            shrink-0
-
             px-6
-            pb-6
+            pb-5
 
             sm:px-7
-            sm:pb-7
+            sm:pb-6
           "
         >
 
@@ -443,7 +432,7 @@ export function createMobileNav() {
               bg-[#E8720F]
 
               px-6
-              py-4
+              py-3.5
 
               text-sm
 
@@ -502,23 +491,22 @@ export function createMobileNav() {
         </div>
 
 
-        <!-- ===================================== -->
+        <!-- ================================= -->
         <!-- Footer -->
-        <!-- ===================================== -->
+        <!-- ================================= -->
 
         <div
           class="
-            shrink-0
-
             border-t
             border-white/10
 
             px-6
-            py-5
+            py-4
 
             text-center
 
             sm:px-7
+            sm:py-5
           "
         >
 
@@ -535,7 +523,7 @@ export function createMobileNav() {
 
           <p
             class="
-              mt-1.5
+              mt-1
 
               text-[9px]
 
