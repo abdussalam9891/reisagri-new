@@ -5,14 +5,17 @@ export function createHeroIndicators() {
     <div
       class="
         absolute
-        bottom-10
+        bottom-8
         left-1/2
         z-40
 
         flex
         -translate-x-1/2
         items-center
-        gap-4
+        gap-3
+
+        sm:bottom-10
+        sm:gap-4
 
         md:bottom-12
       "
@@ -28,20 +31,30 @@ export function createHeroIndicators() {
 
               relative
 
-              h-1
+              h-[3px]
+
               w-12
+              sm:w-16
+              lg:w-20
+
+              shrink-0
 
               overflow-hidden
 
               rounded-full
 
-              bg-white/20
+              bg-white/25
 
-              transition-all
-              duration-500
+              transition-opacity
+              duration-300
 
               hover:bg-white/40
-              hover:w-16
+
+              focus:outline-none
+              focus-visible:ring-2
+              focus-visible:ring-[#E8720F]
+              focus-visible:ring-offset-2
+              focus-visible:ring-offset-transparent
             "
 
             data-indicator="${index}"

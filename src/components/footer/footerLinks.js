@@ -130,7 +130,7 @@ export function createFooterLinks() {
     <div>
 
       <img
-        src="/public/assets/reisagri-logo-white.png"
+        src="/public/assets/reisagri_trading_white.svg"
         alt="REISAGRI"
         class="
           h-32

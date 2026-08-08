@@ -442,10 +442,6 @@ export function renderAboutHero() {
       <!-- Bottom Stats -->
       <!-- ========================================= -->
 
-   <!-- ========================================= -->
-<!-- Hero Stats -->
-<!-- ========================================= -->
-
 <div
   class="
     absolute
@@ -457,400 +453,367 @@ export function renderAboutHero() {
     w-full
   "
 >
-
   <div
     class="
       mx-auto
-
       w-full
-
       max-w-7xl
 
       px-6
-
       sm:px-8
-
       lg:px-12
-
       xl:px-14
     "
   >
 
-    <div
+    <!-- stats block here -->
+      <div
+  class="
+    about-stats
+
+    absolute
+    inset-x-0
+    bottom-0
+
+    z-30
+
+    grid
+    grid-cols-2
+    sm:grid-cols-4
+
+    overflow-hidden
+
+    border-t
+    border-white/10
+
+    bg-black/25
+
+    backdrop-blur-md
+  "
+>
+
+  <!-- ================================= -->
+  <!-- Years Experience -->
+  <!-- ================================= -->
+
+  <div
+    class="
+      flex
+      min-w-0
+      flex-col
+      items-center
+      justify-center
+
+      border-r
+      border-b
+      border-white/10
+
+      px-2
+      py-3
+
+      text-center
+
+      sm:border-b-0
+      sm:px-4
+      sm:py-4
+
+      md:px-6
+      md:py-5
+    "
+  >
+
+    <h3
       class="
-        about-stats
+        about-counter
 
-        grid
-        grid-cols-4
+        font-serif
 
-        overflow-hidden
+        text-[18px]
+        leading-none
 
-        border-t
-        border-white/10
+        text-[#E8720F]
 
-        bg-black/20
+        sm:text-2xl
+        md:text-3xl
+        lg:text-4xl
+      "
 
-        backdrop-blur-sm
+      data-target="10"
+      data-suffix="+"
+    >
+      0
+    </h3>
+
+    <p
+      class="
+        mt-1.5
+
+        whitespace-nowrap
+
+        text-[7px]
+        font-medium
+        uppercase
+        leading-none
+
+        tracking-[0.08em]
+
+        text-white/65
+
+        sm:text-[9px]
+        sm:tracking-[0.12em]
+
+        md:mt-2
+        md:text-[10px]
+        md:tracking-[0.18em]
       "
     >
+      Years Experience
+    </p>
 
-      <!-- ================================= -->
-      <!-- Years Experience -->
-      <!-- ================================= -->
+  </div>
 
-      <div
-        class="
-          flex
-          min-w-0
-          flex-col
-          items-center
-          justify-center
 
-          border-r
-          border-white/10
+  <!-- ================================= -->
+  <!-- Countries -->
+  <!-- ================================= -->
 
-          px-1.5
-          py-3
+  <div
+    class="
+      flex
+      min-w-0
+      flex-col
+      items-center
+      justify-center
 
-          text-center
+      border-b
+      border-white/10
 
-          sm:px-4
-          sm:py-4
+      px-2
+      py-3
 
-          md:px-6
-          md:py-5
-        "
-      >
+      text-center
 
-        <h3
-          class="
-            about-counter
+      sm:border-r
+      sm:border-b-0
 
-            font-serif
+      sm:px-4
+      sm:py-4
 
-            text-[18px]
+      md:px-6
+      md:py-5
+    "
+  >
 
-            leading-none
+    <h3
+      class="
+        about-counter
 
-            text-[#E8720F]
+        font-serif
 
-            sm:text-2xl
+        text-[18px]
+        leading-none
 
-            md:text-3xl
+        text-[#E8720F]
 
-            lg:text-4xl
-          "
+        sm:text-2xl
+        md:text-3xl
+        lg:text-4xl
+      "
 
-          data-target="10"
+      data-target="25"
+      data-suffix="+"
+    >
+      0
+    </h3>
 
-          data-suffix="+"
-        >
-          0
-        </h3>
+    <p
+      class="
+        mt-1.5
 
-        <p
-          class="
-            mt-1.5
+        whitespace-nowrap
 
-            whitespace-nowrap
+        text-[7px]
+        font-medium
+        uppercase
+        leading-none
 
-            text-[7px]
+        tracking-[0.08em]
 
-            font-medium
+        text-white/65
 
-            uppercase
+        sm:text-[9px]
+        sm:tracking-[0.12em]
 
-            leading-none
+        md:mt-2
+        md:text-[10px]
+        md:tracking-[0.18em]
+      "
+    >
+      Countries Served
+    </p>
 
-            tracking-[0.08em]
+  </div>
 
-            text-white/65
 
-            sm:text-[9px]
+  <!-- ================================= -->
+  <!-- Quality -->
+  <!-- ================================= -->
 
-            sm:tracking-[0.12em]
+  <div
+    class="
+      flex
+      min-w-0
+      flex-col
+      items-center
+      justify-center
 
-            md:mt-2
+      border-r
+      border-white/10
 
-            md:text-[10px]
+      px-2
+      py-3
 
-            md:tracking-[0.18em]
-          "
-        >
-          Years Experience
-        </p>
+      text-center
 
-      </div>
+      sm:px-4
+      sm:py-4
 
+      md:px-6
+      md:py-5
+    "
+  >
 
-      <!-- ================================= -->
-      <!-- Countries -->
-      <!-- ================================= -->
+    <h3
+      class="
+        about-counter
 
-      <div
-        class="
-          flex
-          min-w-0
-          flex-col
-          items-center
-          justify-center
+        font-serif
 
-          border-r
-          border-white/10
+        text-[18px]
+        leading-none
 
-          px-1.5
-          py-3
+        text-[#E8720F]
 
-          text-center
+        sm:text-2xl
+        md:text-3xl
+        lg:text-4xl
+      "
 
-          sm:px-4
-          sm:py-4
+      data-target="100"
+      data-suffix="%"
+    >
+      0
+    </h3>
 
-          md:px-6
-          md:py-5
-        "
-      >
+    <p
+      class="
+        mt-1.5
 
-        <h3
-          class="
-            about-counter
+        whitespace-nowrap
 
-            font-serif
+        text-[7px]
+        font-medium
+        uppercase
+        leading-none
 
-            text-[18px]
+        tracking-[0.08em]
 
-            leading-none
+        text-white/65
 
-            text-[#E8720F]
+        sm:text-[9px]
+        sm:tracking-[0.12em]
 
-            sm:text-2xl
+        md:mt-2
+        md:text-[10px]
+        md:tracking-[0.18em]
+      "
+    >
+      Quality Commitment
+    </p>
 
-            md:text-3xl
+  </div>
 
-            lg:text-4xl
-          "
 
-          data-target="25"
+  <!-- ================================= -->
+  <!-- Support -->
+  <!-- ================================= -->
 
-          data-suffix="+"
-        >
-          0
-        </h3>
+  <div
+    class="
+      flex
+      min-w-0
+      flex-col
+      items-center
+      justify-center
 
-        <p
-          class="
-            mt-1.5
+      px-2
+      py-3
 
-            whitespace-nowrap
+      text-center
 
-            text-[7px]
+      sm:px-4
+      sm:py-4
 
-            font-medium
+      md:px-6
+      md:py-5
+    "
+  >
 
-            uppercase
+    <h3
+      class="
+        about-counter
 
-            leading-none
+        font-serif
 
-            tracking-[0.08em]
+        text-[18px]
+        leading-none
 
-            text-white/65
+        text-[#E8720F]
 
-            sm:text-[9px]
+        sm:text-2xl
+        md:text-3xl
+        lg:text-4xl
+      "
 
-            sm:tracking-[0.12em]
+      data-target="24"
+      data-suffix="/7"
+    >
+      0
+    </h3>
 
-            md:mt-2
+    <p
+      class="
+        mt-1.5
 
-            md:text-[10px]
+        whitespace-nowrap
 
-            md:tracking-[0.18em]
-          "
-        >
-          Countries Served
-        </p>
+        text-[7px]
+        font-medium
+        uppercase
+        leading-none
 
-      </div>
+        tracking-[0.08em]
 
+        text-white/65
 
-      <!-- ================================= -->
-      <!-- Quality -->
-      <!-- ================================= -->
+        sm:text-[9px]
+        sm:tracking-[0.12em]
 
-      <div
-        class="
-          flex
-          min-w-0
-          flex-col
-          items-center
-          justify-center
-
-          border-r
-          border-white/10
-
-          px-1.5
-          py-3
-
-          text-center
-
-          sm:px-4
-          sm:py-4
-
-          md:px-6
-          md:py-5
-        "
-      >
-
-        <h3
-          class="
-            about-counter
-
-            font-serif
-
-            text-[18px]
-
-            leading-none
-
-            text-[#E8720F]
-
-            sm:text-2xl
-
-            md:text-3xl
-
-            lg:text-4xl
-          "
-
-          data-target="100"
-
-          data-suffix="%"
-        >
-          0
-        </h3>
-
-        <p
-          class="
-            mt-1.5
-
-            whitespace-nowrap
-
-            text-[7px]
-
-            font-medium
-
-            uppercase
-
-            leading-none
-
-            tracking-[0.08em]
-
-            text-white/65
-
-            sm:text-[9px]
-
-            sm:tracking-[0.12em]
-
-            md:mt-2
-
-            md:text-[10px]
-
-            md:tracking-[0.18em]
-          "
-        >
-          Quality Commitment
-        </p>
-
-      </div>
-
-
-      <!-- ================================= -->
-      <!-- Support -->
-      <!-- ================================= -->
-
-      <div
-        class="
-          flex
-          min-w-0
-          flex-col
-          items-center
-          justify-center
-
-          px-1.5
-          py-3
-
-          text-center
-
-          sm:px-4
-          sm:py-4
-
-          md:px-6
-          md:py-5
-        "
-      >
-
-        <h3
-          class="
-            about-counter
-
-            font-serif
-
-            text-[18px]
-
-            leading-none
-
-            text-[#E8720F]
-
-            sm:text-2xl
-
-            md:text-3xl
-
-            lg:text-4xl
-          "
-
-          data-target="24"
-
-          data-suffix="/7"
-        >
-          0
-        </h3>
-
-        <p
-          class="
-            mt-1.5
-
-            whitespace-nowrap
-
-            text-[7px]
-
-            font-medium
-
-            uppercase
-
-            leading-none
-
-            tracking-[0.08em]
-
-            text-white/65
-
-            sm:text-[9px]
-
-            sm:tracking-[0.12em]
-
-            md:mt-2
-
-            md:text-[10px]
-
-            md:tracking-[0.18em]
-          "
-        >
-          Customer Support
-        </p>
-
-      </div>
-
-    </div>
+        md:mt-2
+        md:text-[10px]
+        md:tracking-[0.18em]
+      "
+    >
+      Customer Support
+    </p>
 
   </div>
 
 </div>
+
+  </div>
+</div>
+
 
 
       <!-- ========================================= -->
@@ -895,35 +858,17 @@ export function renderAboutHero() {
   /* Initialize Animations                     */
   /* ========================================= */
 
-  initAboutCounters();
+ initAboutCounters();
 
-  initAboutHeroParallax();
+initAboutHeroParallax();
 
+animateTitle();
 
-  animateFadeUp(
-    document.querySelector(".about-badge"),
-    0
-  );
-
-
-  animateTitle();
+animateFadeUp(
+  document.querySelector(".about-actions"),
+  1150
+);
 
 
-  animateFadeUp(
-    document.querySelector(".about-description"),
-    850
-  );
-
-
-  animateFadeUp(
-    document.querySelector(".about-actions"),
-    1150
-  );
-
-
-  animateFadeUp(
-    document.querySelector(".about-stats"),
-    1500
-  );
 
 }

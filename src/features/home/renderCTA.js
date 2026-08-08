@@ -3,10 +3,6 @@ import {
 } from "../../constants/home.js";
 
 import {
-  createSectionHeading,
-} from "../../components/common/sectionHeading.js";
-
-import {
   createCTAFeature,
 } from "../../components/common/CTAFeature.js";
 
@@ -19,257 +15,386 @@ export function renderCTA() {
 
   container.innerHTML = `
 
-<section
-class="
-relative
+    <section
+      class="
+        relative
 
-overflow-hidden
-"
->
+        overflow-hidden
 
-<!-- =====================================
-     BACKGROUND IMAGE
-===================================== -->
+        bg-[#181818]
+      "
+    >
 
-<img
+      <!-- ========================================= -->
+      <!-- Background Image -->
+      <!-- ========================================= -->
 
-src="${CTA.background}"
+      <img
+        src="${CTA.background}"
+        alt=""
+        aria-hidden="true"
 
-alt="Warehouse"
+        loading="lazy"
+        decoding="async"
 
- loading="lazy"
-  decoding="async"
+        class="
+          absolute
+          inset-0
 
-class="
-absolute
+          h-full
+          w-full
 
-inset-0
+          object-cover
+        "
+      />
 
-h-full
-w-full
 
-object-cover
-"
-/>
+      <!-- ========================================= -->
+      <!-- Dark Overlay -->
+      <!-- ========================================= -->
 
-<!-- Dark Overlay -->
+      <div
+        class="
+          pointer-events-none
 
-<div
-class="
-absolute
-inset-0
+          absolute
+          inset-0
 
-bg-[#181818]/60
-"
-></div>
+          bg-[#181818]/70
+        "
+      ></div>
 
-<!-- Orange Glow -->
 
-<div
-class="
-absolute
-inset-0
+      <!-- ========================================= -->
+      <!-- Orange Ambient Glow -->
+      <!-- ========================================= -->
 
-bg-[radial-gradient(circle_at_center,rgba(232,114,15,.18),transparent_70%)]
-"
-></div>
+      <div
+        class="
+          pointer-events-none
 
-<!-- =====================================
-     CONTENT
-===================================== -->
+          absolute
+          inset-0
 
-<div
-class="
-relative
+          bg-[radial-gradient(circle_at_center,rgba(232,114,15,.20),transparent_68%)]
+        "
+      ></div>
 
-mx-auto
 
-max-w-7xl
+      <!-- ========================================= -->
+      <!-- Content -->
+      <!-- ========================================= -->
 
-px-5
-py-8
+      <div
+        class="
+          relative
+          z-10
 
-text-center
+          mx-auto
 
-sm:px-6
+          max-w-7xl
 
-lg:px-8
-lg:py-12
-"
->
+          px-5
+          py-20
 
-${createSectionHeading({
+          text-center
 
+          sm:px-6
+          sm:py-24
 
+          lg:px-8
+          lg:py-28
+        "
+      >
 
-title:
-CTA.title,
+        <!-- ===================================== -->
+        <!-- CTA Heading -->
+        <!-- ===================================== -->
 
-description:
-CTA.description,
+        <div
+          class="
+            mx-auto
 
-})}
+            max-w-4xl
 
-<!-- =====================================
-     BUTTONS
-===================================== -->
+            reveal
+            reveal-up
+          "
+        >
 
-<div
-class="
-mt-12
 
-flex
 
-flex-col
 
-items-center
+          <!-- Heading -->
 
-justify-center
+          <h2
+            class="
+              mt-4
 
-gap-5
+              font-serif
 
-sm:flex-row
-"
->
+              text-[2rem]
 
-<a
+              leading-[1.08]
 
-href="${CTA.primaryButton.href}"
+              tracking-[-0.025em]
 
-class="
-group
+              text-white
 
-inline-flex
+              sm:text-[2rem]
 
-items-center
+              md:text-[2.25rem]
 
-gap-3
+              lg:text-[2.5rem]
 
-rounded-full
+              xl:text-[3rem]
+            "
+          >
+            ${CTA.title}
+          </h2>
 
-bg-[#E8720F]
 
-px-10
-py-4
+          <!-- Description -->
 
-text-sm
+          <p
+            class="
+              mx-auto
 
-font-semibold
+              mt-6
 
-uppercase
+              max-w-2xl
 
-tracking-[0.18em]
+              text-sm
 
-text-white
+              leading-7
 
-transition-all
-duration-300
+              text-white/70
 
-hover:-translate-y-1
+              sm:text-base
 
-hover:shadow-[0_20px_45px_rgba(232,114,15,.35)]
-"
->
+              sm:leading-8
 
-${CTA.primaryButton.text}
+              lg:text-lg
+            "
+          >
+            ${CTA.description}
+          </p>
 
-<i
+        </div>
 
-data-lucide="arrow-right"
 
-class="
-h-4
-w-4
+        <!-- ===================================== -->
+        <!-- CTA Buttons -->
+        <!-- ===================================== -->
 
-transition-transform
-duration-300
+        <div
+          class="
+            mt-9
 
-group-hover:translate-x-1
-"
-></i>
+            flex
+            flex-col
 
-</a>
+            items-center
+            justify-center
 
-<a
+            gap-4
 
-href="${CTA.secondaryButton.href}"
+            sm:flex-row
+          "
+        >
 
-class="
-group
+          <!-- Primary -->
 
-inline-flex
+          <a
+            href="${CTA.primaryButton.href}"
 
-items-center
+            class="
+              group
 
-justify-center
+              inline-flex
 
-rounded-full
+              items-center
+              justify-center
 
-border
-border-white/20
+              gap-3
 
-bg-white/5
+              rounded-full
 
-px-10
-py-4
+              bg-[#E8720F]
 
-text-sm
+              px-8
+              py-3.5
 
-font-semibold
+              text-xs
 
-uppercase
+              font-semibold
 
-tracking-[0.18em]
+              uppercase
 
-text-white
+              tracking-[0.18em]
 
-backdrop-blur
+              text-white
 
-transition-all
-duration-300
+              transition-all
+              duration-500
 
-hover:border-[#E8720F]
+              ease-[cubic-bezier(.22,1,.36,1)]
 
-hover:bg-white/10
-"
->
+              hover:-translate-y-1
 
-${CTA.secondaryButton.text}
+              hover:bg-[#F08B2F]
 
-</a>
+              hover:shadow-[0_20px_45px_rgba(232,114,15,.32)]
 
-</div>
+              sm:px-9
+              sm:py-4
 
-<!-- =====================================
-     FEATURES
-===================================== -->
+              sm:text-sm
+            "
+          >
 
-<div
-class="
-mt-16
+            ${CTA.primaryButton.text}
 
-grid
+            <i
+              data-lucide="arrow-right"
 
-gap-8
+              class="
+                h-4
+                w-4
 
-sm:grid-cols-2
+                transition-transform
+                duration-300
 
-lg:grid-cols-4
-"
->
+                group-hover:translate-x-1
+              "
+            ></i>
 
-${CTA.features
-.map(createCTAFeature)
-.join("")}
+          </a>
 
-</div>
 
-</div>
+          <!-- Secondary -->
 
-</section>
+          <a
+            href="${CTA.secondaryButton.href}"
 
-`;
+            class="
+              group
+
+              inline-flex
+
+              items-center
+              justify-center
+
+              gap-3
+
+              rounded-full
+
+              border
+              border-white/20
+
+              bg-white/5
+
+              px-8
+              py-3.5
+
+              text-xs
+
+              font-semibold
+
+              uppercase
+
+              tracking-[0.18em]
+
+              text-white
+
+              backdrop-blur-md
+
+              transition-all
+              duration-500
+
+              ease-[cubic-bezier(.22,1,.36,1)]
+
+              hover:-translate-y-1
+
+              hover:rounded-[6px_22px_6px_22px]
+
+              hover:border-[#E8720F]
+
+              hover:bg-white/10
+
+              hover:shadow-[0_15px_35px_rgba(0,0,0,.20)]
+
+              sm:px-9
+              sm:py-4
+
+              sm:text-sm
+            "
+          >
+
+            ${CTA.secondaryButton.text}
+
+            <i
+              data-lucide="arrow-right"
+
+              class="
+                h-4
+                w-4
+
+                transition-transform
+                duration-300
+
+                group-hover:translate-x-1
+              "
+            ></i>
+
+          </a>
+
+        </div>
+
+
+        <!-- ===================================== -->
+        <!-- Features -->
+        <!-- ===================================== -->
+
+        <div
+          class="
+            mx-auto
+
+            mt-16
+
+            grid
+
+            max-w-5xl
+
+            grid-cols-2
+
+            gap-x-6
+            gap-y-8
+
+            border-t
+            border-white/10
+
+            pt-10
+
+            sm:grid-cols-2
+
+            lg:grid-cols-4
+
+            lg:gap-x-10
+          "
+        >
+
+          ${CTA.features
+            .map(createCTAFeature)
+            .join("")}
+
+        </div>
+
+      </div>
+
+    </section>
+
+  `;
 
   window.lucide?.createIcons();
-
 }

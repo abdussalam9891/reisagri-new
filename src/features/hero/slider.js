@@ -84,16 +84,10 @@ function resetProgressBars() {
 
 function updateIndicators(index) {
   indicators.forEach((indicator, i) => {
-    indicator.classList.remove(
-  "w-12",
-  "w-16"
-);
-
-indicator.classList.add(
-  i === index
-    ? "w-20"
-    : "w-12"
-);
+    indicator.classList.toggle(
+      "is-active",
+      i === index
+    );
   });
 }
 
@@ -163,20 +157,30 @@ function showCurrentSlide() {
 function startSlideTimeline() {
   resetProgressBars();
 
+  const activeBar =
+    progressBars[currentSlide];
+
+  if (activeBar) {
+    activeBar.style.transformOrigin = "left center";
+    activeBar.style.transform = "scaleX(0)";
+  }
+
   startTimeline({
+
     slideDuration: SLIDE_DURATION,
 
     progress(progress) {
-      const bar = progressBars[currentSlide];
 
-      if (bar) {
-        bar.style.transform = `scaleX(${progress})`;
-      }
+      if (!activeBar) return;
+
+      activeBar.style.transform =
+        `scaleX(${progress})`;
     },
 
     complete() {
       nextSlide();
     },
+
   });
 }
 

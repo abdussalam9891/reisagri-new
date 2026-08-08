@@ -74,7 +74,7 @@ export function initScroll() {
       if (navbarLogo) {
 
         navbarLogo.src =
-          "/public/assets/reisagri-logo-white.png";
+          "/public/assets/reisagri_trading_white.svg";
 
       }
 
@@ -120,7 +120,7 @@ export function initScroll() {
 
           item.classList.add(
             "text-[#181818]",
-           
+
           );
 
         });
@@ -128,7 +128,7 @@ export function initScroll() {
         if (navbarLogo) {
 
           navbarLogo.src =
-            "/public/assets/reisagri-logo-black.png";
+            "/public/assets/reisagri_trading_black.svg";
 
         }
 
@@ -163,7 +163,7 @@ export function initScroll() {
         if (navbarLogo) {
 
           navbarLogo.src =
-            "/public/assets/reisagri-logo-white.png";
+            "/public/assets/reisagri_trading_white.svg";
 
         }
 

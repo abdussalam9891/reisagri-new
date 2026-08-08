@@ -1,7 +1,6 @@
 import { NAVIGATION } from "../../constants/navigation.js";
 
 export function createMobileNav() {
-
   const navigation = NAVIGATION.map(
     (item) => `
       <li>
@@ -39,6 +38,7 @@ export function createMobileNav() {
           <span>
             ${item.label}
           </span>
+
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -95,6 +95,7 @@ export function createMobileNav() {
       "
     >
 
+
       <!-- =================================== -->
       <!-- Backdrop -->
       <!-- =================================== -->
@@ -119,7 +120,7 @@ export function createMobileNav() {
 
 
       <!-- =================================== -->
-      <!-- Centered Panel -->
+      <!-- Drawer Panel -->
       <!-- =================================== -->
 
       <aside
@@ -162,9 +163,11 @@ export function createMobileNav() {
           no-scrollbar
 
           sm:w-[calc(100vw-3rem)]
+
           sm:rounded-[32px]
         "
       >
+
 
         <!-- ================================= -->
         <!-- Header -->
@@ -173,7 +176,6 @@ export function createMobileNav() {
         <div
           class="
             flex
-
             items-center
             justify-between
 
@@ -181,47 +183,34 @@ export function createMobileNav() {
             border-white/10
 
             px-6
-            py-5
+            py-1
 
             sm:px-7
-            sm:py-6
+            sm:py-1
           "
         >
 
-          <div>
+          <!-- Logo -->
 
-            <h2
+          <div
+            class="
+              flex
+              items-center
+            "
+          >
+
+            <img
+              src="/public/assets/reisagri_trading_white.svg"
+
+              alt="REIS AGRI TRADING"
+
               class="
-                font-serif
+                h-20
+                w-auto
 
-                text-2xl
-
-                leading-none
-
-                text-white
-
-                sm:text-[26px]
+                sm:h-18
               "
-            >
-              REISAGRI
-            </h2>
-
-
-            <p
-              class="
-                mt-2
-
-                text-[9px]
-
-                uppercase
-
-                tracking-[0.25em]
-
-                text-[#E8720F]
-              "
-            >
-              Global Commodities
-            </p>
+            />
 
           </div>
 
@@ -300,7 +289,7 @@ export function createMobileNav() {
             py-4
 
             sm:px-5
-            sm:py-5
+            sm:py-4
           "
         >
 
@@ -330,6 +319,7 @@ export function createMobileNav() {
             py-5
 
             sm:px-7
+            sm:py-5
           "
         >
 
@@ -410,7 +400,7 @@ export function createMobileNav() {
             pb-5
 
             sm:px-7
-            sm:pb-6
+            sm:pb-5
           "
         >
 
@@ -456,6 +446,7 @@ export function createMobileNav() {
           >
 
             Get Quote
+
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -506,7 +497,7 @@ export function createMobileNav() {
             text-center
 
             sm:px-7
-            sm:py-5
+            sm:py-4
           "
         >
 
@@ -535,9 +526,9 @@ export function createMobileNav() {
 
         </div>
 
+
       </aside>
 
     </div>
-
   `;
 }

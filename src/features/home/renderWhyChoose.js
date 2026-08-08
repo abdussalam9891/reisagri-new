@@ -11,75 +11,71 @@ import {
 } from "../../components/common/WhyChooseCard.js";
 
 export function renderWhyChoose() {
-
   const container =
     document.getElementById("whyChooseSection");
 
   if (!container) return;
 
   container.innerHTML = `
+    <section
+      class="
+        bg-[#F9F8F5]
+      "
+    >
 
-<section
-class="
+      <div
+        class="
+          mx-auto
+          max-w-7xl
 
-"
->
+          px-5
+          py-16
 
-<div
-class="
-mx-auto
+          sm:px-6
+          sm:py-20
 
-max-w-7xl
+          lg:px-8
+          lg:py-24
+        "
+      >
 
-px-5
-py-8
+        <!-- ===================================== -->
+        <!-- Section Heading -->
+        <!-- ===================================== -->
 
-sm:px-6
-sm:py-8
-
-lg:px-8
-lg:py-12
-"
->
-
-${createSectionHeading({
+        ${createSectionHeading({
+          title: WHY_CHOOSE.title,
+          description: WHY_CHOOSE.description,
+        })}
 
 
+        <!-- ===================================== -->
+        <!-- Why Choose Grid -->
+        <!-- ===================================== -->
 
-title:
-WHY_CHOOSE.title,
+        <div
+          class="
+            mt-12
 
-description:
-WHY_CHOOSE.description,
+            grid
+            gap-5
 
-})}
+            md:grid-cols-2
 
-<div
-class="
-mt-10
+            xl:grid-cols-3
+          "
+        >
 
-grid
+          ${WHY_CHOOSE.cards
+            .map(createWhyChooseCard)
+            .join("")}
 
-gap-8
+        </div>
 
-md:grid-cols-2
+      </div>
 
-xl:grid-cols-3
-"
->
-
-${WHY_CHOOSE.cards
-.map(createWhyChooseCard)
-.join("")}
-
-</div>
-
-</div>
-
-</section>
-
-`;
+    </section>
+  `;
 
   window.lucide?.createIcons();
-
 }

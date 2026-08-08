@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" width="1536" height="1024">
+  <defs>
+    <style>
+      .brand { font-family: Georgia, "Times New Roman", serif; font-weight: 700; fill: #000000; }
+      .sub { font-family: Georgia, "Times New Roman", serif; font-weight: 600; fill: #000000; letter-spacing: 9px; }
+    </style>
+  </defs>
+
+  <!-- REISAGRI icon: enlarged first/shortest step to match the original proportions -->
+  <path d="M290 510 L340 460 L340 588 L290 588 Z" fill="#000000"/>
+  <path d="M357 458 L412 404 L412 588 L357 588 Z" fill="#000000"/>
+  <path d="M429 405 L491 344 L491 588 L429 588 Z" fill="#000000"/>
+
+  <!-- Orange pencil/peak accent -->
+  <path d="M429 405 L491 344 L491 430 L466 405 Z" fill="#FF8A1C"/>
+
+  <!-- REISAGRI wordmark -->
+  <text x="530" y="528" class="brand" font-size="126">REISAGRI</text>
+
+  <!-- Orange underline -->
+  <rect x="532" y="548" width="648" height="5" rx="1" fill="#FF8A1C"/>
+
+  <!-- TRADING -->
+  <text x="856" y="605" class="sub" font-size="47" text-anchor="middle">TRADING</text>
+</svg>
