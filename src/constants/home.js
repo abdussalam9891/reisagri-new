@@ -30,7 +30,7 @@ export const ABOUT_PREVIEW = {
   ],
 
   cta: {
-    text: "Learn More",
+    text: "About Reis Agri",
     href: "/pages/about.html",
   },
 };
