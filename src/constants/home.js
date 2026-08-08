@@ -235,7 +235,7 @@ export const GLOBAL_PRESENCE = {
     "Connecting Agricultural\nMarkets Worldwide.",
 
   description:
-    "Through trusted sourcing, efficient logistics and dependable partnerships, REISAGRI delivers agricultural commodities across key international markets.",
+    "Through trusted sourcing, efficient logistics and dependable partnerships, Reis Agri delivers agricultural commodities across key international markets.",
 
   stats: [
     {
@@ -318,7 +318,7 @@ question:
 "Which countries do you export to?",
 
 answer:
-"REISAGRI serves customers across Africa, the Middle East, Asia and other international markets."
+"Reis Agri serves customers across Africa, the Middle East, Asia and other international markets."
 
 },
 
@@ -378,7 +378,7 @@ export const CTA = {
     "Ready To Build\nLong-Term Agricultural\nPartnerships?",
 
   description:
-    "Partner with REISAGRI for premium agricultural commodities, dependable sourcing and reliable export solutions tailored to your business needs.",
+    "Partner with Reis Agri for premium agricultural commodities, dependable sourcing and reliable export solutions tailored to your business needs.",
 
   primaryButton: {
 

@@ -1,4 +1,3 @@
-
 export const HERO_SLIDES = [
   {
     title: "Premium Agricultural\nCommodities For\nGlobal Markets",
@@ -13,7 +12,7 @@ export const HERO_SLIDES = [
 
     button: {
       text: "Explore Products",
-      href: "#products",
+      href: "/pages/products.html",
     },
   },
 
@@ -30,7 +29,7 @@ export const HERO_SLIDES = [
 
     button: {
       text: "About Reis Agri",
-      href: "#about",
+      href: "/pages/about.html",
     },
   },
 
@@ -47,7 +46,7 @@ export const HERO_SLIDES = [
 
     button: {
       text: "Our Products",
-      href: "#products",
+      href: "/pages/products.html",
     },
   },
 
@@ -64,7 +63,7 @@ export const HERO_SLIDES = [
 
     button: {
       text: "Get In Touch",
-      href: "#contact",
+      href: "/pages/contact.html",
     },
   },
 ];

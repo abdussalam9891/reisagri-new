@@ -182,5 +182,5 @@ export const CTA = {
     "Looking For A Reliable\nAgricultural Trading Partner?",
 
   description:
-    "Partner with REISAGRI for premium agricultural commodities, dependable sourcing, transparent communication and efficient global supply chain solutions tailored to your business.",
+    "Partner with Reis Agri for premium agricultural commodities, dependable sourcing, transparent communication and efficient global supply chain solutions tailored to your business.",
 };

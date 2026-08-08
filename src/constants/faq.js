@@ -10,7 +10,7 @@
   {
     id: 2,
     featured: true,
-    question: "What products does REISAGRI export?",
+    question: "What products does Reis Agri export?",
     answer:
       "Our portfolio includes rice, sugar, spices, grains, pulses, maize and other premium agricultural commodities sourced from trusted producers.",
   },

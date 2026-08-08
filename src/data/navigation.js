@@ -5,8 +5,8 @@
  * ============================================
  *
  * Unlike Banshiwala (multi-page store: /pages/products.html etc.),
- * REISAGRI's homepage is a single page with anchor sections — so hrefs
- * are in-page anchors, not routes. If REISAGRI grows into multiple pages
+ * Reis Agri's homepage is a single page with anchor sections — so hrefs
+ * are in-page anchors, not routes. If Reis Agri grows into multiple pages
  * later, swap these hrefs the same way Banshiwala's are structured.
  */
 
