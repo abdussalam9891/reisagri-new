@@ -38,53 +38,71 @@ export function createLeadershipCard({
   <div>
 
     <!-- CEO IMAGE -->
-
-    <div
+<div
   class="
+    ceo-image-wrapper
+
     group
+    relative
 
     overflow-hidden
 
-    rounded-[32px]
+    rounded-tl-[8px]
+    rounded-tr-[72px]
+    rounded-br-[8px]
+    rounded-bl-[72px]
 
-    border
-    border-transparent
-
-    bg-white
-
-    shadow-xl
+    bg-black
 
     transition-all
     duration-500
 
-    hover:-translate-y-2
-    hover:border-[#E8720F]/60
-    hover:shadow-[0_28px_60px_rgba(232,114,15,.15)]
+    ease-[cubic-bezier(0.22,1,0.36,1)]
+
+    hover:-translate-y-1
+
+    hover:rounded-tl-[48px]
+    hover:rounded-tr-[8px]
+    hover:rounded-br-[48px]
+    hover:rounded-bl-[8px]
+
+    
   "
 >
 
-      <img
-        src="${image}"
-        alt="${alt}"
+  <img
+    src="${image}"
+    alt="${alt}"
 
-         loading="lazy"
-  decoding="async"
+    loading="lazy"
+    decoding="async"
 
-        class="
-          aspect-[4/5]
+    class="
+      block
 
-          w-full
+      aspect-[4/5]
 
-          object-cover
+      w-full
 
-          transition-transform
-          duration-700
+      object-cover
 
-          group-hover:scale-105
-        "
-      />
+      select-none
 
-    </div>
+      transition-transform
+      duration-700
+
+      ease-out
+
+      group-hover:scale-[1.035]
+    "
+  />
+
+
+
+
+
+
+</div>
 
     <!-- EXECUTIVE INFO -->
 

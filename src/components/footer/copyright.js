@@ -2,106 +2,152 @@ export function createCopyright() {
   const year = new Date().getFullYear();
 
   return `
-<section
-  class="
-    border-t
-    border-white/10
-    bg-[#151515]
-  "
->
-
-  <div
-    class="
-      mx-auto
-      flex
-      max-w-7xl
-      flex-col
-      items-center
-      justify-between
-      gap-6
-
-      px-6
-      py-6
-
-      text-center
-
-      lg:flex-row
-      lg:px-8
-      lg:text-left
-    "
-  >
-
-    <p
+    <div
       class="
-        text-sm
-        text-white/50
+        grid
+        grid-cols-1
+
+        items-center
+
+        gap-4
+
+        border-t
+        border-white/10
+
+        px-6
+        py-5
+
+        text-center
+
+        lg:grid-cols-3
+
+        lg:px-8
+
+        lg:text-left
       "
     >
-      © ${year} Reis Agri Trading. All rights reserved.
-    </p>
 
-    <nav>
+      <!-- Copyright -->
 
-      <ul
+      <p
         class="
-          flex
-          flex-wrap
-          items-center
-          justify-center
-          gap-6
+          text-xs
+          text-white/40
 
-          text-sm
+          lg:justify-self-start
         "
       >
+        © ${year} Reis Agri Trading. All rights reserved.
+      </p>
 
-        <li>
-          <a
-            href="/pages/privacy-policy.html"
-            class="
-              text-white/50
-              transition-colors
-              duration-300
-              hover:text-[#E8720F]
-            "
-          >
-            Privacy Policy
-          </a>
-        </li>
 
-        <li>
-          <a
-            href="/pages/terms-and-conditions.html"
-            class="
-              text-white/50
-              transition-colors
-              duration-300
-              hover:text-[#E8720F]
-            "
-          >
-            Terms & Conditions
-          </a>
-        </li>
+      <!-- Legal -->
 
-        <li>
-          <a
-            href="/pages/disclaimer.html"
-            class="
-              text-white/50
-              transition-colors
-              duration-300
-              hover:text-[#E8720F]
-            "
-          >
-            Disclaimer
-          </a>
-        </li>
+      <nav
+        aria-label="Legal"
+        class="
+          lg:justify-self-center
+        "
+      >
+        <ul
+          class="
+            flex
+            flex-wrap
 
-      </ul>
+            items-center
+            justify-center
 
-    </nav>
+            gap-x-6
+            gap-y-2
 
-  </div>
+            text-xs
+          "
+        >
 
-</section>
-`;
+          <li>
+            <a
+              href="/pages/privacy-policy.html"
+              class="
+                text-white/40
+
+                transition-colors
+                duration-300
+
+                hover:text-[#E8720F]
+              "
+            >
+              Privacy Policy
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/pages/terms-and-conditions.html"
+              class="
+                text-white/40
+
+                transition-colors
+                duration-300
+
+                hover:text-[#E8720F]
+              "
+            >
+              Terms & Conditions
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/pages/disclaimer.html"
+              class="
+                text-white/40
+
+                transition-colors
+                duration-300
+
+                hover:text-[#E8720F]
+              "
+            >
+              Disclaimer
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+
+      <!-- Developer -->
+
+      <p
+        class="
+          text-xs
+          text-white/30
+
+          lg:justify-self-end
+        "
+      >
+        Designed & Developed by
+
+        <a
+          href="https://wa.me/919006143335"
+          target="_blank"
+          rel="noopener noreferrer"
+
+          class="
+            ml-1
+
+            text-white/45
+
+            transition-colors
+            duration-300
+
+            hover:text-[#E8720F]
+          "
+        >
+          Abdus
+        </a>
+      </p>
+
+    </div>
+  `;
 }
