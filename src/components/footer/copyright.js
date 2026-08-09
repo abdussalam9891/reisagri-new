@@ -37,7 +37,7 @@ export function createCopyright() {
           lg:justify-self-start
         "
       >
-        © ${year} Reis Agri Trading. All rights reserved.
+        © ${year} Reis Agri Trading Private Limited. All rights reserved.
       </p>
 
 
