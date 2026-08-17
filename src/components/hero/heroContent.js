@@ -71,13 +71,13 @@ export function createHeroContent() {
 
                   text-white
 
-                  sm:text-[36px]
+                  sm:text-2xl
 
-                  md:text-[42px]
+                  md:text-3xl
 
-                  lg:text-[50px]
+                  lg:text-3xl
 
-                  xl:text-[58px]
+                  xl:text-4xl
                 "
               >
 

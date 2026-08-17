@@ -171,38 +171,7 @@ export function createWhyChooseCard({
       <!-- Small Label -->
       <!-- ================================= -->
 
-      <div
-        class="
-          mb-3
 
-          flex
-          items-center
-          gap-2
-
-          text-[9px]
-
-          font-semibold
-
-          uppercase
-
-          tracking-[0.22em]
-
-          text-[#E8720F]
-        "
-      >
-
-        <span
-          class="
-            h-px
-            w-5
-
-            bg-[#E8720F]/60
-          "
-        ></span>
-
-        REISAGRI
-
-      </div>
 
 
       <!-- ================================= -->
@@ -256,59 +225,7 @@ export function createWhyChooseCard({
       </p>
 
 
-      <!-- ================================= -->
-      <!-- Bottom Detail -->
-      <!-- ================================= -->
-
-      <div
-        class="
-          mt-8
-
-          flex
-          items-center
-          justify-between
-        "
-      >
-
-        <span
-          class="
-            h-px
-            w-10
-
-            bg-[#E7E3DC]
-
-            transition-all
-            duration-500
-
-            group-hover:w-20
-
-            group-hover:bg-[#E8720F]
-          "
-        ></span>
-
-
-        <span
-          class="
-            text-[9px]
-
-            font-semibold
-
-            uppercase
-
-            tracking-[0.18em]
-
-            text-[#999999]
-
-            transition-colors
-            duration-300
-
-            group-hover:text-[#E8720F]
-          "
-        >
-          Trusted Supply
-        </span>
-
-      </div>
+      
 
     </article>
   `;

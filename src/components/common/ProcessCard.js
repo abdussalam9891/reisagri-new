@@ -93,36 +93,7 @@ group-hover:w-full
 : ""
 }
 
-<!-- =====================================
-     STEP NUMBER
-====================================== -->
-
-<div
-class="
-absolute
-
--top-5
-
-right-5
-
-font-serif
-
-text-4xl
-
-leading-none
-
-text-[#E8720F]/10
-
-transition-all
-duration-500
-
-group-hover:text-[#E8720F]/20
-"
->
-
-${number}
-
-</div>
+ 
 
 <!-- =====================================
      ICON

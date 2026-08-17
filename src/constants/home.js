@@ -45,7 +45,7 @@ export const WHY_CHOOSE = {
     "Why Choose REISAGRI",
 
   title:
-    "Built Around Trust,\nQuality & Reliability",
+    "Built Around Trust,\nQuality and Reliability",
 
   description:
     "Every shipment reflects our commitment to dependable sourcing, international quality standards and long-term business relationships.",
