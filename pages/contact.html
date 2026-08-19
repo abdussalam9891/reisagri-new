@@ -1338,7 +1338,9 @@ India
     <input
       type="tel"
       name="phone"
-      placeholder="Phone / WhatsApp *"
+      placeholder="Phone / WhatsApp (with country code) *"
+      pattern="^\+?[0-9\s()-]{7,20}$"
+      title="Include your country code, e.g. +971 55 123 4567"
       required
       class="rounded-xl border border-[#D8DDDA] px-5 py-4 outline-none transition focus:border-[#181818]"
     />
