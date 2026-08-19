@@ -10,6 +10,10 @@ import {
   initProductsPage,
 } from "./pages/productsPage.js";
 
+import {
+  initContactPage,
+} from "./pages/contactpage.js";
+
 
 
 
@@ -39,6 +43,10 @@ switch (page) {
 
      case "products":
     initProductsPage();
+    break;
+
+  case "contact":
+    initContactPage();
     break;
 
 }

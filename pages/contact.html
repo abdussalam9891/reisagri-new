@@ -1268,6 +1268,7 @@ India
       </p>
 
  <form
+  id="contactForm"
   class="
     mt-10
 
@@ -1275,6 +1276,16 @@ India
     gap-6
   "
 >
+
+  <!--
+    Web3Forms access key — this is a CLIENT project, so this must be
+    the client's own key (web3forms.com, free, no login needed —
+    just enter the email that should receive enquiries).
+    Replace the placeholder below before going live.
+  -->
+  <input type="hidden" name="access_key" value="REPLACE_WITH_CLIENT_WEB3FORMS_ACCESS_KEY" />
+  <input type="hidden" name="subject" value="New Enquiry — Reis Agri Trading Website" />
+  <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
 
   <!-- Row 1 -->
 
@@ -1289,6 +1300,7 @@ India
 
     <input
       type="text"
+      name="fullName"
       placeholder="Full Name *"
       required
       class="rounded-xl border border-[#D8DDDA] px-5 py-4 outline-none transition focus:border-[#181818]"
@@ -1296,6 +1308,7 @@ India
 
     <input
       type="text"
+      name="companyName"
       placeholder="Company Name *"
       required
       class="rounded-xl border border-[#D8DDDA] px-5 py-4 outline-none transition focus:border-[#181818]"
@@ -1316,6 +1329,7 @@ India
 
     <input
       type="email"
+      name="email"
       placeholder="Business Email *"
       required
       class="rounded-xl border border-[#D8DDDA] px-5 py-4 outline-none transition focus:border-[#181818]"
@@ -1323,6 +1337,7 @@ India
 
     <input
       type="tel"
+      name="phone"
       placeholder="Phone / WhatsApp *"
       required
       class="rounded-xl border border-[#D8DDDA] px-5 py-4 outline-none transition focus:border-[#181818]"
@@ -1343,6 +1358,7 @@ India
 
     <input
       type="text"
+      name="country"
       placeholder="Country *"
       required
       class="rounded-xl border border-[#D8DDDA] px-5 py-4 outline-none transition focus:border-[#181818]"
@@ -1350,6 +1366,7 @@ India
 
     <input
       type="text"
+      name="destinationPort"
       placeholder="Destination Port"
       class="rounded-xl border border-[#D8DDDA] px-5 py-4 outline-none transition focus:border-[#181818]"
     />
@@ -1368,6 +1385,7 @@ India
   >
 
     <select
+      name="commodity"
       class="rounded-xl border border-[#D8DDDA] px-5 py-4 outline-none transition focus:border-[#181818]"
     >
       <option>Commodity</option>
@@ -1382,6 +1400,7 @@ India
 
     <input
       type="text"
+      name="quantity"
       placeholder="Required Quantity (MT)"
       class="rounded-xl border border-[#D8DDDA] px-5 py-4 outline-none transition focus:border-[#181818]"
     />
@@ -1391,6 +1410,7 @@ India
   <!-- Row 5 -->
 
   <select
+    name="purpose"
     class="rounded-xl border border-[#D8DDDA] px-5 py-4 outline-none transition focus:border-[#181818]"
   >
     <option>Purpose of Enquiry</option>
@@ -1412,14 +1432,25 @@ India
   <!-- Message -->
 
   <textarea
+    name="message"
     rows="7"
     placeholder="Tell us about your sourcing requirements, preferred specifications, destination country, packaging or delivery timeline..."
     class="resize-none rounded-xl border border-[#D8DDDA] px-5 py-4 outline-none transition focus:border-[#181818]"
   ></textarea>
 
+  <!-- Status message -->
+
+  <p
+    id="contactFormStatus"
+    class="hidden text-sm font-medium"
+    role="status"
+    aria-live="polite"
+  ></p>
+
   <!-- Button -->
 
   <button
+    id="contactSubmitBtn"
     type="submit"
     class="
       inline-flex
@@ -1447,10 +1478,13 @@ India
       duration-300
 
       hover:bg-[#E8720F]
+
+      disabled:cursor-not-allowed
+      disabled:opacity-60
     "
   >
 
-    Request A Quote
+    <span data-btn-label>Request A Quote</span>
 
     <svg
       xmlns="http://www.w3.org/2000/svg"
