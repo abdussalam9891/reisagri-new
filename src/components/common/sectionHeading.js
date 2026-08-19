@@ -27,7 +27,39 @@ export function createSectionHeading({
   "
 >
 
+  ${
+    badge
+      ? `
+  <span
+    class="
+      inline-flex
+      items-center
+      gap-2
 
+      text-[12px]
+      font-semibold
+      uppercase
+
+      tracking-[0.14em]
+
+      text-[#E8720F]
+    "
+  >
+    <span
+      class="
+        h-1.5
+        w-1.5
+
+        rounded-full
+
+        bg-[#E8720F]
+      "
+    ></span>
+    ${badge}
+  </span>
+`
+      : ""
+  }
 
   <h2
     class="

@@ -19,7 +19,7 @@ export function renderWhyChoose() {
   container.innerHTML = `
     <section
       class="
-        bg-[#F9F8F5]
+        bg-white
       "
     >
 
@@ -29,7 +29,7 @@ export function renderWhyChoose() {
           max-w-7xl
 
           px-5
-          py-16
+          py-12
 
           sm:px-6
           sm:py-20
@@ -44,6 +44,7 @@ export function renderWhyChoose() {
         <!-- ===================================== -->
 
         ${createSectionHeading({
+          badge: WHY_CHOOSE.badge,
           title: WHY_CHOOSE.title,
           description: WHY_CHOOSE.description,
         })}
@@ -55,10 +56,13 @@ export function renderWhyChoose() {
 
         <div
           class="
-            mt-12
+            mt-8
 
             grid
-            gap-5
+            gap-3
+
+            sm:mt-12
+            sm:gap-5
 
             md:grid-cols-2
 

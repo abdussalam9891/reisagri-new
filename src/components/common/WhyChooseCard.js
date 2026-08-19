@@ -11,52 +11,44 @@ export function createWhyChooseCard({
 
         relative
 
-        overflow-hidden
+        flex
+        flex-row
+        items-start
+        gap-4
+
+        rounded-2xl
 
         border
         border-[#E7E3DC]
 
         bg-white
 
-        p-7
+        p-5
 
         shadow-[0_8px_30px_rgba(24,24,24,.04)]
 
         transition-all
-        duration-500
+        duration-300
+        ease-out
 
-        ease-[cubic-bezier(.22,1,.36,1)]
+        hover:-translate-y-1
 
-        hover:-translate-y-2
+        hover:border-[#E8720F]/35
 
-        hover:border-[#E8720F]/40
+        hover:shadow-[0_18px_40px_rgba(232,114,15,.10)]
 
-        hover:shadow-[0_24px_55px_rgba(232,114,15,.10)]
+        sm:flex-col
+        sm:items-stretch
+        sm:gap-0
 
-        rounded-tl-[8px]
-        rounded-tr-[34px]
-        rounded-br-[8px]
-        rounded-bl-[34px]
+        sm:p-7
 
-        sm:p-8
-
-        sm:rounded-tr-[42px]
-        sm:rounded-bl-[42px]
-
-        lg:p-9
-
-        lg:rounded-tr-[52px]
-        lg:rounded-bl-[52px]
-
-        hover:rounded-tl-[34px]
-        hover:rounded-tr-[8px]
-        hover:rounded-br-[34px]
-        hover:rounded-bl-[8px]
+        lg:p-8
       "
     >
 
       <!-- ================================= -->
-      <!-- Top Accent -->
+      <!-- Bottom Accent -->
       <!-- ================================= -->
 
       <span
@@ -64,20 +56,25 @@ export function createWhyChooseCard({
           pointer-events-none
 
           absolute
-          left-0
-          top-0
+          left-5
+          right-5
+          bottom-0
 
-          h-[3px]
-          w-0
+          hidden
+          sm:block
+
+          h-px
+
+          origin-left
+          scale-x-0
 
           bg-[#E8720F]
 
-          transition-all
-          duration-700
+          transition-transform
+          duration-500
+          ease-out
 
-          ease-[cubic-bezier(.22,1,.36,1)]
-
-          group-hover:w-full
+          group-hover:scale-x-100
         "
       ></span>
 
@@ -88,79 +85,47 @@ export function createWhyChooseCard({
 
       <div
         class="
-          relative
-
-          mb-8
-
           flex
-          h-14
-          w-14
+          h-11
+          w-11
+          shrink-0
 
           items-center
           justify-center
 
-          overflow-hidden
+          rounded-[10px]
 
-          rounded-[16px]
+          border
+          border-[#E7E3DC]
 
-          bg-[#FFF3E8]
+          text-[#181818]
 
           transition-all
-          duration-500
+          duration-300
+          ease-out
 
-          ease-[cubic-bezier(.22,1,.36,1)]
-
-          group-hover:scale-105
-
-          group-hover:rounded-[8px_20px_8px_20px]
+          group-hover:border-[#E8720F]
 
           group-hover:bg-[#E8720F]
+
+          group-hover:text-white
+
+          sm:mb-6
+          sm:h-12
+          sm:w-12
+          sm:rounded-xl
         "
       >
-
-        <!-- Icon background detail -->
-
-        <span
-          class="
-            pointer-events-none
-
-            absolute
-            -right-4
-            -top-4
-
-            h-10
-            w-10
-
-            rounded-full
-
-            bg-[#E8720F]/10
-
-            transition-transform
-            duration-700
-
-            group-hover:scale-[2.5]
-          "
-        ></span>
-
 
         <i
           data-lucide="${icon}"
 
           class="
-            relative
-            z-10
+            h-5
+            w-5
 
-            h-6
-            w-6
-
-            text-[#E8720F]
-
-            transition-all
-            duration-500
-
-            group-hover:scale-110
-
-            group-hover:text-white
+            sm:h-[22px]
+            sm:w-[22px]
           "
         ></i>
 
@@ -168,64 +133,50 @@ export function createWhyChooseCard({
 
 
       <!-- ================================= -->
-      <!-- Small Label -->
+      <!-- Text -->
       <!-- ================================= -->
 
-
-
-
-      <!-- ================================= -->
-      <!-- Title -->
-      <!-- ================================= -->
-
-      <h3
+      <div
         class="
-          max-w-[300px]
-
-          font-serif
-
-          text-[1.55rem]
-
-          leading-[1.12]
-
-          tracking-[-0.02em]
-
-          text-[#181818]
-
-          transition-transform
-          duration-500
-
-          group-hover:translate-x-1
-
-          sm:text-[1.65rem]
+          min-w-0
         "
       >
-        ${title}
-      </h3>
 
+        <h3
+          class="
+            font-serif
 
-      <!-- ================================= -->
-      <!-- Description -->
-      <!-- ================================= -->
+            text-[17px]
+            leading-snug
 
-      <p
-        class="
-          mt-4
+            tracking-[-0.01em]
 
-          max-w-[420px]
+            text-[#181818]
 
-          text-[15px]
+            sm:text-[1.35rem]
+          "
+        >
+          ${title}
+        </h3>
 
-          leading-7
+        <p
+          class="
+            mt-1.5
 
-          text-[#666666]
-        "
-      >
-        ${description}
-      </p>
+            text-[13.5px]
+            leading-6
 
+            text-[#666666]
 
-      
+            sm:mt-3
+            sm:text-[15px]
+            sm:leading-7
+          "
+        >
+          ${description}
+        </p>
+
+      </div>
 
     </article>
   `;
