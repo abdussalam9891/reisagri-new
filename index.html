@@ -135,6 +135,98 @@
     href="/apple-touch-icon.png">
 
   <!-- ==========================================
+       STRUCTURED DATA (JSON-LD)
+  =========================================== -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Reis Agri Trading",
+    "alternateName": "REISAGRI",
+    "url": "https://www.reisagritrading.com/",
+    "logo": "https://www.reisagritrading.com/public/assets/og-image.jpg",
+    "description": "Reis Agri Trading is a trusted agricultural commodity trading and export company specializing in premium-quality rice, sugar, spices, maize, grains and pulses.",
+    "email": "info@reisagritrading.com",
+    "telephone": "+91-8298771036",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Unit No. TK1, Third Floor, Living Style Mall, Jasola",
+      "addressLocality": "New Delhi",
+      "postalCode": "110025",
+      "addressCountry": "IN"
+    },
+    "sameAs": []
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Reis Agri Trading",
+    "url": "https://www.reisagritrading.com/"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What agricultural commodities do you export?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We export premium-quality rice, sugar, pulses, spices, maize and other agricultural commodities sourced from trusted producers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which countries do you export to?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Reis Agri serves customers across Africa, the Middle East, Asia and other international markets."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the minimum order quantity?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The minimum order quantity depends on the product and destination. Please contact our team for customized quotations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you provide customized packaging?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We offer customized packaging and private labeling based on customer requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What certifications do your products have?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our products are supplied in accordance with applicable export standards and quality requirements. Specific certifications vary by product."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does export delivery take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Delivery timelines depend on destination, product availability and shipping schedules. Our team provides estimated timelines before order confirmation."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ==========================================
        GOOGLE FONTS
   =========================================== -->
 
@@ -204,7 +296,18 @@ data-page="home"
   <div
     id="navbar-container"
     data-theme="light"
-  ></div>
+  >
+    <!-- Static SEO fallback; replaced by JS on load -->
+    <nav aria-label="Primary" class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-6 lg:px-8">
+      <a href="/index.html">Reis Agri Trading</a>
+      <ul class="flex gap-6">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/about.html">About</a></li>
+        <li><a href="/pages/products.html">Products</a></li>
+        <li><a href="/pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <!-- ========================================= -->
   <!-- Main -->
@@ -351,7 +454,19 @@ data-page="home"
   <!-- JS HERO CONTENT -->
   <!-- ========================================= -->
 
-  <div id="heroContent"></div>
+  <div id="heroContent">
+    <!-- Static SEO fallback; replaced by JS slider on load -->
+    <div class="absolute inset-0 z-30 flex items-center">
+      <div class="mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-12 xl:px-14">
+        <h1 class="mt-12 max-w-[680px] font-serif font-semibold text-[32px] leading-[1.1] text-white sm:text-2xl md:text-3xl xl:text-4xl">
+          Premium Agricultural Commodities For Global Markets
+        </h1>
+        <p class="mt-6 hidden max-w-[580px] text-base leading-7 text-white/90 md:block lg:text-lg lg:leading-8">
+          Reis Agri Trading supplies premium-quality agricultural commodities sourced from trusted producers across India. Our expertise lies in delivering consistent quality, dependable sourcing and efficient export solutions for buyers worldwide.
+        </p>
+      </div>
+    </div>
+  </div>
 
 
   <!-- ========================================= -->
@@ -560,13 +675,35 @@ data-page="home"
      ABOUT PREVIEW
 ========================================== -->
 
-<div id="aboutPreviewSection" class="reveal reveal-up"></div>
+<div id="aboutPreviewSection" class="reveal reveal-up">
+  <!-- Static SEO fallback; replaced by JS on load -->
+  <div class="mx-auto w-full max-w-7xl px-5 py-12 sm:px-6 sm:py-14 lg:px-8 lg:py-20 xl:px-10 xl:py-24">
+    <p class="text-sm font-semibold uppercase tracking-[0.18em] text-[#E8720F]">About REISAGRI</p>
+    <h2 class="mt-4 max-w-2xl font-serif text-3xl font-semibold text-[#181818] lg:text-4xl">Building Trusted Agricultural Partnerships Worldwide.</h2>
+    <p class="mt-6 max-w-2xl leading-8 text-[#666666]">Reis Agri Trading is a trusted agricultural commodity exporter connecting reliable producers with international buyers through premium-quality products, transparent communication and dependable supply chain solutions.</p>
+  </div>
+</div>
 
     <!-- ==========================================
      PRODUCT CATEGORIES
 ========================================== -->
 
-<div id="productCategoriesSection" class="reveal reveal-up"  ></div>
+<div id="productCategoriesSection" class="reveal reveal-up">
+  <!-- Static SEO fallback; replaced by JS on load -->
+  <div class="mx-auto max-w-7xl px-5 py-8 sm:px-6 lg:px-8 lg:py-12">
+    <p class="text-sm font-semibold uppercase tracking-[0.18em] text-[#E8720F]">Our Products</p>
+    <h2 class="mt-4 max-w-2xl font-serif text-3xl font-semibold text-[#181818] lg:text-4xl">A Complete Range Of Agricultural Commodities.</h2>
+    <p class="mt-6 max-w-2xl leading-8 text-[#666666]">From premium grains to essential food commodities, Reis Agri Trading delivers reliable sourcing solutions backed by trusted supplier networks and efficient global logistics.</p>
+    <ul class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <li><h3 class="font-serif text-lg font-semibold text-[#181818]">Basmati Rice</h3><p class="mt-1 text-sm leading-6 text-[#666666]">Premium Indian basmati rice including 1121, 1509, 1718 and Pusa varieties available in Steam, Golden Sella, Creamy Sella and Raw variants.</p></li>
+      <li><h3 class="font-serif text-lg font-semibold text-[#181818]">Non-Basmati Rice</h3><p class="mt-1 text-sm leading-6 text-[#666666]">Export-quality non-basmati rice including IR 64, PR 11/14, RH 10, Taj, Swarna, Sugandha, Govind Bhog, Sona Masuri and 100% Broken Rice.</p></li>
+      <li><h3 class="font-serif text-lg font-semibold text-[#181818]">Wheat</h3><p class="mt-1 text-sm leading-6 text-[#666666]">Premium-quality wheat sourced from trusted producers for flour mills, food manufacturers and international wholesale markets.</p></li>
+      <li><h3 class="font-serif text-lg font-semibold text-[#181818]">Sugar</h3><p class="mt-1 text-sm leading-6 text-[#666666]">High-quality refined sugar supplied with dependable sourcing, consistent quality standards and efficient international logistics.</p></li>
+      <li><h3 class="font-serif text-lg font-semibold text-[#181818]">Maize</h3><p class="mt-1 text-sm leading-6 text-[#666666]">Premium food-grade and feed-grade maize supplied in bulk with strict quality control and reliable export logistics.</p></li>
+      <li><h3 class="font-serif text-lg font-semibold text-[#181818]">Pulses</h3><p class="mt-1 text-sm leading-6 text-[#666666]">A wide range of export-quality pulses carefully sourced to meet international quality standards and buyer requirements.</p></li>
+    </ul>
+  </div>
+</div>
 
 
 
@@ -575,7 +712,22 @@ data-page="home"
      WHY CHOOSE US
 ========================================== -->
 
-<div id="whyChooseSection" class="reveal reveal-up"></div>
+<div id="whyChooseSection" class="reveal reveal-up">
+  <!-- Static SEO fallback; replaced by JS on load -->
+  <div class="mx-auto max-w-7xl px-5 py-12 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+    <p class="text-sm font-semibold uppercase tracking-[0.18em] text-[#E8720F]">Why Choose REISAGRI</p>
+    <h2 class="mt-4 max-w-2xl font-serif text-3xl font-semibold text-[#181818] lg:text-4xl">Built Around Trust, Quality and Reliability</h2>
+    <p class="mt-6 max-w-2xl leading-8 text-[#666666]">Every shipment reflects our commitment to dependable sourcing, international quality standards and long-term business relationships.</p>
+    <ul class="mt-8 grid gap-6 sm:mt-12 md:grid-cols-2 xl:grid-cols-3">
+      <li><h3 class="font-serif text-lg font-semibold text-[#181818]">Trusted Supplier Network</h3><p class="mt-1 text-sm leading-6 text-[#666666]">We partner with carefully selected producers to ensure consistent quality and reliable long-term supply.</p></li>
+      <li><h3 class="font-serif text-lg font-semibold text-[#181818]">Premium Quality</h3><p class="mt-1 text-sm leading-6 text-[#666666]">Every commodity is sourced and supplied with strict quality control and international export standards.</p></li>
+      <li><h3 class="font-serif text-lg font-semibold text-[#181818]">Global Logistics</h3><p class="mt-1 text-sm leading-6 text-[#666666]">Efficient export documentation, freight coordination and dependable international delivery.</p></li>
+      <li><h3 class="font-serif text-lg font-semibold text-[#181818]">Transparent Communication</h3><p class="mt-1 text-sm leading-6 text-[#666666]">Clear updates, honest pricing and responsive support throughout every stage of the business process.</p></li>
+      <li><h3 class="font-serif text-lg font-semibold text-[#181818]">Reliable Delivery</h3><p class="mt-1 text-sm leading-6 text-[#666666]">Timely execution backed by efficient supply chain management and trusted logistics partners.</p></li>
+      <li><h3 class="font-serif text-lg font-semibold text-[#181818]">Long-Term Partnerships</h3><p class="mt-1 text-sm leading-6 text-[#666666]">We focus on building lasting relationships that create sustainable value for buyers and suppliers alike.</p></li>
+    </ul>
+  </div>
+</div>
 
 
 
@@ -591,7 +743,22 @@ data-page="home"
      HOW WE WORK
 ========================================== -->
 
-<div id="processSection" class="reveal reveal-up"></div>
+<div id="processSection" class="reveal reveal-up">
+  <!-- Static SEO fallback; replaced by JS on load -->
+  <div class="mx-auto max-w-7xl px-5 py-8 sm:px-6 lg:px-8 lg:py-12">
+    <p class="text-sm font-semibold uppercase tracking-[0.18em] text-[#E8720F]">How We Work</p>
+    <h2 class="mt-4 max-w-2xl font-serif text-3xl font-semibold text-[#181818] lg:text-4xl">From Inquiry To Delivery</h2>
+    <p class="mt-6 max-w-2xl leading-8 text-[#666666]">Every shipment follows a transparent and structured process that ensures quality, efficiency and dependable execution.</p>
+    <ol class="mt-12 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+      <li><h3 class="font-serif text-lg font-semibold text-[#181818]">01. Inquiry</h3><p class="mt-1 text-sm leading-6 text-[#666666]">Share your product requirements, quantity and destination.</p></li>
+      <li><h3 class="font-serif text-lg font-semibold text-[#181818]">02. Quotation</h3><p class="mt-1 text-sm leading-6 text-[#666666]">Receive transparent pricing, specifications and commercial terms.</p></li>
+      <li><h3 class="font-serif text-lg font-semibold text-[#181818]">03. Order Confirmation</h3><p class="mt-1 text-sm leading-6 text-[#666666]">Finalize product specifications, documentation and payment terms.</p></li>
+      <li><h3 class="font-serif text-lg font-semibold text-[#181818]">04. Quality Inspection</h3><p class="mt-1 text-sm leading-6 text-[#666666]">Every shipment undergoes strict quality checks before dispatch.</p></li>
+      <li><h3 class="font-serif text-lg font-semibold text-[#181818]">05. Export & Logistics</h3><p class="mt-1 text-sm leading-6 text-[#666666]">We coordinate documentation, freight and international shipping.</p></li>
+      <li><h3 class="font-serif text-lg font-semibold text-[#181818]">06. Delivered</h3><p class="mt-1 text-sm leading-6 text-[#666666]">Reliable delivery with continuous communication until completion.</p></li>
+    </ol>
+  </div>
+</div>
 
 
 
@@ -599,7 +766,14 @@ data-page="home"
      GLOBAL PRESENCE
 ========================================== -->
 
-<div id="globalPresenceSection" class="reveal reveal-up"></div>
+<div id="globalPresenceSection" class="reveal reveal-up">
+  <!-- Static SEO fallback; replaced by JS on load -->
+  <div class="mx-auto max-w-7xl px-5 py-8 sm:px-6 lg:px-8 lg:py-12">
+    <p class="text-sm font-semibold uppercase tracking-[0.18em] text-[#E8720F]">Global Presence</p>
+    <h2 class="mt-4 max-w-2xl font-serif text-3xl font-semibold text-[#181818] lg:text-4xl">Connecting Agricultural Markets Worldwide.</h2>
+    <p class="mt-6 max-w-2xl leading-8 text-[#666666]">Through trusted sourcing, efficient logistics and dependable partnerships, Reis Agri delivers agricultural commodities across key international markets including Africa, the Middle East, Asia and Europe.</p>
+  </div>
+</div>
 
 
 
@@ -609,13 +783,33 @@ data-page="home"
      FAQ
 ========================================== -->
 
-<div id="faqSection" class="reveal reveal-up"></div>
+<div id="faqSection" class="reveal reveal-up">
+  <!-- Static SEO fallback; replaced by JS on load -->
+  <div class="mx-auto max-w-7xl px-5 py-8 sm:px-6 lg:px-8 lg:py-12">
+    <p class="text-sm font-semibold uppercase tracking-[0.18em] text-[#E8720F]">Frequently Asked Questions</p>
+    <h2 class="mt-4 max-w-2xl font-serif text-3xl font-semibold text-[#181818] lg:text-4xl">Everything You Need To Know</h2>
+    <dl class="mt-8 space-y-6">
+      <div><dt class="font-semibold text-[#181818]">What agricultural commodities do you export?</dt><dd class="mt-1 text-sm leading-6 text-[#666666]">We export premium-quality rice, sugar, pulses, spices, maize and other agricultural commodities sourced from trusted producers.</dd></div>
+      <div><dt class="font-semibold text-[#181818]">Which countries do you export to?</dt><dd class="mt-1 text-sm leading-6 text-[#666666]">Reis Agri serves customers across Africa, the Middle East, Asia and other international markets.</dd></div>
+      <div><dt class="font-semibold text-[#181818]">What is the minimum order quantity?</dt><dd class="mt-1 text-sm leading-6 text-[#666666]">The minimum order quantity depends on the product and destination. Please contact our team for customized quotations.</dd></div>
+      <div><dt class="font-semibold text-[#181818]">Can you provide customized packaging?</dt><dd class="mt-1 text-sm leading-6 text-[#666666]">Yes. We offer customized packaging and private labeling based on customer requirements.</dd></div>
+      <div><dt class="font-semibold text-[#181818]">What certifications do your products have?</dt><dd class="mt-1 text-sm leading-6 text-[#666666]">Our products are supplied in accordance with applicable export standards and quality requirements. Specific certifications vary by product.</dd></div>
+      <div><dt class="font-semibold text-[#181818]">How long does export delivery take?</dt><dd class="mt-1 text-sm leading-6 text-[#666666]">Delivery timelines depend on destination, product availability and shipping schedules. Our team provides estimated timelines before order confirmation.</dd></div>
+    </dl>
+  </div>
+</div>
 
   <!-- ==========================================
      CALL TO ACTION
 ========================================== -->
 
-<div id="ctaSection" class="reveal reveal-up"></div>
+<div id="ctaSection" class="reveal reveal-up">
+  <!-- Static SEO fallback; replaced by JS on load -->
+  <div class="mx-auto max-w-4xl px-5 py-20 text-center sm:px-6 sm:py-24 lg:px-8 lg:py-28">
+    <h2 class="font-serif text-[2rem] font-semibold leading-[1.08] text-[#181818] lg:text-[2.5rem]">Ready To Build Long-Term Agricultural Partnerships?</h2>
+    <p class="mx-auto mt-6 max-w-2xl text-sm leading-7 text-[#666666] sm:text-base sm:leading-8">Partner with Reis Agri for premium agricultural commodities, dependable sourcing and reliable export solutions tailored to your business needs.</p>
+  </div>
+</div>
 
   </main>
 
@@ -629,7 +823,21 @@ data-page="home"
 <!-- Footer -->
 <!-- ========================================= -->
 
-<div id="footer"></div>
+<div id="footer">
+  <!-- Static SEO fallback; replaced by JS on load -->
+  <footer class="mx-auto max-w-7xl px-5 py-12 sm:px-6 lg:px-8">
+    <p>Reis Agri Trading &mdash; Unit No. TK1, Third Floor, Living Style Mall, Jasola, New Delhi &ndash; 110025, India</p>
+    <ul class="mt-4 flex flex-wrap gap-6">
+      <li><a href="/pages/about.html">About Us</a></li>
+      <li><a href="/pages/products.html">Products</a></li>
+      <li><a href="/pages/contact.html">Contact</a></li>
+      <li><a href="/pages/privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="/pages/terms-and-conditions.html">Terms &amp; Conditions</a></li>
+      <li><a href="/pages/disclaimer.html">Disclaimer</a></li>
+    </ul>
+    <p class="mt-4"><a href="tel:+918298771036">+91 8298771036</a> &middot; <a href="mailto:info@reisagritrading.com">info@reisagritrading.com</a></p>
+  </footer>
+</div>
 
 <script src="https://unpkg.com/lucide@latest"></script>
 
