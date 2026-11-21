@@ -20,7 +20,7 @@ const CONTENT_SHOWN = ["opacity-100", "visible"];
 const CONTENT_HIDDEN = ["opacity-0", "invisible", "absolute"];
 
 const arrowButtonClass =
-  "absolute top-1/2 z-40 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/20 text-white backdrop-blur-md transition-all duration-300 hover:scale-110 hover:border-[#E8720F] hover:bg-black/40 focus:outline-hidden focus:ring-2 focus:ring-[#E8720F]/50 lg:flex xl:h-14 xl:w-14";
+  "absolute top-1/2 z-40 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/20 text-white backdrop-blur-md transition-colors duration-300 hover:border-white hover:bg-black/50 focus:outline-hidden focus:ring-2 focus:ring-[#E8720F]/50 lg:flex xl:h-14 xl:w-14";
 
 export default function HeroSlider() {
   const heroRef = useRef(null);
@@ -251,7 +251,7 @@ export default function HeroSlider() {
                 <div className="hero-actions mt-7 sm:mt-8 md:mt-9 lg:mt-10">
                   <Link
                     href={slide.button.href}
-                    className="hero-button group inline-flex items-center gap-2.5 rounded-full bg-[#E8720F] px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-white transition-all duration-300 hover:-translate-y-[3px] hover:bg-[#F08B32] hover:shadow-[0_18px_40px_rgba(232,114,15,.35)] sm:px-7 sm:py-3.5 sm:text-xs md:px-8 md:py-3.5 md:text-sm"
+                    className="hero-button group inline-flex items-center gap-2.5 rounded-full bg-[#E8720F] px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-white transition-colors duration-300 hover:bg-[#C95F06] sm:px-7 sm:py-3.5 sm:text-xs md:px-8 md:py-3.5 md:text-sm"
                   >
                     {slide.button.text}
                     <svg

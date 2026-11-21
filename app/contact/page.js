@@ -28,7 +28,7 @@ const Address = () =>
 const darkPill =
   "mt-8 inline-flex w-fit items-center gap-2 rounded-full bg-[#181818] px-5 py-3 text-sm font-medium text-white transition-all hover:bg-[#E8720F]";
 const lightCard =
-  "reveal flex flex-col rounded-[28px] border border-[#E8ECE7] bg-white p-8 transition-all duration-300 hover:-translate-y-2 hover:border-[#E8720F] hover:shadow-xl";
+  "reveal flex flex-col rounded-[28px] border border-[#E8ECE7] bg-white p-8 transition-colors duration-300 hover:border-[#181818]/30";
 const iconCircle = "flex h-14 w-14 items-center justify-center rounded-full bg-[#181818]/10 text-[#181818]";
 
 const CONTACT_FAQS = [
@@ -67,7 +67,7 @@ export default function ContactPage() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3 sm:mt-10 sm:gap-4">
             <a
               href="#contact-form"
-              className="inline-flex items-center justify-center rounded-full bg-[#181818] px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.16em] text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E8720F] hover:shadow-[0_12px_30px_rgba(232,114,15,.18)] sm:px-8 sm:py-4 sm:text-sm sm:tracking-[0.18em]"
+              className="inline-flex items-center justify-center rounded-full bg-[#181818] px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.16em] text-white transition-colors duration-300 hover:bg-[#E8720F] sm:px-8 sm:py-4 sm:text-sm sm:tracking-[0.18em]"
             >
               Request A Quote
             </a>
@@ -76,7 +76,7 @@ export default function ContactPage() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Chat with ReisAgri on WhatsApp"
-              className="inline-flex items-center justify-center gap-2.5 rounded-full border border-[#181818] px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.16em] text-[#181818] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#E8720F] hover:text-[#E8720F] sm:px-8 sm:py-4 sm:text-sm sm:tracking-[0.18em]"
+              className="inline-flex items-center justify-center gap-2.5 rounded-full border border-[#181818] px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.16em] text-[#181818] transition-colors duration-300 hover:bg-[#181818] hover:text-white sm:px-8 sm:py-4 sm:text-sm sm:tracking-[0.18em]"
             >
               <span>Chat On WhatsApp</span>
               <WhatsAppIcon className="h-5 w-5" />
@@ -155,7 +155,7 @@ export default function ContactPage() {
               </a>
             </div>
 
-            <div className="reveal flex flex-col rounded-[28px] bg-[#181818] p-8 text-white transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <div className="reveal flex flex-col rounded-[28px] bg-[#181818] p-8 text-white">
               <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#E8720F] text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" className="h-7 w-7">
                   <path d="M16 3C8.83 3 3 8.72 3 15.78c0 2.54.74 4.99 2.14 7.11L3.5 29l6.32-1.61A13.1 13.1 0 0 0 16 28.56c7.17 0 13-5.72 13-12.78S23.17 3 16 3Zm0 23.12a10.9 10.9 0 0 1-5.57-1.53l-.4-.24-3.75.95 1-3.63-.26-.42a10.53 10.53 0 0 1-1.63-5.47C5.39 10.1 10.06 5.5 16 5.5s10.61 4.6 10.61 10.28S21.94 26.12 16 26.12Zm5.88-7.74c-.32-.16-1.9-.93-2.2-1.04-.29-.1-.5-.16-.71.16s-.82 1.03-1 1.24c-.19.21-.37.24-.69.08-.32-.16-1.34-.49-2.55-1.56-.94-.83-1.57-1.86-1.76-2.18-.18-.31-.02-.48.14-.64.14-.14.32-.37.48-.56.16-.18.21-.31.32-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.69-.97-2.32-.26-.61-.53-.53-.71-.54h-.61c-.21 0-.55.08-.84.39-.29.31-1.11 1.08-1.11 2.63s1.13 3.05 1.29 3.26c.16.21 2.22 3.35 5.38 4.69.75.32 1.34.51 1.8.66.76.24 1.45.21 2 .13.61-.09 1.9-.78 2.17-1.54.27-.76.27-1.41.19-1.54-.08-.13-.29-.21-.61-.37Z" />
@@ -326,7 +326,7 @@ export default function ContactPage() {
           </p>
           <a
             href={`mailto:${CONTACT.email}`}
-            className="mt-10 inline-flex items-center justify-center rounded-full bg-[#E8720F] px-10 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-white transition-all duration-300 hover:scale-105"
+            className="mt-10 inline-flex items-center justify-center rounded-full bg-[#E8720F] px-10 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-white transition-colors duration-300 hover:bg-[#C95F06]"
           >
             Contact Our Team
           </a>

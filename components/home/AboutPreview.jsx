@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { buttonClass } from "@/components/common/button";
+import ButtonArrow from "@/components/common/ButtonArrow";
 import Counter from "@/components/common/Counter";
 import Lines from "@/components/common/Lines";
 import { ABOUT_PREVIEW } from "@/constants/home";
@@ -28,7 +30,7 @@ export default function AboutPreview({ className = "" }) {
                   <Counter
                     value={stat.value}
                     delay={index * 120}
-                    className="text-3xl font-medium leading-none tracking-tight text-[#E8720F] transition-colors duration-300 sm:text-4xl"
+                    className="text-3xl font-medium leading-none tracking-tight text-[#181818] sm:text-4xl"
                   />
                   <div className="mt-2 max-w-[130px] text-[10px] font-medium uppercase leading-4 tracking-[0.14em] text-[#777777] sm:text-xs">
                     {stat.label}
@@ -37,24 +39,9 @@ export default function AboutPreview({ className = "" }) {
               ))}
             </div>
 
-            <Link
-              href={cta.href}
-              className="group/cta relative mt-9 inline-flex items-center justify-center overflow-hidden rounded-full border border-[#E8720F] px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.16em] text-[#181818] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:rounded-[6px_22px_6px_22px] hover:shadow-[0_12px_30px_rgba(232,114,15,.18)] sm:px-8 sm:py-4 sm:text-sm"
-            >
-              <span className="absolute inset-0 origin-left scale-x-0 bg-[#E8720F] transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover/cta:scale-x-100" />
-              <span className="relative z-10 flex items-center gap-3 transition-colors duration-300 group-hover/cta:text-white">
-                {cta.text}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  className="h-4 w-4 transition-transform duration-300 group-hover/cta:translate-x-1"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M13 5l7 7-7 7" />
-                </svg>
-              </span>
+            <Link href={cta.href} className={buttonClass("outline", "mt-9")}>
+              {cta.text}
+              <ButtonArrow />
             </Link>
           </div>
         </div>

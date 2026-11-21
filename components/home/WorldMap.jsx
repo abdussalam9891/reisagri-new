@@ -46,9 +46,9 @@ export default function WorldMap({ markets }) {
   return (
     <div
       ref={ref}
-      className="relative mx-auto w-full max-w-6xl rounded-[24px] p-3 transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-2 hover:scale-[1.015] hover:rounded-[42px] sm:p-5 lg:p-7"
+      className="relative mx-auto w-full max-w-6xl p-3 sm:p-5 lg:p-7"
     >
-      <div className="relative z-10 w-full transform-gpu transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]">
+      <div className="relative z-10 w-full">
         {/* eslint-disable-next-line @next/next/no-img-element -- markers are positioned over the SVG's intrinsic box */}
         <img
           src="/assets/images/worldMap.svg"
@@ -56,7 +56,7 @@ export default function WorldMap({ markets }) {
           loading="lazy"
           decoding="async"
           draggable="false"
-          className="block w-full transform-gpu select-none opacity-35 transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] hover:rotate-[0.35deg] hover:scale-[1.025] hover:opacity-50 hover:drop-shadow-[0_20px_35px_rgba(232,114,15,.10)]"
+          className="block w-full select-none opacity-35"
         />
 
         {/* India — export origin */}
@@ -101,7 +101,7 @@ export default function WorldMap({ markets }) {
             <span className="absolute bottom-5 left-1/2 h-5 w-px -translate-x-1/2 bg-[#E8720F]/60 opacity-0 transition-all duration-500 group-hover:opacity-100" />
             <span className="absolute left-1/2 top-1/2 h-10 w-10 -translate-x-1/2 -translate-y-1/2 animate-ping rounded-full bg-[#E8720F]/15" />
             <span className="absolute left-1/2 top-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#E8720F]/40" />
-            <div className="relative flex h-5 w-5 items-center justify-center rounded-full bg-[#E8720F] shadow-[0_0_30px_rgba(232,114,15,.45)] transition-all duration-500 group-hover:scale-125">
+            <div className="relative flex h-5 w-5 items-center justify-center rounded-full bg-[#E8720F]">
               <span className="h-2 w-2 rounded-full bg-white" />
             </div>
           </div>

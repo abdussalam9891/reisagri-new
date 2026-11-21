@@ -145,13 +145,10 @@ export default function Navbar() {
           <div className="hidden lg:ml-10 lg:flex">
             <Link
               href="/contact"
-              className={`group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-lg border border-[#E8720F] px-7 py-3.5 text-[13px] font-semibold uppercase tracking-[0.18em] ${textColor} transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:rounded-[4px_22px_4px_22px] hover:border-[#F08B2F] hover:shadow-[0_18px_40px_rgba(232,114,15,.28)]`}
+              className="group inline-flex items-center justify-center gap-2.5 rounded-full bg-[#E8720F] px-6 py-3 text-[13px] font-semibold uppercase tracking-[0.16em] text-white transition-colors duration-300 hover:bg-[#C95F06]"
             >
-              <span className="absolute inset-0 z-0 origin-left scale-x-0 bg-[#E8720F] transition-transform duration-500 ease-[cubic-bezier(.22,1,.36,1)] group-hover:scale-x-100" />
-              <span className="relative z-10 flex items-center gap-2.5">
-                Get Quote
-                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1.5" />
-              </span>
+              Get Quote
+              <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
           </div>
         </div>
@@ -264,7 +261,7 @@ function MobileDrawer({ mounted, open, onClose, activeSlug }) {
           <Link
             href="/contact"
             onClick={onClose}
-            className="group flex items-center justify-center gap-3 rounded-xl bg-[#E8720F] px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#F08B2F] hover:shadow-[0_15px_35px_rgba(232,114,15,.25)]"
+            className="group flex items-center justify-center gap-3 rounded-full bg-[#E8720F] px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors duration-300 hover:bg-[#C95F06]"
           >
             Get Quote
             <svg

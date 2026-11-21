@@ -1,20 +1,5 @@
-import {
-  BadgeCheck,
-  ClipboardCheck,
-  Clock3,
-  FileText,
-  Handshake,
-  MessageCircle,
-  MessagesSquare,
-  PackageCheck,
-  Ship,
-  ShieldCheck,
-  Award,
-} from "lucide-react";
-
 export const ABOUT_PREVIEW = {
-  badge: "About REISAGRI",
-  title: "Building Trusted Agricultural\nPartnerships Worldwide.",
+  title: "Building Trusted Agricultural\n*Partnerships Worldwide.*",
   description:
     "Reis Agri Trading is a trusted agricultural commodity exporter connecting reliable producers with international buyers through premium-quality products, transparent communication and dependable supply chain solutions.",
   video: "/videos/reisagriVideo.mp4",
@@ -29,50 +14,45 @@ export const ABOUT_PREVIEW = {
 };
 
 export const PRODUCT_CATEGORIES_HEADING = {
-  badge: "Our Products",
-  title: "A Complete Range Of\nAgricultural Commodities.",
+  eyebrow: "Our Products",
+  title: "A Complete Range Of\n*Agricultural Commodities.*",
   description:
     "From premium grains to essential food commodities, Reis Agri Trading delivers reliable sourcing solutions backed by trusted supplier networks and efficient global logistics.",
 };
 
 export const WHY_CHOOSE = {
-  badge: "Why Choose REISAGRI",
-  title: "Built Around Trust,\nQuality and Reliability",
+  title: "Built Around Trust,\n*Quality and Reliability.*",
   description:
     "Every shipment reflects our commitment to dependable sourcing, international quality standards and long-term business relationships.",
-  cards: [
+  image: "/images/grains.webp",
+  imageAlt: "Assorted rice, grains and pulses on spoons",
+  points: [
     {
-      icon: ShieldCheck,
       title: "Trusted Supplier Network",
       description:
         "We partner with carefully selected producers to ensure consistent quality and reliable long-term supply.",
     },
     {
-      icon: Award,
       title: "Premium Quality",
       description:
         "Every commodity is sourced and supplied with strict quality control and international export standards.",
     },
     {
-      icon: Ship,
       title: "Global Logistics",
       description:
         "Efficient export documentation, freight coordination and dependable international delivery.",
     },
     {
-      icon: MessagesSquare,
       title: "Transparent Communication",
       description:
         "Clear updates, honest pricing and responsive support throughout every stage of the business process.",
     },
     {
-      icon: Clock3,
       title: "Reliable Delivery",
       description:
         "Timely execution backed by efficient supply chain management and trusted logistics partners.",
     },
     {
-      icon: Handshake,
       title: "Long-Term Partnerships",
       description:
         "We focus on building lasting relationships that create sustainable value for buyers and suppliers alike.",
@@ -81,44 +61,37 @@ export const WHY_CHOOSE = {
 };
 
 export const PROCESS = {
-  badge: "How We Work",
-  title: "From Inquiry To Delivery",
+  title: "From Inquiry\n*To Delivery.*",
   description:
     "Every shipment follows a transparent and structured process that ensures quality, efficiency and dependable execution.",
   steps: [
     {
       number: "01",
-      icon: MessageCircle,
       title: "Inquiry",
       description: "Share your product requirements, quantity and destination.",
     },
     {
       number: "02",
-      icon: FileText,
       title: "Quotation",
       description: "Receive transparent pricing, specifications and commercial terms.",
     },
     {
       number: "03",
-      icon: ClipboardCheck,
       title: "Order Confirmation",
       description: "Finalize product specifications, documentation and payment terms.",
     },
     {
       number: "04",
-      icon: ShieldCheck,
       title: "Quality Inspection",
       description: "Every shipment undergoes strict quality checks before dispatch.",
     },
     {
       number: "05",
-      icon: Ship,
       title: "Export & Logistics",
       description: "We coordinate documentation, freight and international shipping.",
     },
     {
       number: "06",
-      icon: PackageCheck,
       title: "Delivered",
       description: "Reliable delivery with continuous communication until completion.",
     },
@@ -126,8 +99,7 @@ export const PROCESS = {
 };
 
 export const GLOBAL_PRESENCE = {
-  badge: "Global Presence",
-  title: "Connecting Agricultural\nMarkets Worldwide.",
+  title: "Connecting Agricultural\n*Markets Worldwide.*",
   description:
     "Through trusted sourcing, efficient logistics and dependable partnerships, Reis Agri delivers agricultural commodities across key international markets.",
   markets: [
@@ -139,8 +111,7 @@ export const GLOBAL_PRESENCE = {
 };
 
 export const FAQ = {
-  badge: "Frequently Asked Questions",
-  title: "Everything You Need\nTo Know",
+  title: "Everything You Need\n*To Know.*",
   description:
     "Find answers to the most common questions about our agricultural commodities, export process, logistics and business partnerships.",
   questions: [
@@ -178,16 +149,10 @@ export const FAQ = {
 };
 
 export const CTA = {
-  title: "Ready To Build\nLong-Term Agricultural\nPartnerships?",
+  title: "Ready To Build Long-Term\n*Agricultural Partnerships?*",
   description:
     "Partner with Reis Agri for premium agricultural commodities, dependable sourcing and reliable export solutions tailored to your business needs.",
   primaryButton: { text: "Request a Quote", href: "/contact" },
   secondaryButton: { text: "Contact Us", href: "/contact" },
-  features: [
-    { icon: BadgeCheck, text: "Premium Quality" },
-    { icon: Ship, text: "Global Logistics" },
-    { icon: Handshake, text: "Trusted Partnership" },
-    { icon: MessagesSquare, text: "Transparent Communication" },
-  ],
   background: "/images/warehouse.webp",
 };

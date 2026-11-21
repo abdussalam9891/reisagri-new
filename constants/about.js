@@ -1,5 +1,3 @@
-import { BadgeCheck, Globe, Handshake, Shield, Target, Truck } from "lucide-react";
-
 export const ABOUT_HERO_STATS = [
   { value: "10+", label: "Years Experience" },
   { value: "25+", label: "Countries Served" },
@@ -9,24 +7,19 @@ export const ABOUT_HERO_STATS = [
 
 export const FOUNDATION = {
   heading: {
-    badge: "Our Foundation",
-    title: "Purpose That Drives\nEvery Partnership",
+    title: "Purpose That Drives\n*Every Partnership.*",
     description:
       "Everything we do is guided by integrity, quality and long-term relationships. These principles shape every sourcing decision, every shipment and every partnership we build across international markets.",
   },
   cards: [
     {
-      badge: "Our Mission",
-      icon: Target,
-      variant: "light",
+      label: "Our Mission",
       title: "Deliver Trust Through\nEvery Shipment",
       description:
         "To connect trusted agricultural producers with global buyers by delivering premium-quality commodities, dependable sourcing and efficient supply chain solutions that create long-term value.",
     },
     {
-      badge: "Our Vision",
-      icon: Globe,
-      variant: "dark",
+      label: "Our Vision",
       title: "Becoming A Trusted\nGlobal Agricultural\nTrading Partner.",
       description:
         "We aspire to become a globally respected agricultural commodity trading company recognised for integrity, operational excellence and dependable partnerships across international markets.",
@@ -36,33 +29,28 @@ export const FOUNDATION = {
 
 export const CORE_VALUES = {
   heading: {
-    badge: "Core Values",
-    title: "The Principles Behind\nEverything We Do",
+    title: "The Principles Behind\n*Everything We Do.*",
     description:
       "Our values guide every sourcing decision, every shipment and every long-term partnership we build across global agricultural markets.",
   },
   values: [
     {
       title: "Integrity",
-      icon: Shield,
       description:
         "Honesty, transparency and ethical business practices remain at the heart of every relationship we build.",
     },
     {
       title: "Quality",
-      icon: BadgeCheck,
       description:
         "Every shipment is sourced and inspected with strict quality standards, ensuring consistency, reliability and customer satisfaction.",
     },
     {
       title: "Reliability",
-      icon: Truck,
       description:
         "From sourcing to export logistics, we ensure dependable execution, timely communication and smooth delivery across every stage.",
     },
     {
       title: "Partnership",
-      icon: Handshake,
       description:
         "We believe lasting success is built through mutual trust, collaboration and long-term relationships that benefit every stakeholder.",
     },
@@ -73,7 +61,7 @@ export const LEADERSHIP = [
   {
     image: "/assets/images/ceo.jpeg",
     alt: "Mohammad Izhar Alam - CO-FOUNDER & CEO",
-    heading: "Driven by Experience\nGuided by Integrity",
+    heading: "Driven by Experience,\n*Guided by Integrity.*",
     paragraphs: [
       <>
         Reis Agri Trading is led by{" "}
@@ -94,7 +82,7 @@ export const LEADERSHIP = [
 
 export const TIMELINE = {
   heading: {
-    title: "Growing Through\nExperience",
+    title: "Growing Through\n*Experience.*",
     description:
       "Every milestone reflects our commitment to building stronger supply chains, trusted partnerships and sustainable growth.",
   },
@@ -127,7 +115,7 @@ export const TIMELINE = {
 };
 
 export const ABOUT_CTA = {
-  heading: "Looking For A Reliable\nAgricultural Trading Partner?",
+  heading: "Looking For A Reliable\n*Agricultural Trading Partner?*",
   description:
     "Partner with Reis Agri for premium agricultural commodities, dependable sourcing, transparent communication and efficient global supply chain solutions tailored to your business.",
 };

@@ -37,7 +37,7 @@ export default function Footer() {
   const toggle = (name) => setOpenSection((current) => (current === name ? null : name));
 
   return (
-    <footer className="mt-24 bg-[#181818] text-white">
+    <footer className="bg-[#181818] text-white">
       <section className="bg-[#181818]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-12 md:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr] lg:gap-16 lg:px-8 lg:py-14">
           {/* Brand */}

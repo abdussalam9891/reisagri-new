@@ -1,18 +1,3 @@
-import {
-  BadgeCheck,
-  Bean,
-  FileText,
-  Handshake,
-  Leaf,
-  MessagesSquare,
-  Package,
-  ShieldCheck,
-  Ship,
-  Sprout,
-  Warehouse,
-  Wheat,
-} from "lucide-react";
-
 export const PRODUCT_CATEGORIES = [
   {
     slug: "basmati-rice",
@@ -65,7 +50,7 @@ export const PRODUCT_CATEGORIES = [
 ];
 
 export const PRODUCT_HERO = {
-  title: "Premium Agricultural\nCommodities For\nGlobal Markets",
+  title: "Premium Agricultural\nCommodities For *Global Markets*",
   description:
     "Reis Agri Trading supplies premium-quality agricultural commodities sourced from trusted producers across India. Our expertise lies in delivering consistent quality, dependable sourcing and efficient export solutions for buyers worldwide.",
   image: "/images/sugar2.webp",
@@ -82,86 +67,82 @@ export const PRODUCT_INTRODUCTION = {
     {
       label: "Flagship",
       title: "Rice",
-      icon: Wheat,
       description:
         "Extensive portfolio of premium basmati and non-basmati rice varieties for global buyers.",
     },
     {
       label: "Export",
       title: "Sugar",
-      icon: Package,
       description: "Reliable supply of refined sugar for food processing and wholesale markets.",
     },
     {
       label: "Bulk",
       title: "Grains & Maize",
-      icon: Warehouse,
       description: "Food and feed grade commodities sourced through dependable procurement.",
     },
     {
       label: "Agriculture",
       title: "Pulses & Spices",
-      icon: Leaf,
       description: "Premium Indian pulses and spices sourced for export markets.",
     },
   ],
 };
 
 export const RICE = {
-  title: "Our Flagship\nExport Commodity",
+  title: "Our Flagship\n*Export Commodity.*",
   description:
     "Rice represents the core of our export portfolio. We supply an extensive range of premium basmati and non-basmati varieties, sourced from trusted mills and processed to meet international quality standards.",
   nonBasmati: [
-    { name: "IR 64", variants: ["White Raw", "Parboiled"] },
-    { name: "PR 11 / PR 14", variants: ["Steam", "Golden Sella", "Creamy Sella"] },
-    { name: "RH 10", variants: ["Steam", "Golden Sella", "Creamy Sella"] },
-    { name: "Taj", variants: ["Steam", "Creamy Sella"] },
-    { name: "Swarna", variants: ["White Raw", "Parboiled"] },
-    { name: "Sugandha", variants: ["Creamy Sella"] },
-    { name: "Govind Bhog", variants: ["Raw Rice"] },
-    { name: "Sona Masuri", variants: ["Steam Rice"] },
-    { name: "100% Broken Rice", variants: ["Export Quality"] },
+    { name: "IR 64", image: "/images/rice/ir-64.webp", variants: ["White Raw", "Parboiled"] },
+    { name: "PR 11 / PR 14", image: "/images/rice/pr-11-14.webp", variants: ["Steam", "Golden Sella", "Creamy Sella"] },
+    { name: "RH 10", image: "/images/rice/rh-10.webp", variants: ["Steam", "Golden Sella", "Creamy Sella"] },
+    { name: "Taj", image: "/images/rice/taj.webp", variants: ["Steam", "Creamy Sella"] },
+    { name: "Swarna", image: "/images/rice/swarna.webp", variants: ["White Raw", "Parboiled"] },
+    { name: "Sugandha", image: "/images/rice/sugandha.webp", variants: ["Creamy Sella"] },
+    { name: "Govind Bhog", image: "/images/rice/govind-bhog.webp", variants: ["Raw Rice"] },
+    { name: "Sona Masuri", image: "/images/rice/sona-masuri.webp", variants: ["Steam Rice"] },
+    { name: "100% Broken Rice", image: "/images/rice/broken-rice.webp", variants: ["Export Quality"] },
   ],
   basmati: [
-    { name: "1121", variants: ["Steam", "Golden Sella", "Creamy Sella"] },
-    { name: "1509", variants: ["Steam", "Golden Sella", "Creamy Sella"] },
-    { name: "1718", variants: ["Steam", "Golden Sella", "Creamy Sella"] },
-    { name: "Pusa", variants: ["Raw", "Golden Sella", "Creamy Sella"] },
+    { name: "1121", image: "/images/rice/basmati-1121.webp", variants: ["Steam", "Golden Sella", "Creamy Sella"] },
+    { name: "1509", image: "/images/rice/basmati-1509.webp", variants: ["Steam", "Golden Sella", "Creamy Sella"] },
+    { name: "1718", image: "/images/rice/basmati-1718.webp", variants: ["Steam", "Golden Sella", "Creamy Sella"] },
+    { name: "Pusa", image: "/images/rice/basmati-pusa.webp", variants: ["Raw", "Golden Sella", "Creamy Sella"] },
   ],
 };
 
 export const OTHER_COMMODITIES = {
-  title: "Beyond Rice,\nA Diverse Commodity Portfolio",
+  title: "Beyond Rice,\n*A Diverse Commodity Portfolio.*",
   description:
     "While rice remains our flagship commodity, we also supply a broad range of agricultural products sourced through trusted supplier networks to meet the diverse requirements of global buyers.",
   products: [
     {
       title: "Wheat",
-      icon: Wheat,
+      image: "/images/wheat.webp",
       description:
         "Premium-quality wheat sourced from trusted producers and supplied for food processing, flour milling and international wholesale markets.",
     },
     {
       title: "Sugar",
-      icon: Package,
+      image: "/images/sugar.webp",
       description:
         "High-quality refined sugar supplied with dependable sourcing, export documentation and timely shipment coordination.",
     },
     {
       title: "Maize",
-      icon: Leaf,
+      image: "/images/maize.jpg",
       description:
         "Food-grade and feed-grade maize supplied in bulk quantities with consistent quality and reliable logistics.",
     },
     {
       title: "Pulses",
-      icon: Bean,
+      image: "/images/pulses.webp",
       description:
         "A diverse range of export-quality pulses carefully sourced to meet international quality expectations.",
     },
     {
       title: "Indian Spices",
-      icon: Sprout,
+      image: "/images/turmeric.webp",
       description:
         "Whole and ground Indian spices selected for freshness, purity and consistent export quality.",
     },
@@ -169,18 +150,16 @@ export const OTHER_COMMODITIES = {
 };
 
 export const PACKAGING = {
-  title: "Built Around Your\nImport Requirements",
+  title: "Built Around Your\n*Import Requirements.*",
   description:
     "From packaging preferences to export documentation and shipment coordination, we provide flexible solutions designed to meet the requirements of international buyers.",
   cards: [
     {
       title: "Packaging",
-      icon: Package,
       items: ["PP Bags", "Jute Bags", "Custom Packaging", "Private Label Packaging"],
     },
     {
       title: "Export Support",
-      icon: Ship,
       items: [
         "Container Loading",
         "Export Documentation",
@@ -192,30 +171,26 @@ export const PACKAGING = {
 };
 
 export const WHY_PRODUCTS = {
-  title: "Trusted By Importers\nAcross International Markets.",
+  title: "Trusted By Importers\n*Across International Markets.*",
   description:
     "Reis Agri Trading combines dependable sourcing, quality assurance and efficient export operations to build lasting partnerships with buyers around the world.",
   features: [
     {
-      icon: ShieldCheck,
       title: "Direct Sourcing Network",
       description:
         "We collaborate with trusted producers and processing partners to ensure consistent quality, dependable supply and complete traceability.",
     },
     {
-      icon: Ship,
       title: "Reliable Export Logistics",
       description:
         "Our experienced team coordinates documentation, container loading and shipment scheduling to ensure smooth international deliveries.",
     },
     {
-      icon: BadgeCheck,
       title: "Consistent Quality Assurance",
       description:
         "Every shipment is inspected against buyer specifications before dispatch, ensuring confidence in every order.",
     },
     {
-      icon: Handshake,
       title: "Long-Term Business Partnerships",
       description:
         "We focus on transparency, communication and reliability to build enduring relationships with importers across global markets.",
@@ -224,30 +199,26 @@ export const WHY_PRODUCTS = {
 };
 
 export const TRADE_PROCESS = {
-  title: "Simple.\nTransparent.\nReliable.",
+  title: "Simple. Transparent.\n*Reliable.*",
   description:
     "Our export process is designed to make international sourcing simple, transparent and dependable from the first enquiry to final shipment.",
   steps: [
     {
-      icon: MessagesSquare,
       title: "Inquiry",
       description:
         "Share your product requirements, destination, quantity and packaging preferences with our export team.",
     },
     {
-      icon: FileText,
       title: "Quotation",
       description:
         "We prepare a detailed commercial quotation including specifications, pricing, delivery terms and timelines.",
     },
     {
-      icon: BadgeCheck,
       title: "Quality Approval",
       description:
         "Samples, product specifications and quality parameters are reviewed and approved before production.",
     },
     {
-      icon: Ship,
       title: "Shipment",
       description:
         "We coordinate packaging, documentation, logistics and international delivery until your order reaches its destination.",
@@ -256,7 +227,7 @@ export const TRADE_PROCESS = {
 };
 
 export const PRODUCTS_CTA = {
-  heading: "Looking For A Trusted\nAgricultural Commodity Supplier?",
+  heading: "Looking For A Trusted\n*Agricultural Commodity Supplier?*",
   description:
     "Whether you're sourcing premium rice, wheat, sugar, maize, pulses or spices, Reis Agri Trading delivers dependable sourcing, transparent communication and efficient export solutions worldwide.",
   button: { text: "Request A Quote", href: "/contact" },

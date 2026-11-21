@@ -20,7 +20,7 @@ export default function LegalPage({ content }) {
 
       {/* Content */}
       <section className="bg-white">
-        <div className="mx-auto max-w-4xl space-y-16 px-6 py-14">
+        <div className="mx-auto max-w-4xl space-y-16 px-6 pb-28 pt-14">
           {sections.map((section, index) => (
             <section key={section.title} className="reveal">
               {numbered === "badge" ? (
@@ -64,12 +64,11 @@ export default function LegalPage({ content }) {
 }
 
 function ContactCard() {
-  const iconTile = "mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#FFF6EE]";
+  const iconTile = "mb-4 text-[#E8720F]";
   const link = "mt-4 inline-block text-[#E8720F] transition hover:underline";
 
   return (
-    <div className="group relative mt-10 overflow-hidden rounded-[28px] border border-[#ECECEC] bg-white p-8 shadow-xs transition-all duration-500 hover:-translate-y-1 hover:border-[#E8720F]/50 hover:shadow-[0_18px_45px_rgba(232,114,15,.12)]">
-      <div className="absolute left-0 top-0 h-1 w-0 bg-[#E8720F] transition-all duration-500 group-hover:w-full" />
+    <div className="mt-10 border-y border-[#ECECEC] py-8">
       <div className="grid gap-8 md:grid-cols-3">
         <div>
           <div className={iconTile}>

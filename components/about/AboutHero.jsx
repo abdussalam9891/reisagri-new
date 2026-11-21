@@ -105,7 +105,7 @@ export default function AboutHero() {
           <div ref={actionsRef} className="mt-8 flex flex-wrap gap-3 sm:mt-10 sm:gap-4 md:mt-11 lg:mt-12">
             <Link
               href="/contact"
-              className="group inline-flex items-center gap-2.5 rounded-full bg-[#E8720F] px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#f68b32] hover:shadow-[0_18px_40px_rgba(232,114,15,.35)] sm:px-7 sm:py-3.5 sm:text-xs md:px-8 md:py-4 md:text-sm"
+              className="group inline-flex items-center gap-2.5 rounded-full bg-[#E8720F] px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-white transition-colors duration-300 hover:bg-[#C95F06] sm:px-7 sm:py-3.5 sm:text-xs md:px-8 md:py-4 md:text-sm"
             >
               Get Quote
               <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1 sm:h-4 sm:w-4" />
@@ -113,13 +113,10 @@ export default function AboutHero() {
 
             <Link
               href="/products"
-              className="group relative inline-flex items-center justify-center overflow-hidden rounded-full border border-white/25 px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] hover:-translate-y-1 hover:rounded-[6px_20px_6px_20px] hover:border-[#E8720F] hover:shadow-[0_16px_35px_rgba(232,114,15,.22)] sm:px-7 sm:py-3.5 sm:text-xs md:px-8 md:py-4 md:text-sm"
+              className="group inline-flex items-center justify-center gap-2.5 rounded-full border border-white/30 px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] hover:-translate-y-1 hover:rounded-[6px_20px_6px_20px] hover:border-[#E8720F] hover:shadow-[0_16px_35px_rgba(232,114,15,.22)] sm:px-7 sm:py-3.5 sm:text-xs md:px-8 md:py-4 md:text-sm"
             >
-              <span className="absolute inset-0 origin-left scale-x-0 bg-[#E8720F] transition-transform duration-500 ease-[cubic-bezier(.22,1,.36,1)] group-hover:scale-x-100" />
-              <span className="relative z-10 flex items-center gap-2.5">
-                Explore Products
-                <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1 sm:h-4 sm:w-4" />
-              </span>
+              Explore Products
+              <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1 sm:h-4 sm:w-4" />
             </Link>
           </div>
         </div>
