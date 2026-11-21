@@ -11,6 +11,7 @@ desktop.ini
 # Env / secrets
 .env
 .env.*
+!.env.example
 *.pem
 *.key
 
@@ -20,3 +21,8 @@ npm-debug.log*
 
 # Logs
 *.log
+
+# Next.js
+.next/
+out/
+next-env.d.ts
